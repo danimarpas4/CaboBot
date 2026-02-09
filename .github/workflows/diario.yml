@@ -1,0 +1,28 @@
+name: Publicar Test Diario
+
+on:
+  schedule:
+    # Se ejecuta a las 07:00 UTC (Que son las 08:00 en invierno / 09:00 en verano en España)
+    - cron: '0 6 * * *'
+  
+  # Esto añade un botón "Run workflow" en la web de GitHub para probarlo manual
+  workflow_dispatch:
+
+jobs:
+  ejecutar_bot:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Descargar tu código del repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar las librerías necesarias
+        run: pip install -r requirements.txt
+
+      - name: Lanzar el Bot
+        run: python bot.py

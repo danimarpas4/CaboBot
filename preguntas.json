@@ -1,0 +1,20 @@
+[
+    {
+        "pregunta": "¿Cuál es la sanción máxima por falta grave según el Régimen Disciplinario?",
+        "opciones": ["Arresto de 15 a 30 días", "Arresto de 1 a 14 días", "Pérdida de destino", "Suspensión de empleo"],
+        "correcta": 0,
+        "explicacion": "⚖️ Artículo 11.\nLas faltas graves se sancionan con arresto de 15 a 30 días.\n\n👇"
+    },
+    {
+        "pregunta": "¿Quién ostenta el mando supremo de las Fuerzas Armadas?",
+        "opciones": ["El Presidente del Gobierno", "El Rey", "El JEMAD", "El Ministro de Defensa"],
+        "correcta": 1,
+        "explicacion": "👑 Constitución Española Art. 62.\nCorresponde al Rey el mando supremo de las FF.AA.\n\n👇"
+    },
+    {
+        "pregunta": "En topografía, ¿qué distancia hay entre dos curvas de nivel?",
+        "opciones": ["15", "20", "25", "-20"],
+        "correcta": 3,
+        "explicacion": "💧 Son 20 entre curvas de nivel y 100 entre directoras, puto pollo.\n\n👇 "
+    }
+]
