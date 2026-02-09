@@ -1238,6 +1238,106 @@
         "opciones": ["Rechazarla", "Archivarla", "Trasladarla por escrito a quien corresponda e informar al interesado", "Devolverla al interesado para que la envíe él"],
         "correcta": 2,
         "explicacion": "📚 Artículo 11 (RD 176/2014).\nSi no es competente, la trasladará por escrito a quien corresponda para que actúe, dando conocimiento al interesado."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "¿Cuál es el 'centro de gravedad' del Ejército según el propósito del JEME sobre liderazgo?",
+        "opciones": ["La tecnología", "El combatiente", "La estructura orgánica", "El armamento"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1 (Punto 1).\nEl centro de gravedad es el combatiente y nuestra primera prioridad es su formación, motivación y moral."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "¿Qué significan las siglas del entorno VUCA en el que se basa el liderazgo del futuro?",
+        "opciones": ["Velocidad, Unión, Calidad y Astucia", "Volátil, Incierto, Complejo y Ambiguo", "Valor, Unidad, Compañerismo y Abnegación", "Visión, Utilidad, Claridad y Agilidad"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1 (Punto 1).\nUn entorno VUCA (Volátil, Incierto, Complejo y Ambiguo), que conjuga la inversión a largo plazo con una sólida formación en valores."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "En la distinción entre Jefe y Líder, ¿con qué se relaciona el 'Jefe'?",
+        "opciones": ["Con la 'auctoritas' y la actitud", "Con la gestión de recursos tangibles y la aptitud ('potestas')", "Con la influencia sobre las personas", "Con los recursos intangibles"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1 (Punto 2).\nComo jefe, dirigiendo, gestionando y administrando los recursos ('potestas'). Estos se denominan recursos tangibles y tienen que ver con la aptitud."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "¿Cuáles son las 3 dimensiones del liderazgo en el Modelo K2?",
+        "opciones": ["Táctica, Técnica y Logística", "Aptitud, Actitud y Ética", "Mando, Dirección y Ejecución", "Valor, Honor y Disciplina"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1 (Punto 3).\nLas dimensiones son la aptitud (habilidades), la actitud (competencias) y la ética (excelencia basada en valores)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "¿A qué nivel de responsabilidad corresponde el 'Microliderazgo'?",
+        "opciones": ["Nivel estratégico (Crear cultura)", "Nivel indirecto (Líder de líderes)", "Nivel directo (Líder de equipo)", "Nivel personal (Autoliderazgo)"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1 (Punto 3).\nEl microliderazgo corresponde al nivel directo de mando ('Líder de equipo') y se adquiere en la formación de oficiales, suboficiales y cabos."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "¿Cuál es la primera etapa o 'campamento base' en el ascenso a la cima del liderazgo?",
+        "opciones": ["El Equipazgo", "La Decisión", "El Autoliderazgo", "La Misión"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1 (Punto 3).\nAsí tendemos al autoliderazgo, basado en el autoconocimiento y el autodesarrollo, como primer paso."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "En la evolución del liderazgo, ¿qué símil se utiliza para el siglo XIX (control del caos y obediencia ciega)?",
+        "opciones": ["Entorno Rafting", "Entorno Vela", "Entorno Remo", "Entorno Motor"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 2 (Punto 1).\nSe simula a un entorno de remos: el jefe es el único que sabe dónde está la meta y da las órdenes, los demás obedecen ciegamente."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "¿Qué caracteriza al entorno 'Rafting' del siglo XXI?",
+        "opciones": ["El jefe decide todo", "Cada miembro conoce la meta y tiene iniciativa para adaptarse a los cambios rápidos", "Se necesita solo fuerza física", "Es un entorno estático y seguro"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 2 (Punto 1).\nEn el entorno rafting, cada miembro conoce la meta y usa su iniciativa individual para adaptar la toma de decisiones al entorno inmediato."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "¿En qué dos pilares fundamentales se basa el 'Mission Command' (Mando Orientado a la Misión)?",
+        "opciones": ["La jerarquía y la disciplina", "La confianza y el entendimiento mutuo", "El control y la sanción", "La tecnología y la potencia de fuego"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 2 (Punto 2).\nEs una filosofía de mando descentralizado basada en dos pilares fundamentales: la confianza y el entendimiento mutuo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "¿Cuál de los siguientes es un elemento básico de la filosofía del mando tipo misión?",
+        "opciones": ["Controlar todos los detalles (Detailed Command)", "Ejercer la iniciativa disciplinada", "Evitar cualquier riesgo", "Esperar órdenes para todo"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 2 (Punto 2).\nLos elementos básicos son: confianza, comprensión compartida, clara intención, iniciativa disciplinada, órdenes tipo misión y aceptar riesgos prudentes."
     }
 ]
 
