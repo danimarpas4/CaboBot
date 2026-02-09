@@ -1338,7 +1338,228 @@
         "opciones": ["Controlar todos los detalles (Detailed Command)", "Ejercer la iniciativa disciplinada", "Evitar cualquier riesgo", "Esperar órdenes para todo"],
         "correcta": 1,
         "explicacion": "📚 Tema 2 (Punto 2).\nLos elementos básicos son: confianza, comprensión compartida, clara intención, iniciativa disciplinada, órdenes tipo misión y aceptar riesgos prudentes."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción Técnica de Combate",
+        "pregunta": "En la construcción de un pozo de tirador, ¿qué margen superior debe tener el escalón de disparo para protegerse del paso de un carro?",
+        "opciones": ["Al menos 40 centímetros", "Al menos 50 centímetros", "Al menos 60 centímetros", "Al menos 1 metro"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 1.2.\nEl escalón de disparo: el ocupante, sentado en él, debe tener al menos 60 centímetros de margen superior para protegerse del paso de un carro de combate."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción Técnica de Combate",
+        "pregunta": "Durante el avance por saltos, si el enemigo NO está apercibido, ¿cuánto tiempo se estima que tarda en reaccionar y disparar?",
+        "opciones": ["1 segundo", "3 segundos", "6 segundos", "9 segundos"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 1.5 (Avance por saltos).\nSi el enemigo no está apercibido, el tiempo que necesita para advertir el salto... será de unos 6 segundos. Si acecha, podrá reaccionar en 1 segundo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción Técnica de Combate",
+        "pregunta": "¿Cuáles son las condiciones para que la observación sea eficaz?",
+        "opciones": ["Rápida, Segura y Concisa", "Disimulada, Completa, Constante y Limitada", "Lejana, Oculta y Silenciosa", "General, Específica y Detallada"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.3.\nPara que sea eficaz debe ser: Disimulada (que no nos vean), Completa (toda la zona), Constante (no dejar de observar) y Limitada (en zona no muy extensa)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción NBQ",
+        "pregunta": "¿Cuál es el tiempo máximo establecido para colocarse la máscara NBQ y comprobar su hermeticidad?",
+        "opciones": ["6 segundos", "9 segundos", "15 segundos", "30 segundos"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.2.1.3.\nLa máscara NBQ debe colocarse en un máximo de 9 segundos."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción NBQ",
+        "pregunta": "¿Cuánto tiempo mantiene sus propiedades el filtro de la máscara en un ambiente de contaminación media?",
+        "opciones": ["Aproximadamente 1 hora", "Aproximadamente 6 horas", "Aproximadamente 12 horas", "Aproximadamente 24 horas"],
+        "correcta": 0,
+        "explicacion": "📚 Apartado 3.2.1.2.\nEl filtro, en un ambiente NBQ de contaminación media, mantiene sus propiedades y eficacia, aproximadamente, durante 1 hora."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción NBQ",
+        "pregunta": "¿Durante cuánto tiempo protege el uniforme NBQ en un ambiente medianamente contaminado?",
+        "opciones": ["6 horas", "12 horas", "24 horas", "48 horas"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 3.2.2.5.\nEl uniforme NBQ protege durante 24 horas en un ambiente medianamente contaminado por los agentes químicos conocidos."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción NBQ",
+        "pregunta": "En el papel detector de agentes químicos, ¿qué indica un color de amarillo a naranja?",
+        "opciones": ["Agentes Vesicantes", "Agentes Neurotóxicos (tipo G)", "Agentes Neurotóxicos (tipo V)", "Ausencia de contaminación"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.2.3.2.\nDe amarillo a naranja: agentes neurotóxicos (tipo G). De rojo a violeta: vesicantes. De azul-verde a negro: neurotóxicos (tipo V)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción NBQ",
+        "pregunta": "Respecto a los autoinyectores de atropina y oxima, ¿cuál es el máximo que se puede administrar?",
+        "opciones": ["Uno", "Dos", "Tres", "Sin límite"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 3.2.3.2.\nEn caso necesario, se administrarán uno, dos o un máximo de tres autoinyectores, con intervalos de 15 minutos. No administrar más de tres."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Transmisiones",
+        "pregunta": "Según el alfabeto fonético internacional, ¿cuál es la voz para la letra 'Ñ'?",
+        "opciones": ["NOÑO", "ÑU", "NOVEMBER", "ÑANDU"],
+        "correcta": 0,
+        "explicacion": "📚 Apartado 4.1 (Tabla).\nLetra N: NOVEMBER. Letra Ñ: ÑOÑO."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Transmisiones",
+        "pregunta": "¿Qué caracteriza a una Red Dirigida?",
+        "opciones": ["Las estaciones pueden comunicarse libremente", "Es el sistema de pequeñas unidades", "Las estaciones deben obtener permiso de la 'directora' antes de comunicarse entre sí", "No hay estación directora"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 4.1.\nEn este tipo de red, las estaciones deberán obtener permiso de la 'directora' antes de comunicarse entre sí. Se emplean en grandes unidades."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Transmisiones",
+        "pregunta": "En un mensaje radio, ¿para qué sirve la 'Llamada preliminar'?",
+        "opciones": ["Para cerrar el mensaje", "Para establecer el enlace y asegurar que la receptora está lista", "Para autenticar la estación", "Para pedir silencio radio"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 4.1.\nSirve para establecer el enlace... Cuando la estación que llama desea asegurarse de que la 'directora' está lista para recibir un mensaje."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Instrucción Técnica de Combate",
+        "pregunta": "¿Qué diferencia hay entre la preparación del terreno 'Rápida' y 'Completa'?",
+        "opciones": ["La rápida es con maquinaria y la completa a mano", "La rápida se prepara con el útil de mango corto individual y la completa cuando hay tiempo y medios", "La rápida es para tiradores y la completa para vehículos", "No hay diferencia"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.\nLa organización del terreno puede ser: Rápida (se prepara con el útil de mango corto individual) y Completa (siempre que se disponga de tiempo y medios)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Cuál es la composición orgánica de una Escuadra de Infantería?",
+        "opciones": ["Un Cabo y cuatro soldados", "Un Cabo y tres soldados", "Un Cabo 1º y tres soldados", "Dos binomios de soldados"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1 (Generalidades).\nLa escuadra es la unidad elemental de la Infantería... Está compuesta por un cabo y tres soldados."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Quién es el responsable de la moral, disciplina e instrucción de la escuadra?",
+        "opciones": ["El Jefe de Pelotón", "El Cabo (Jefe de Escuadra)", "El soldado más antiguo", "El Suboficial de la Sección"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.1 (Misiones del jefe de escuadra).\nEs el responsable de la moral, disciplina e instrucción de su unidad, así como del estado del material."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Para qué situaciones es más adecuada la formación en 'Columna de a uno'?",
+        "opciones": ["Para el asalto a una posición", "Para avanzar por terreno abierto bajo fuego enemigo", "Para desplazamientos rápidos, de noche o con poca visibilidad", "Para ofrecer el máximo frente de fuego"],
+        "correcta": 2,
+        "explicacion": "📚 Formaciones.\nColumna de a uno: Es la formación de marcha por excelencia. Se utiliza para desplazamientos rápidos, de noche, con niebla o por terreno muy cubierto."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Qué formación adopta la escuadra para cruzar zonas batidas por el fuego enemigo o para el asalto?",
+        "opciones": ["Columna de a uno", "Cuña", "Línea o Guerrilla", "Rombo"],
+        "correcta": 2,
+        "explicacion": "📚 Formaciones.\nLínea o Guerrilla: Se adopta para cruzar zonas batidas por el fuego enemigo en los últimos momentos del asalto. Permite el máximo volumen de fuego al frente."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Qué ventaja principal ofrece la formación en 'Cuña'?",
+        "opciones": ["Máxima velocidad de desplazamiento", "Buen frente de fuego y seguridad a los flancos", "Máxima ocultación", "Control absoluto del jefe de escuadra"],
+        "correcta": 1,
+        "explicacion": "📚 Formaciones.\nCuña: Permite hacer fuego al frente y a los flancos. Es adecuada para avanzar por terreno descubierto pero no batido intensamente."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "En el reconocimiento de un punto, ¿qué elemento se encarga de la acción principal en el objetivo?",
+        "opciones": ["El elemento de seguridad", "El elemento de mando", "El elemento de reconocimiento y observación", "Toda la patrulla a la vez"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 4.1.\nEl elemento de reconocimiento y observación es el encargado de realizar la acción en el objetivo (reconocer, observar, etc.)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Qué misión tiene el elemento de seguridad en una patrulla de reconocimiento?",
+        "opciones": ["Dirigir la acción", "Facilitar la progresión y la retirada del elemento de reconocimiento", "Llevar las transmisiones", "Interrogar a los prisioneros"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 4.1.\nEl elemento de seguridad tomará posiciones para facilitar la progresión, la acción en el objetivo y la retirada del elemento de reconocimiento."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Qué significa la señal de brazo levantado verticalmente?",
+        "opciones": ["Alto el fuego", "Atención o Reunión", "Despliegue", "Enemigo a la vista"],
+        "correcta": 1,
+        "explicacion": "📚 Señales.\nBrazo levantado verticalmente: Atención. También se utiliza para llamar a los jefes de escuadra (Reunión)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Cuál es la distancia normal entre combatientes en orden abierto (dispersión)?",
+        "opciones": ["1 a 2 metros", "5 a 10 metros", "15 a 20 metros", "Más de 25 metros"],
+        "correcta": 1,
+        "explicacion": "📚 Formaciones.\nLa dispersión normal entre hombres es de 5 a 10 metros, dependiendo del terreno y la visibilidad."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "La Escuadra y el Equipo",
+        "pregunta": "¿Qué técnica utiliza la patrulla para el reconocimiento de una zona?",
+        "opciones": ["Avanzar en línea recta hasta el final", "Establecer un PRN y destacar al elemento de reconocimiento para recorrerla por partes", "Rodear la zona sin entrar en ella", "Enviar a un solo hombre"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 4.2.\nDesde el PRN elegido se destacará el elemento de reconocimiento, que recorrerá por partes la zona asignada, mientras el de seguridad le protege."
     }
+
 ]
 
 
