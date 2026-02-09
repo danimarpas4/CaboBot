@@ -558,5 +558,155 @@
         "opciones": ["De menor a mayor antigüedad", "De mayor a menor antigüedad", "Por orden alfabético", "Aleatoriamente"],
         "correcta": 1,
         "explicacion": "📚 Artículo 105.\nComo norma general, las guardias de seguridad se nombrarán de mayor a menor antigüedad, y en orden inverso para las restantes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Están sujetos al Régimen Disciplinario los alumnos de los centros docentes militares de formación?",
+        "opciones": ["No, tienen un régimen exclusivamente académico", "Sí, están sujetos a lo previsto en esta ley", "Solo durante las prácticas", "Solo si tienen empleo eventual de alférez"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 2.\nLos alumnos de los centros docentes militares de formación... están sujetos a lo previsto en esta ley. Las infracciones académicas van por normas específicas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Impide la iniciación de un procedimiento penal la tramitación de un expediente disciplinario por los mismos hechos?",
+        "opciones": ["Sí, debe paralizarse inmediatamente", "No, no impedirá la incoación y tramitación", "Depende de la gravedad del delito", "Solo si lo autoriza el juez"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 4.\nLa iniciación de un procedimiento penal no impedirá la incoación y tramitación de expedientes disciplinarios, pero la resolución definitiva deberá esperar a la sentencia firme."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "Según el artículo 10, ¿cuándo se entiende que una conducta es reiterada?",
+        "opciones": ["Cuando se realiza 2 veces en un año", "Cuando se realiza 3 o más veces en dos años", "Cuando se realiza 3 veces en un año", "Cuando se realiza 5 veces en toda la carrera"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nSe entiende que una conducta típica es reiterada cuando se realiza en tres o más ocasiones en el periodo de dos años."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Cuál de las siguientes sanciones NO corresponde a una falta leve?",
+        "opciones": ["Reprensión", "Privación de salida (alumnos)", "Arresto de 1 a 14 días", "Pérdida de destino"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 11.\nLa pérdida de destino es una sanción para faltas graves. Las leves son reprensión, privación de salida, sanción económica (1-7 días) y arresto (1-14 días)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Qué es la reprensión?",
+        "opciones": ["Una bronca verbal del mando", "La reprobación disciplinaria expresa y por escrito", "Un arresto domiciliario", "Una anotación negativa sin sanción"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 12.\nEs la reprobación disciplinaria expresa que, por escrito, dirige el superior con competencia... para su anotación en la hoja de servicios."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Dónde se cumple el arresto por falta leve (1 a 14 días)?",
+        "opciones": ["En un establecimiento disciplinario militar (celda)", "En su domicilio o en la unidad, sin ser celda", "Siempre en el domicilio", "En el calabozo de la guardia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 15.\nConsiste en la permanencia... en su domicilio o en el lugar de la unidad... Esta restricción de libertad implica que el lugar no puede ser una celda."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Cuándo prescriben las faltas muy graves?",
+        "opciones": ["A los 2 años", "A los 3 años", "A los 4 años", "A los 5 años"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 24.\nLas faltas leves prescriben a los dos meses, las graves a los dos años y las muy graves a los tres años."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Qué capacidad sancionadora tiene un Jefe de Compañía (o unidad similar)?",
+        "opciones": ["Solo reprensión", "Todas las sanciones por falta leve", "Reprensión, económica hasta 5 días y arresto hasta 3 días", "Reprensión y arresto hasta 14 días"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 32.\nLos jefes de compañía... las sanciones de reprensión, sanción económica hasta cinco días y arresto hasta tres días."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Qué capacidad sancionadora tiene un Jefe de Pelotón (Suboficial)?",
+        "opciones": ["No tiene potestad sancionadora", "La sanción de reprensión", "Arresto de 1 día", "Sanción económica de 1 día"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 32.\nLos jefes de pelotón o unidad similar con categoría de Suboficial, la sanción de reprensión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "El plazo para cancelar una sanción por falta grave es de:",
+        "opciones": ["1 año", "2 años", "3 años", "4 años"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 65.\nLas notas de las sanciones... serán canceladas... transcurrido el plazo de un año (leves), dos años (graves) o cuatro años (muy graves)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Cuál es el plazo para interponer un recurso de alzada?",
+        "opciones": ["15 días", "Un mes", "Dos meses", "Tres meses"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 69.\nEl recurso podrá interponerse en un plazo de un mes, que se iniciará el día siguiente al de notificación de la sanción."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "Si un militar observa una infracción disciplinaria y no tiene competencia para sancionar, ¿qué debe hacer?",
+        "opciones": ["Nada, no es su responsabilidad", "Corregirla verbalmente y olvidarlo", "Formular parte disciplinario a quien tenga competencia", "Arrestar al infractor preventivamente"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 42.\nFormulará directa e inmediatamente parte disciplinario a quien la tenga para sancionar la falta."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "La sanción de Suspensión de Empleo, aplicable solo a militares profesionales, tiene una duración máxima de:",
+        "opciones": ["6 meses", "1 año", "2 años", "3 años"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 19.\nSupone la privación de todas las funciones propias del empleo por un periodo mínimo de un mes y máximo de un año."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "¿Cuándo comienza la prescripción de una falta?",
+        "opciones": ["Desde que se descubre", "Desde que se sanciona", "Desde el día en que la infracción se hubiera cometido", "Desde que el mando recibe el parte"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 24.\nEstos plazos comenzarán a contarse desde el día en que la infracción se hubiera cometido."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "En las sanciones económicas, ¿cómo se calcula la cuantía diaria?",
+        "opciones": ["Sueldo base dividido por 30", "Sueldo más complementos dividido por 30", "Sueldo más complemento de empleo dividido por 60", "Sueldo base dividido por 60"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 60.\nSe calculará tomando el sueldo y el complemento de empleo... se dividirá por sesenta aquella cantidad y se multiplicará por el número de días."
     }
 ]
