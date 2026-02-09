@@ -1,0 +1,47 @@
+[
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Demo - Cultura General",
+        "pregunta": "¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?",
+        "opciones": [
+            "1918",
+            "1945",
+            "1950",
+            "1939"
+        ],
+        "correcta": 1,
+        "explicacion": "La ONU fue fundada el 24 de octubre de 1945, tras la conclusión de la Segunda Guerra Mundial."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Demo - Tecnología",
+        "pregunta": "¿Qué significan las siglas 'JSON' en programación?",
+        "opciones": [
+            "Java Standard Object Notation",
+            "JavaScript Object Notation",
+            "Joint System Online Network",
+            "Just Simple Object Navigation"
+        ],
+        "correcta": 1,
+        "explicacion": "JSON es un formato de texto sencillo para el intercambio de datos, basado en un subconjunto del lenguaje JavaScript."
+    },
+    {
+        "capitulo": 3,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Demo - Geografía",
+        "pregunta": "¿Cuál es el pico más alto del mundo sobre el nivel del mar?",
+        "opciones": [
+            "K2",
+            "Annapurna",
+            "Monte Everest",
+            "Teide"
+        ],
+        "correcta": 2,
+        "explicacion": "El Monte Everest es la montaña más alta del planeta con una altitud de 8.848 metros."
+    }
+]
