@@ -848,5 +848,275 @@
         "opciones": ["Sí, es un delito de Insubordinación (insulto a superior)", "No, es solo falta grave", "Solo si es por escrito", "Depende de la graduación"],
         "correcta": 0,
         "explicacion": "📚 Artículo 43.\nEl militar que... coaccionare, amenazare, calumniare o injuriare gravemente a un superior... será castigado con pena de prisión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué norma desarrolla la organización del Ejército de Tierra?",
+        "opciones": ["La Ley de la Carrera Militar", "La Orden DEF/708/2020", "La Instrucción 14/2021 del JEME", "Las Reales Ordenanzas"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nLa Instrucción 14/2021, de 8 de marzo, del Jefe de Estado Mayor del Ejército de Tierra, desarrolla la organización del Ejército de Tierra."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "Bajo la autoridad del JEME, ¿en qué tres grandes bloques se estructura el Ejército de Tierra?",
+        "opciones": ["Ministerio, Cuartel General y Unidades", "Cuartel General, Fuerza y Apoyo a la Fuerza", "Fuerza Terrestre, Fuerza Logística y Cuartel General", "Unidades, Centros y Organismos"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.\nLas unidades del ET se encuadran en el Cuartel General, la Fuerza y el Apoyo a la Fuerza."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Cuál es el principal órgano de apoyo del JEME responsable de proporcionarle elementos de juicio para fundamentar sus decisiones?",
+        "opciones": ["El Gabinete del JEME", "El Estado Mayor del Ejército de Tierra (EME)", "La Asesoría Jurídica", "El Consejo Superior del Ejército"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.1.1.\nEl Estado Mayor del Ejército de Tierra (EME) es el principal órgano de apoyo del JEME."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿De qué órgano depende el Regimiento de Transmisiones 22?",
+        "opciones": ["Del Mando de Transmisiones (MATRANS)", "De la Brigada Logística", "De la Jefatura del Ciberespacio y de los Servicios de Asistencia Técnica (JCISAT)", "Del Gabinete del JEME"],
+        "correcta": 2,
+        "explicacion": "📚 Punto 1.1.3.\nEl Regimiento de Transmisiones 22 depende de JCISAT (encuadrada en el Cuartel General)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué órganos constituyen la Fuerza del Ejército de Tierra?",
+        "opciones": ["FUTER y FLO", "CGTAD, Fuerza Terrestre y Mando de Canarias", "Fuerza Terrestre y Mando de Apoyo Logístico", "CGTAD y FUTER exclusivamente"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.2.\nLa Fuerza del Ejército de Tierra está constituida por: a) El Cuartel General Terrestre de Alta Disponibilidad. b) La Fuerza Terrestre. c) El Mando de Canarias del ET."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Cuál es el cometido principal del Cuartel General Terrestre de Alta Disponibilidad (CGTAD)?",
+        "opciones": ["La gestión de personal", "Prepararse para ser utilizado como estructura de mando en operaciones (Cuerpo de Ejército)", "La defensa de las Islas Canarias", "El apoyo logístico a la zona sur"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.2.1.\nSu cometido principal es prepararse para ser utilizado como estructura de mando... Constituir y adiestrarse como Cuartel General de Cuerpo de Ejército."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Dónde se encuadra la Brigada 'Rey Alfonso XIII' II de La Legión?",
+        "opciones": ["En la División 'San Marcial'", "En la División 'Castillejos'", "En el Mando de Canarias", "En el Mando de Apoyo a la Maniobra"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.2.2.2.\nLa División 'Castillejos' se articula en... d) Brigada 'Rey Alfonso XIII' II de La Legión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué unidad NO pertenece a la División 'San Marcial'?",
+        "opciones": ["Brigada 'Almogávares' VI de Paracaidistas", "Mando de Operaciones Especiales (MOE)", "Fuerzas Aeromóviles del ET (FAMET)", "Brigada 'Guadarrama' XII"],
+        "correcta": 3,
+        "explicacion": "📚 Punto 1.2.2.3.\nLa Brigada 'Guadarrama' XII pertenece a la División 'Castillejos'. La San Marcial agrupa Paracaidistas, Montaña, MOE y FAMET."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Dentro de qué mando se encuentra la Brigada Logística (BRILOG)?",
+        "opciones": ["Mando de Apoyo Logístico (MALE)", "Mando de Apoyo a la Maniobra (MAM)", "Inspección General del Ejército", "División 'Castillejos'"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.2.2.4.\nEl Mando de Apoyo a la Maniobra se articula en... f) La Brigada Logística. (Ojo: Aunque sea logística, orgánicamente está en la Fuerza, en el MAM)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿De quién dependen las Comandancias Generales de Ceuta y Melilla?",
+        "opciones": ["Directamente del JEME", "De la Fuerza Terrestre (FUTER)", "Del Mando de Canarias del ET", "Del Mando de Operaciones"],
+        "correcta": 2,
+        "explicacion": "📚 Punto 1.2.3.\nEl Mando de Canarias del Ejército de Tierra se articula en... b) La Comandancia General de Ceuta. c) La Comandancia General de Melilla."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué órganos forman el Apoyo a la Fuerza?",
+        "opciones": ["MAPER, MADOC, MALE, IGE y DAE", "FUTER, FLO y MAPER", "Cuartel General, FUTER y MALE", "MAPER, MALE y Dirección de Acuartelamiento"],
+        "correcta": 0,
+        "explicacion": "📚 Punto 1.3.\nEl Apoyo a la Fuerza está formado por: Mando de Personal, Mando de Adiestramiento y Doctrina, Mando de Apoyo Logístico, Inspección General del ET y Dirección de Asuntos Económicos."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Quién es el responsable de la asistencia sanitaria en el ámbito del ET?",
+        "opciones": ["La Brigada de Sanidad", "El Mando de Apoyo Logístico", "El Mando de Personal (MAPER)", "La Inspección General"],
+        "correcta": 2,
+        "explicacion": "📚 Punto 1.3.1.\nEl Mando de Personal es el órgano... responsable... en materia de gestión de personal, asistencia al personal y asistencia sanitaria."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué órgano es responsable de las infraestructuras y la prevención de riesgos laborales?",
+        "opciones": ["El Mando de Ingenieros", "La Inspección General del Ejército de Tierra (IGE)", "La Dirección de Asuntos Económicos", "El Cuartel General"],
+        "correcta": 1,
+        "explicacion": "📚 Punto 1.3.4.\nLa Inspección General del Ejército de Tierra es el órgano... responsable... de los procesos relacionados con las infraestructuras... y la prevención de riesgos laborales."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Quién se encarga de la contratación y contabilidad en el ET?",
+        "opciones": ["La Dirección de Asuntos Económicos (DAE)", "El Mando de Apoyo Logístico (MALE)", "La Jefatura de Asuntos Económicos del FUTER", "El Gabinete del JEME"],
+        "correcta": 0,
+        "explicacion": "📚 Punto 1.3.5.\nLa Dirección de Asuntos Económicos es la responsable de... la contratación y contabilidad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 1,
+        "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
+        "pregunta": "¿Qué unidad depende directamente del JEME y tiene consideración de Fuerza, aunque forma parte del Cuartel General?",
+        "opciones": ["El Regimiento de Infantería 'Inmemorial del Rey' nº 1", "El Regimiento de Transmisiones 22", "La Guardia Real", "El Batallón de Policía Militar I"],
+        "correcta": 0,
+        "explicacion": "📚 Punto 1.1.\nTambién forma parte del Cuartel General del Ejército el Regimiento de Infantería 'Inmemorial del Rey' nº 1... con consideración de Fuerza."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿Cuál de las siguientes NO es una situación administrativa de los militares profesionales?",
+        "opciones": ["Servicio activo", "Servicios especiales", "Vacaciones retribuidas", "Suspensión de empleo"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 107.\nLas situaciones son: Servicio activo, Servicios especiales, Excedencia, Suspensión de funciones, Suspensión de empleo, Reserva y Servicio en la Administración civil."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿A qué situaciones administrativas solo pueden acceder los militares de carrera?",
+        "opciones": ["Servicio activo y Reserva", "Reserva y Servicio en la Administración civil", "Servicios especiales y Excedencia", "Suspensión de funciones y empleo"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 107.\nA la situación administrativa de reserva y de servicio en la Administración civil solo podrán acceder los militares de carrera."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿En qué situación se encuentra un militar pendiente de asignación de destino?",
+        "opciones": ["Excedencia forzosa", "Servicio activo", "Suspensión de funciones", "Servicios especiales"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 108.\nTambién se hallarán en servicio activo cuando estén pendientes de asignación de destino por haber cesado en el que tuvieran."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "Si un militar es elegido alcalde o diputado, ¿a qué situación administrativa pasa?",
+        "opciones": ["Excedencia por cargo público", "Servicios especiales", "Reserva", "Servicio activo"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 109.\nPasan a Servicios Especiales cuando sean designados candidatos o elegidos para órganos representativos públicos (diputados, senadores, asambleas autonómicas...)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "En la situación de Servicios Especiales, ¿se cobra el sueldo militar?",
+        "opciones": ["Sí, íntegramente", "No, percibirán las retribuciones del puesto o cargo que desempeñen", "Sí, pero solo el sueldo base sin complementos", "Solo el 50%"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 109.\nPercibirán las retribuciones del puesto o cargo que desempeñen y no las que les correspondan como militares (aunque sí cobran trienios)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿Cuál de las siguientes es una modalidad de Excedencia?",
+        "opciones": ["Excedencia por estudios", "Excedencia por cuidado de familiares", "Excedencia por enfermedad común", "Excedencia por matrimonio"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 110.\nLas modalidades son: Prestación de servicios en el sector público, Interés particular, Agrupación familiar, Cuidado de familiares y Violencia de género."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿Por qué motivo se puede acordar el pase a la situación de Suspensión de Funciones?",
+        "opciones": ["Por una falta grave", "Por procesamiento en procedimiento penal o falta muy grave", "Por bajo rendimiento", "Por enfermedad de larga duración"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 111.\nSe podrá acordar como consecuencia del procesamiento... en un procedimiento penal o por la incoación de un expediente disciplinario por falta muy grave."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿Cuál es el periodo máximo de permanencia en Suspensión de Funciones?",
+        "opciones": ["3 meses", "6 meses (o la duración de la prisión preventiva)", "1 año", "Indefinido"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 111.\nEl periodo máximo será de seis meses o el de la duración de la prisión preventiva si fuese superior."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "Si un militar profesional es condenado por sentencia firme a pena de prisión, ¿a qué situación pasa?",
+        "opciones": ["Suspensión de funciones", "Suspensión de empleo", "Reserva", "Servicios especiales"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 112.\nPasarán a Suspensión de Empleo por condena en sentencia firme a pena de prisión del Código Penal Militar o Código Penal."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿El tiempo en Suspensión de Funciones computa a efectos de trienios y derechos pasivos?",
+        "opciones": ["Sí, siempre", "No", "Solo si es por falta grave", "Sí, pero solo la mitad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 111.\nEl tiempo permanecido en la situación de suspensión de funciones NO será computable como tiempo de servicios ni a efectos de trienios."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "¿Qué ocurre si un militar de tropa aprueba una oposición y se hace Policía Nacional?",
+        "opciones": ["Pasa a la reserva", "Se resuelve su compromiso", "Pasa a excedencia voluntaria", "Pasa a servicios especiales"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 118.\nEl compromiso se resolverá... c) Por el ingreso en un centro de formación de la Guardia Civil o del Cuerpo Nacional de Policía."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 5,
+        "tema": 2,
+        "titulo_tema": "Situaciones Administrativas (Ley 39/2007)",
+        "pregunta": "Si como resultado de un reconocimiento médico se establece una insuficiencia de condiciones psicofísicas que conlleva limitación para ocupar destinos:",
+        "opciones": ["Se le expulsa del ejército", "Se le garantiza el principio de igualdad de trato en los destinos a los que pueda acceder", "Pasa a retiro forzoso", "Pierde la condición de militar"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 120.\nSe les garantizará el principio de igualdad de trato en los destinos a los que puedan acceder... y se establecerán medios para reorientar su perfil profesional."
     }
 ]
