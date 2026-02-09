@@ -31,9 +31,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+        # Reemplaza la línea de abajo con la ruta real que se ve en tu GitHub
+        working-directory: . 
 
       # Step 4: Execute the main script
       - name: Execute Bot Payload
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: python bot.py
+        # Reemplaza la línea de abajo con la ruta real que se ve en tu GitHub
+        working-directory: .
