@@ -1,11 +1,5 @@
-# Secretos y tokens
 .env
-
-# Datos sensibles (Temario)
 preguntas.json
-
-# Archivos de Python
 __pycache__/
-*.pyc
+venv/
 .venv/
-venv/venv/
