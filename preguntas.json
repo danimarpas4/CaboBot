@@ -1118,5 +1118,127 @@
         "opciones": ["Se le expulsa del ejército", "Se le garantiza el principio de igualdad de trato en los destinos a los que pueda acceder", "Pasa a retiro forzoso", "Pierde la condición de militar"],
         "correcta": 1,
         "explicacion": "📚 Artículo 120.\nSe les garantizará el principio de igualdad de trato en los destinos a los que puedan acceder... y se establecerán medios para reorientar su perfil profesional."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 1,
+        "titulo_tema": "Derechos y Deberes (LO 9/2011)",
+        "pregunta": "Según la LO 9/2011, ¿puede un militar fundar o afiliarse a un partido político?",
+        "opciones": ["Sí, como cualquier ciudadano", "Sí, pero sin ocupar cargos directivos", "No, está sujeto al deber de neutralidad política", "Solo si está en la reserva"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 7.\nEl militar está sujeto al deber de neutralidad política. No podrá fundar ni afiliarse a partidos políticos."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 1,
+        "titulo_tema": "Derechos y Deberes (LO 9/2011)",
+        "pregunta": "¿Tienen los militares derecho de sindicación?",
+        "opciones": ["Sí, para defender sus intereses", "Solo las asociaciones profesionales", "No, no podrá fundar ni afiliarse a sindicatos", "Sí, pero sin derecho a huelga"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 7.\nEl militar no podrá ejercer el derecho de sindicación y, en consecuencia, no podrá fundar ni afiliarse a sindicatos."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 1,
+        "titulo_tema": "Derechos y Deberes (LO 9/2011)",
+        "pregunta": "En las Fuerzas Armadas, el principio de igualdad implica que:",
+        "opciones": ["Todos cobran lo mismo", "No cabrá discriminación alguna por razón de nacimiento, origen, género, religión u opinión", "Todos tienen el mismo empleo", "Se aplica el mismo horario a todas las unidades"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 4.\nNo cabrá discriminación alguna por razón de nacimiento, origen racial o étnico, género, sexo, orientación sexual, religión, etc."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 2,
+        "titulo_tema": "Derechos y Deberes de carácter profesional",
+        "pregunta": "¿Dónde debe residir el militar?",
+        "opciones": ["En el acuartelamiento obligatoriamente", "En el municipio de su destino, salvo autorización para otro distinto", "En cualquier lugar de la provincia", "A menos de 1 hora de la unidad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 23.\nEl lugar de residencia del militar será el del municipio de su destino. También podrá ser uno distinto siempre que se asegure el cumplimiento de sus obligaciones."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 2,
+        "titulo_tema": "Derechos y Deberes de carácter profesional",
+        "pregunta": "Respecto a la disponibilidad para el servicio, los militares estarán:",
+        "opciones": ["Disponibles de 08:00 a 15:00", "En disponibilidad permanente", "Disponibles solo cuando estén de guardia", "Disponibles según su contrato"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 22.\nLos militares estarán en disponibilidad permanente para el servicio."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 2,
+        "titulo_tema": "Derechos y Deberes de carácter profesional",
+        "pregunta": "¿Qué obligación tiene el militar respecto a los datos no clasificados relativos al servicio?",
+        "opciones": ["Publicarlos para ser transparente", "Guardar la debida discreción", "Compartirlos solo con familiares", "Ninguna, si no son secretos"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 21.\nGuardará la debida discreción sobre hechos o datos no clasificados relativos al servicio... sin que pueda difundirlos por ningún medio."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 3,
+        "titulo_tema": "Asociaciones Profesionales",
+        "pregunta": "Las asociaciones profesionales de miembros de las FAS:",
+        "opciones": ["Pueden tener carácter lucrativo", "Pueden realizar actividades políticas", "Deben tener ámbito nacional y no tener carácter lucrativo", "Pueden tener su sede dentro de los cuarteles"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 33.\nDeberán tener ámbito nacional... y en ningún caso tendrán carácter lucrativo. No podrán establecer su domicilio social en las unidades."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 4,
+        "titulo_tema": "Observatorio de la vida militar",
+        "pregunta": "¿A qué organismo está adscrito el Observatorio de la vida militar?",
+        "opciones": ["Al Ministerio de Defensa", "Al Cuartel General del Ejército", "A las Cortes Generales", "Al Defensor del Pueblo"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 53.\nSe crea el Observatorio de la vida militar como órgano colegiado... adscrito a las Cortes Generales."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 5,
+        "titulo_tema": "Iniciativas y Quejas (RD 176/2014)",
+        "pregunta": "¿Ante quién se presentan las iniciativas y propuestas en la unidad?",
+        "opciones": ["Directamente ante el General Jefe", "Ante el oficial, suboficial mayor o cabo mayor designado a tal efecto", "Ante el buzón de sugerencias anónimo", "Ante la asociación profesional"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 6 (RD 176/2014).\nSe podrán presentar... ante el oficial, suboficial mayor o cabo mayor designados a tal efecto, quienes las trasladarán al jefe de unidad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 5,
+        "titulo_tema": "Iniciativas y Quejas (RD 176/2014)",
+        "pregunta": "¿Cómo deben presentarse las quejas?",
+        "opciones": ["Siempre por escrito y mediante abogado", "Siguiendo el conducto regular, de buen modo, verbalmente o por escrito", "Públicamente en formación", "A través de los medios de comunicación"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 11 (RD 176/2014).\nPodrán presentar sus quejas siguiendo el conducto regular... y haciéndolo de buen modo, verbalmente o por escrito."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 5,
+        "titulo_tema": "Iniciativas y Quejas (RD 176/2014)",
+        "pregunta": "¿Qué debe incluir necesariamente toda queja por escrito?",
+        "opciones": ["Solo el motivo de la queja", "Nombre, TIM, empleo, destino, motivo, fecha y firma", "Nombre y DNI", "Puede ser anónima"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 11 (RD 176/2014).\nIncluirá necesariamente el nombre, la tarjeta de identidad militar, empleo y destino... motivo... fecha... y firma."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 6,
+        "tema": 5,
+        "titulo_tema": "Iniciativas y Quejas (RD 176/2014)",
+        "pregunta": "Si un mando no es competente para resolver una queja recibida, ¿qué debe hacer?",
+        "opciones": ["Rechazarla", "Archivarla", "Trasladarla por escrito a quien corresponda e informar al interesado", "Devolverla al interesado para que la envíe él"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 11 (RD 176/2014).\nSi no es competente, la trasladará por escrito a quien corresponda para que actúe, dando conocimiento al interesado."
     }
 ]
+
+
