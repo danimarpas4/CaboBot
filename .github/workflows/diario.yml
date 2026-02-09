@@ -34,4 +34,6 @@ jobs:
 
       # Step 4: Execute the main script
       - name: Execute Bot Payload
-        run: python bot.py 
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: python bot.py
