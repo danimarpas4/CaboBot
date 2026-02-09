@@ -1558,8 +1558,788 @@
         "opciones": ["Avanzar en línea recta hasta el final", "Establecer un PRN y destacar al elemento de reconocimiento para recorrerla por partes", "Rodear la zona sin entrar en ella", "Enviar a un solo hombre"],
         "correcta": 1,
         "explicacion": "📚 Apartado 4.2.\nDesde el PRN elegido se destacará el elemento de reconocimiento, que recorrerá por partes la zona asignada, mientras el de seguridad le protege."
-    }
-
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Qué sistema de coordenadas es el más utilizado en la cartografía militar al nivel que nos interesa?",
+        "opciones": ["Coordenadas Geográficas", "Coordenadas Polares", "Coordenadas Rectangulares (UTM)", "Coordenadas Azimutales"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 1.1.\nEn la cartografía militar, al nivel que nos interesa, el sistema más utilizado es el de coordenadas rectangulares dadas para una proyección tipo Universal Transversa Mercator (UTM)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "Al dar las coordenadas rectangulares de un punto, ¿qué cifras se ponen en primer lugar?",
+        "opciones": ["Las de la línea vertical (Y)", "Las de la línea horizontal (X)", "Indistintamente", "Primero la latitud y luego la longitud"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.2.\nLas coordenadas se dan poniendo en primer lugar los números correspondientes a la línea horizontal (X), y a continuación los de la línea vertical (Y)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Qué precisión de localización nos ofrece una coordenada de 6 dígitos (ej: 355053)?",
+        "opciones": ["Error inferior a 1.000 metros", "Error inferior a 100 metros", "Error inferior a 10 metros", "Error inferior a 1 metro"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.2.\nSi damos como coordenadas '355053', la precisión es mayor, pues estamos dando la situación del punto con un error inferior a 100 metros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Qué elementos necesitamos para situar un punto por coordenadas polares?",
+        "opciones": ["Una referencia conocida, brújula, medio para medir distancias y medio para medir ángulos", "Un GPS y un mapa", "Solo una brújula y el mapa", "Dos referencias conocidas en el terreno"],
+        "correcta": 0,
+        "explicacion": "📚 Apartado 1.5.\nNecesitaremos: Una referencia de coordenadas conocidas, una brújula, un medio para medir distancias y un medio para medir ángulos."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Cuál es la diferencia angular entre un rumbo y su rumbo inverso?",
+        "opciones": ["90 grados", "180 grados", "360 grados", "Depende del cuadrante"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.6.\nSe puede decir que el rumbo inverso (R BA) difiere del rumbo (RAB) en 180°, para una misma dirección."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "En un mapa escala 1:50.000, ¿cuál es la equidistancia normal entre dos curvas de nivel contiguas (no directoras)?",
+        "opciones": ["10 metros", "20 metros", "50 metros", "100 metros"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.7.1.\nSi se trata de un mapa escala 1:50.000, la diferencia de nivel (intervalo) entre dos curvas contiguas es de 20 metros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Cómo se denominan las curvas de nivel de trazo más grueso que llevan rotulada su altitud?",
+        "opciones": ["Curvas maestras o directoras", "Curvas intercaladas", "Curvas de pendiente", "Curvas de configuración"],
+        "correcta": 0,
+        "explicacion": "📚 Apartado 1.7.1.\nHay unas curvas de color marrón con un trazo más grueso (curvas directoras o maestras) rotuladas con la cifra correspondiente a su altitud."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "¿Qué indica una pendiente del 6%?",
+        "opciones": ["Que el ángulo de la cuesta es de 6 grados", "Que subimos 6 metros por cada 100 metros de distancia reducida", "Que la distancia geométrica es 6 veces la altura", "Que subimos 60 metros cada kilómetro de distancia geométrica"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.8.2.\nNos indica que nos acercamos a una pendiente en la que por cada 100 metros que avancemos, en distancia reducida, subiremos seis metros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "Para localizar nuestra posición exacta mediante el método de la intersección, ¿cuántas referencias del terreno necesitamos como mínimo?",
+        "opciones": ["Una referencia", "Dos referencias (aunque es preferible tres)", "Cuatro referencias", "No hacen falta referencias si tenemos brújula"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 1.6.1.\nDe las referencias identificadas, necesitaremos un mínimo de dos, pero es preferible tener tres localizadas sobre el mapa."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Cartografía",
+        "pregunta": "Si un punto se encuentra entre dos curvas de nivel, a menos de 1/4 de distancia de una de ellas, ¿qué altitud se le asigna?",
+        "opciones": ["La del punto medio entre ambas", "Se interpola matemáticamente", "La misma de dicha curva de nivel más próxima", "La de la curva superior siempre"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 1.7.2.\nSi se encuentra a menos de 1/4 de distancia de una de las curvas de nivel, se considerará que su altitud es la misma de dicha curva de nivel."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿En qué consiste orientar un mapa?",
+        "opciones": ["En poner el Norte hacia arriba", "En colocarlo de tal forma que las líneas del mapa coincidan o resulten paralelas a sus homólogas en el terreno", "En determinar nuestras coordenadas exactas", "En usar la brújula para medir rumbos"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 2.1.\nOrientar un mapa es colocarlo de tal modo que las líneas que forman los accidentes en él representados coincidan o resulten paralelas a sus homólogas en el terreno."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿Qué norte señala siempre la aguja imantada de la brújula?",
+        "opciones": ["El Norte Geográfico", "El Norte de la Cuadrícula", "El Norte Magnético", "El Norte Lambert"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.2.\nLa brújula es un instrumento que contiene una aguja imantada que siempre marca el norte (magnético)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿A cuántas milésimas artilleras equivalen los 360 grados de una circunferencia?",
+        "opciones": ["6.000 milésimas", "6.200 milésimas", "6.400 milésimas", "3.600 milésimas"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.2.\nTeniendo presente que una circunferencia son 360° que equivalen a 6.400 milésimas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "Para localizar el Norte Geográfico de noche mediante la Osa Mayor, ¿cuántas veces debemos prolongar la distancia entre las guardas (Merak y Dubhe)?",
+        "opciones": ["3 veces", "4 veces", "5 veces", "10 veces"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.11.4.\nLlevando 5 veces la distancia entre las estrellas del costado del carro opuesto al timón (Merak y Dubhe) en la dirección de éstas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "Utilizando un reloj de agujas para orientarse en el hemisferio Norte, ¿qué marca la dirección SUR?",
+        "opciones": ["La aguja horaria apuntando al sol", "La línea que pasa por las 12", "La bisectriz del ángulo que forman la aguja horaria (apuntando al sol) y la línea de las 12", "La bisectriz del ángulo entre el minutero y las 12"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.11.3.\nLa bisectriz del ángulo que forman la aguja horaria (dirigida hacia el sol) y la línea de las 12, nos marcará la dirección Sur."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "Cuando la Luna está en fase Creciente (forma de D), ¿qué dirección señala a las 18:00 horas?",
+        "opciones": ["Norte", "Sur", "Este", "Oeste"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 2.11.5.\nCuando la Luna está en su fase creciente, a las 18 horas señala la dirección Sur."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿En qué fase lunar la luna presenta forma de 'C'?",
+        "opciones": ["Luna Llena", "Cuarto Creciente", "Cuarto Menguante (o decreciente)", "Luna Nueva"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.11.5.\nLa fase decreciente tiene forma de C, es decir, con los cuernos a la derecha."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "Si estamos en Luna Llena, ¿a qué hora señalará la luna la dirección Sur?",
+        "opciones": ["A las 18:00 horas", "A las 24:00 horas (medianoche)", "A las 06:00 horas", "No señala el Sur en luna llena"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 2.11.5.\nCuando la Luna está llena, a las 24 horas señalará el Sur."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿Qué estrella nos indica la dirección del Norte Geográfico con muy poca variacion?",
+        "opciones": ["Sirio", "La Estrella Polar", "Antares", "Betelgeuse"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 2.11.4.\nLa Estrella Polar materializa, con error despreciable, la situación del Norte Geográfico."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Orientación",
+        "pregunta": "¿Cómo se denominan los accidentes del terreno fácilmente identificables que usamos para orientar el mapa?",
+        "opciones": ["Puntos de cota", "Vértices geodésicos", "Referencias", "Jalones"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 2.1.\nAquellos accidentes naturales o artificiales que resultan fácilmente identificables en el terreno se denominan referencias."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "¿En qué consiste la navegación?",
+        "opciones": ["En orientarse para poder desplazarse de un punto a otro del terreno", "En saber utilizar el GPS", "En determinar el Norte con la brújula", "En medir distancias en el mapa"],
+        "correcta": 0,
+        "explicacion": "📚 Apartado 3.1.\nLa navegación consiste en orientarse para poder desplazarse de un punto a otro del terreno."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "Para navegar de un punto a otro, ¿qué dos cosas debemos saber fundamentalmente?",
+        "opciones": ["La hora de salida y la de llegada", "El equipo necesario y la meteorología", "En qué punto nos encontramos y a dónde queremos dirigirnos", "El rumbo inicial y la velocidad de marcha"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 3.1.\nPara navegar de un punto a otro debemos saber en qué punto nos encontramos y a dónde queremos dirigirnos para llegar al punto final."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "En la navegación con mapa, ¿en qué debe basarse el itinerario elegido?",
+        "opciones": ["En la línea recta más corta", "En caminos asfaltados exclusivamente", "En una serie de puntos que coincidan con referencias claramente identificables en el terreno", "En evitar cualquier pendiente"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 3.2.\nEl itinerario elegido debe estar basado en una serie de puntos que coincidirán con referencias claramente identificables en el terreno."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "Si navegamos con mapa y brújula y el punto final ES visible desde el inicial, ¿cómo procedemos?",
+        "opciones": ["Caminamos en línea recta sin mirar la brújula", "Basta con introducir en la brújula el rumbo correspondiente a la orientación determinada y materializarlo", "Debemos triangular nuestra posición primero", "Calculamos la distancia a pasos"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.3.\nSi el punto final es visible desde el inicial, bastará con introducir en la brújula el rumbo correspondiente y materializarlo sobre el terreno."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "Si el punto final NO es visible desde el inicial, ¿qué debemos identificar en el mapa?",
+        "opciones": ["El punto más alto de la zona", "Una serie de puntos intermedios que enlazándolos nos lleven hasta el final", "La declinación magnética exacta", "El camino más largo pero seguro"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.3.\nSi, por el contrario, el punto final no es visible, se identificarán la serie de puntos intermedios que enlazándolos sucesivamente nos lleven hasta el final."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "En la navegación por tramos (punto final no visible), ¿qué debemos medir en el mapa de cada tramo?",
+        "opciones": ["Solo la distancia", "Solo el rumbo inverso", "Su orientación y su longitud", "La pendiente media"],
+        "correcta": 2,
+        "explicacion": "📚 Apartado 3.3.\nDe cada tramo y tomando como origen el punto inicial del mismo, mediremos su orientación y su longitud."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "Si al llegar al final de un tramo (según la distancia recorrida) no logramos identificar la referencia del terreno, ¿qué debemos hacer?",
+        "opciones": ["Darnos por perdidos y volver al inicio", "Recorrer sobre la dirección materializada una distancia equivalente a la longitud medida en el mapa", "Cambiar de rumbo aleatoriamente", "Esperar a que mejore la visibilidad"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.3.\nEn el caso de no ser posible esta identificación, recorreremos sobre la dirección materializada una distancia equivalente a la longitud medida en el mapa."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 2,
+        "tema": 3,
+        "titulo_tema": "Navegación",
+        "pregunta": "¿Qué métodos podemos emplear para medir distancias durante la navegación a pie?",
+        "opciones": ["Telémetro láser exclusivamente", "Podómetro, paso talonado, velocidad de marcha", "Cuenta kilómetros del vehículo", "Estimación visual solamente"],
+        "correcta": 1,
+        "explicacion": "📚 Apartado 3.3.\nPara medir esta distancia podemos emplear distintos métodos: podómetro, paso talonado, velocidad de marcha o cualquier otro procedimiento."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "¿En qué condiciones físicas y psicológicas es imprescindible manejar el armamento?",
+        "opciones": ["Bajo supervisión médica", "En perfectas condiciones, nunca bajo efectos de alcohol, medicamentos o drogas", "Habiendo descansado al menos 8 horas", "Solo si se ha pasado el TGCF"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1.\nPor las posibles consecuencias... es imprescindible manejarlo en perfectas condiciones físicas y psicológicas, por ejemplo, no se debe manejar un arma habiendo tomado alcohol, o bajo los efectos de medicamentos o drogas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "Antes del empleo del arma o de su limpieza, ¿qué debemos comprobar?",
+        "opciones": ["Que tiene el seguro puesto", "Que el alza está graduada", "Que está descargada, sin cargador, recámara libre y cañón sin cuerpos extraños", "Que está perfectamente engrasada"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nSe deberá comprobar que: El arma está descargada, se ha retirado el sistema de alimentación, está libre la recámara y en el cañón no se encuentra ningún cuerpo extraño."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "En el momento de la entrega o recepción de un arma, ¿cómo debe estar ésta?",
+        "opciones": ["Con el cierre abierto", "Con el seguro puesto y la boca del cañón apuntando a una dirección segura", "Desmontada en sus grupos principales", "Con el cargador puesto pero sin cartucho en recámara"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1.\nEl arma tiene que tener puesto el seguro y la boca del cañón tiene que apuntar hacia una dirección segura."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "Si no conocemos el estado de carga de un arma, ¿cómo debemos tratarla?",
+        "opciones": ["Como si estuviera descargada", "Como si estuviera cargada y lista para el disparo", "Preguntando al compañero más cercano", "Accionando el disparador en vacío"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1.\nSiempre que no se conozca el estado de carga del arma, ésta debe ser tratada como si estuviera cargada y lista para el disparo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "¿Cuándo se debe poner el dedo en el disparador?",
+        "opciones": ["En cuanto encaramos el arma", "Durante el desplazamiento táctico", "Nunca hasta el momento de hacer fuego", "Para comprobar la tensión del muelle"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nNo tocar nunca el disparador hasta el momento de hacer fuego."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "¿Se puede apuntar con el arma a personas durante la instrucción?",
+        "opciones": ["Sí, si el arma está descargada", "Sí, si es un ejercicio de combate en población", "No, nunca durante su manipulación o ejercicios", "Solo si lo ordena el instructor"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nNo apuntar nunca con el arma a personas durante su manipulación o durante los ejercicios."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "Si un arma sufre un golpe fuerte o caída que pueda afectar a su funcionamiento, ¿quién debe inspeccionarla?",
+        "opciones": ["El usuario del arma", "El Cabo de la Escuadra", "El fabricante o personal técnico experto en armas", "El oficial de tiro"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nEn caso de golpes fuertes... ésta debe ser inspeccionada por el fabricante o por personal técnico experto en armas de fuego."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "¿Qué precaución debemos tener con los blancos durante los ejercicios de tiro?",
+        "opciones": ["Que sean visibles a larga distancia", "Que estén fabricados de un material que evite el rebote de los proyectiles", "Que sean biodegradables", "Que tengan la silueta reglamentaria"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1.\nTener presente que los blancos... estén fabricados de un material que evite el rebote de los proyectiles."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "Durante el desmontaje y montaje del arma, ¿se puede aplicar violencia para encajar las piezas?",
+        "opciones": ["Sí, si alguna pieza está dura por el uso", "Solo si usamos herramientas adecuadas", "No, no aplicar violencia alguna", "Depende del modelo de arma"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 1.\nNo aplicar violencia alguna durante la manipulación, despiece, limpieza y ensamblaje del arma."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Normas Generales en el Uso de las Armas",
+        "pregunta": "¿Qué tipo de munición debemos usar?",
+        "opciones": ["Cualquiera que encaje en la recámara", "Únicamente cartuchos en perfecto estado, suministrados oficialmente y del calibre correspondiente", "Munición recargada por nosotros mismos", "La que encontremos en el campo de tiro"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 1.\nUsar únicamente cartuchos en perfecto estado y que hayan sido suministrados oficialmente, y sean del calibre correspondiente a cada arma."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Qué tipo de funcionamiento tiene el fusil HK G-36E?",
+        "opciones": ["Automático, por retroceso de masas", "Automático, por toma de gases con cierre de cabeza giratoria", "Semiautomático, por inercia retardada", "De repetición manual"],
+        "correcta": 1,
+        "explicacion": "📚 Datos Generales.\nEl fusil G36 E es un arma de funcionamiento automático, por toma de gases con cierre de cabeza giratoria."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿De qué material están fabricados el cajón de mecanismos, la empuñadura, el culatín y el guardamanos?",
+        "opciones": ["Acero estampado", "Aleación ligera de aluminio", "Material sintético altamente resistente", "Madera laminada"],
+        "correcta": 2,
+        "explicacion": "📚 Datos Generales.\nEstán fabricados de material sintético altamente resistente, resultando un arma muy ligera."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Cuál es la capacidad del cargador estándar del HK G-36E?",
+        "opciones": ["20 cartuchos", "25 cartuchos", "30 cartuchos", "35 cartuchos"],
+        "correcta": 2,
+        "explicacion": "📚 Datos Generales.\nEl arma se alimenta mediante cargadores de petaca de 30 cartuchos, que pueden acoplarse unos a otros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Dónde va integrado el visor óptico del fusil?",
+        "opciones": ["En el guardamanos", "En el asa de transporte", "Sobre el cañón", "En la culata"],
+        "correcta": 1,
+        "explicacion": "📚 Datos Generales.\nEl visor óptico va integrado en el asa de transporte."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "En la descripción general del arma, ¿qué pieza corresponde al número 1?",
+        "opciones": ["El cañón", "La bocacha apagallamas", "La palanca de montar", "El tapón de gases"],
+        "correcta": 1,
+        "explicacion": "📚 Descripción General.\n1.- Bocacha apagallamas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Qué pieza corresponde al número 4 en el esquema del fusil?",
+        "opciones": ["Palanca de montar", "Cierre", "Palanca del seguro", "Guardamonte"],
+        "correcta": 0,
+        "explicacion": "📚 Descripción General.\n4.- Palanca de montar."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "Si se produce una interrupción por 'Vaina no expulsada', ¿cuál puede ser una causa probable?",
+        "opciones": ["Aguja percutora rota", "Recámara sucia o extractor roto", "Cargador mal colocado", "Seguro puesto"],
+        "correcta": 1,
+        "explicacion": "📚 Tabla de Interrupciones.\nVaina no expulsada: Recámara sucia, extractor roto o muelle del extractor roto."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "Si observamos una 'Expulsión violenta de vainas', ¿a qué se debe generalmente?",
+        "opciones": ["A que el paso de gases es excesivo", "A que el muelle recuperador está muy fuerte", "A que la munición es defectuosa", "A que el cierre está sucio"],
+        "correcta": 0,
+        "explicacion": "📚 Tabla de Interrupciones.\nExpulsión violenta... Causa: El paso de gases es excesivo. Remedio: Reducir el paso de gases."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Es necesario utilizar herramientas especiales para el desmontaje básico de limpieza?",
+        "opciones": ["Sí, un destornillador plano", "Sí, un botador especial", "No, se desmonta con facilidad sin herramientas", "Sí, la llave del HK"],
+        "correcta": 2,
+        "explicacion": "📚 Datos Generales.\nEl fusil G36 E se desmonta con facilidad en sus componentes principales, sin necesidad de herramientas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "Fusil HK G-36E",
+        "pregunta": "¿Qué característica especial tienen los cargadores del HK G-36?",
+        "opciones": ["Son metálicos e inoxidables", "Tienen un indicador de carga digital", "Pueden acoplarse unos a otros", "Son desechables"],
+        "correcta": 2,
+        "explicacion": "📚 Datos Generales.\nCargadores de petaca de 30 cartuchos, que pueden acoplarse unos a otros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Cuál es el calibre de la pistola HK USP reglamentaria?",
+        "opciones": ["9 mm Corto", "9 x 19 mm Parabellum", "45 ACP", "7.62 mm"],
+        "correcta": 1,
+        "explicacion": "📚 Características Generales.\nCalibre: 9 x 19 mm Parabellum."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Cuál es la velocidad inicial del proyectil y el alcance eficaz de la HK USP?",
+        "opciones": ["300 m/s y 25 metros", "360 m/s y 50 metros", "400 m/s y 100 metros", "340 m/s y 50 metros"],
+        "correcta": 1,
+        "explicacion": "📚 Características Generales.\nVelocidad inicial del proyectil: 360 m/s. Alcance eficaz: 50 metros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Qué tipo de mecanismo de disparo tiene la HK USP?",
+        "opciones": ["Solo Doble Acción (DAO)", "Solo Simple Acción (SA)", "Simple y Doble Acción (SA/DA)", "Aguja lanzada"],
+        "correcta": 2,
+        "explicacion": "📚 Características Generales.\nMecanismo de disparo de simple/doble acción con martillo a la vista."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Cuál es la capacidad del cargador de la pistola HK USP?",
+        "opciones": ["13 cartuchos", "15 cartuchos", "17 cartuchos", "12 cartuchos"],
+        "correcta": 1,
+        "explicacion": "📚 Características Generales.\nAutonomía de fuego: 15 disparos (más uno en recámara)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Cómo funciona el sistema de acerrojamiento de la HK USP?",
+        "opciones": ["Cierre de masas (Blowback)", "Toma de gases", "Acerrojamiento semirrígido por corto retroceso basculante del cañón", "Cañón fijo"],
+        "correcta": 2,
+        "explicacion": "📚 Características Generales.\nAcerrojamiento semirrígido por interposición del bloque de la recámara. Desbloqueo por corto retroceso basculante del cañón."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿De qué material está fabricado el armazón de la pistola?",
+        "opciones": ["Acero inoxidable", "Aluminio aeronáutico", "Polímero reforzado con fibra de vidrio", "Aleación ligera"],
+        "correcta": 2,
+        "explicacion": "📚 Características Generales.\nEl armazón está fabricado en polímero integral... mezcla de plástico poliamídico y fibra de vidrio."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Qué función tiene la palanca de retenida de la corredera?",
+        "opciones": ["Solo desmontar el arma", "Mantener la corredera abierta cuando el cargador está vacío", "Activar el seguro", "Expulsar el cargador"],
+        "correcta": 1,
+        "explicacion": "📚 Funcionamiento.\nTras producirse el disparo del último cartucho... la palanca de retención de la corredera mantiene el sistema de cierre en posición abierta."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "La HK USP dispone de un sistema de desamartillado. ¿Cómo se activa?",
+        "opciones": ["Presionando el disparador en vacío", "Presionando la palanca del seguro hacia abajo más allá de la posición de fuego", "Tirando del martillo hacia atrás", "Quitando el cargador"],
+        "correcta": 1,
+        "explicacion": "📚 Características.\nSistema de desamartillado: Permite bajar el martillo con seguridad presionando la palanca del seguro hacia abajo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Qué ocurre tras el disparo durante la secuencia de funcionamiento?",
+        "opciones": ["El cañón permanece fijo y solo se mueve la corredera", "El grupo cañón-corredera retrocede unido un breve recorrido hasta que el cañón bascula y se desbloquea", "Los gases empujan el pistón", "El martillo se queda abatido"],
+        "correcta": 1,
+        "explicacion": "📚 Secuencia de funcionamiento.\nTras producirse el disparo... el grupo cañón-corredera se desplaza, bloqueado, hacia atrás. Tras retroceder conjuntamente... el descenso del cañón produce el desbloqueo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Pistola HK USP",
+        "pregunta": "¿Qué pieza del despiece básico contiene el muelle recuperador?",
+        "opciones": ["El cañón", "La corredera", "El eje de la palanca de retenida", "El conjunto de recuperación (varilla guía y muelle)"],
+        "correcta": 3,
+        "explicacion": "📚 Despiece.\nEl conjunto de recuperación formado por el muelle recuperador y su varilla guía es una pieza independiente en el despiece básico."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Cuál es el calibre de la ametralladora MG-42?",
+        "opciones": ["5.56 x 45 mm", "7.62 x 51 mm NATO", "12.70 mm", "9 mm Parabellum"],
+        "correcta": 1,
+        "explicacion": "Datos Técnicos.\nEl calibre de la ametralladora MG-42 es 7.62 x 51 mm NATO."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Cuál es el principio de funcionamiento de la MG-42?",
+        "opciones": ["Toma de gases", "Retroceso de masas de largo recorrido", "Retroceso del cañón (corto recorrido) con cierre de rodillos", "Inercia de masas pura"],
+        "correcta": 2,
+        "explicacion": "Funcionamiento.\nFunciona por el principio de retroceso del cañón (corto recorrido) y utiliza un sistema de acerrojamiento por rodillos."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Cómo se realiza la alimentación de la ametralladora?",
+        "opciones": ["Mediante cargadores de petaca de 30 cartuchos", "Mediante cinta de eslabón irreintegrable (desintegrable)", "Mediante tambor de 100 cartuchos", "Mediante peine de 5 cartuchos"],
+        "correcta": 1,
+        "explicacion": "Alimentación.\nLa alimentación se realiza mediante cinta de eslabón irreintegrable (generalmente de 50 cartuchos, que pueden empalmarse)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Qué tipo de refrigeración tiene el cañón de la MG-42?",
+        "opciones": ["Por agua", "Por aire, con cambio rápido de cañón", "Por aceite", "No tiene sistema de refrigeración"],
+        "correcta": 1,
+        "explicacion": "Características.\nLa refrigeración es por aire. Debido a su alta cadencia de fuego, dispone de un sistema de cambio rápido de cañón para evitar el sobrecalentamiento."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "En ambientes secos y polvorientos (desiertos), ¿cómo debe ser el engrase del arma?",
+        "opciones": ["Abundante para evitar la fricción", "Moderado", "Debe evitarse el exceso de grasa, estando más segura seca y limpia", "Solo con aceite de motor"],
+        "correcta": 2,
+        "explicacion": "Mantenimiento.\nEn ambientes secos y polvorientos... un arma excesivamente engrasada está más expuesta a interrupciones que estando seca y limpia, sin engrase alguno."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Quién debe llevar a cabo las inspecciones técnicas del arma?",
+        "opciones": ["El usuario del arma", "El jefe de pelotón", "Los especialistas con las herramientas adecuadas", "El oficial de servicio"],
+        "correcta": 2,
+        "explicacion": "Mantenimiento.\nLas inspecciones técnicas se llevan a cabo por los especialistas con las herramientas adecuadas, tales como medidores, calibradores, etc."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Qué alcance eficaz aproximado tiene la MG-42 sobre bípode?",
+        "opciones": ["400 metros", "600 metros", "1.200 metros", "2.000 metros"],
+        "correcta": 1,
+        "explicacion": "Datos Técnicos.\nEl alcance eficaz sobre bípode es de aproximadamente 600 metros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "Si empleamos la MG-42 sobre trípode, ¿cuál es su alcance eficaz estimado?",
+        "opciones": ["800 metros", "1.200 metros", "2.500 metros", "3.000 metros"],
+        "correcta": 1,
+        "explicacion": "Datos Técnicos.\nSobre trípode, el alcance eficaz aumenta considerablemente hasta los 1.200 metros aproximadamente."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Cuál es la cadencia de tiro teórica aproximada de la MG-42?",
+        "opciones": ["600 disparos/minuto", "800 disparos/minuto", "1.100 - 1.300 disparos/minuto", "1.800 disparos/minuto"],
+        "correcta": 2,
+        "explicacion": "Datos Técnicos.\nLa MG-42 se caracteriza por una cadencia de tiro muy elevada, situada teóricamente entre 1.100 y 1.300 disparos por minuto."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Ametralladora MG-42",
+        "pregunta": "¿Qué elemento se utiliza para montar el arma (llevar el cierre atrás)?",
+        "opciones": ["El disparador", "La palanca de montar", "El guardamonte", "La ventana de alimentación"],
+        "correcta": 1,
+        "explicacion": "Manejo.\nPara montar el arma se utiliza la palanca de montar, tirando de ella enérgicamente hacia atrás."
+    },
+    [
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué rama de la balística estudia el movimiento del proyectil en la atmósfera?",
+        "opciones": ["Balística Interior", "Balística Exterior", "Balística de Efectos", "Balística Terminal"],
+        "correcta": 1,
+        "explicacion": "📚 Balística.\nDenominamos balística al estudio del movimiento del proyectil... en la atmósfera (balística exterior)."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué elementos componen el 'disparo' según la balística interior?",
+        "opciones": ["El arma, el tirador y el objetivo", "El proyectil, la carga de proyección y el artificio de fuego", "La vaina, la bala y el pistón", "El cañón, el cierre y el disparador"],
+        "correcta": 1,
+        "explicacion": "📚 Balística Interior.\nEstos elementos son el proyectil o sólido que se lanza, la carga de proyección... y el artificio de fuego que activa la carga."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "En un cartucho de arma ligera, ¿dónde se aloja la cápsula fulminante?",
+        "opciones": ["En la ojiva de la bala", "En el cuerpo de la vaina", "En el culote de la vaina", "En el interior de la carga de proyección"],
+        "correcta": 2,
+        "explicacion": "📚 Balística Interior.\nEn la parte inferior de la vaina se encuentra el culote, donde se aloja la cápsula fulminante, artificio de dar fuego."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué define a la munición con balas incendiarias?",
+        "opciones": ["Que explota por impacto", "Que contiene un núcleo duro perforante", "Que contiene una mezcla química que se inflama al contacto con el aire o por impacto", "Que deja una estela visible en su trayectoria"],
+        "correcta": 2,
+        "explicacion": "📚 Tipos de munición.\nMunición con balas incendiarias: la munición... con balas que contengan una mezcla química que se inflama al contacto con el aire o por impacto."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "Según el Reglamento de Armas, ¿qué se considera un arma de fuego corta (1ª Categoría)?",
+        "opciones": ["Aquella cuyo cañón no exceda de 20 cm o longitud total no exceda de 40 cm", "Aquella cuyo cañón no exceda de 30 cm o longitud total no exceda de 60 cm", "Cualquier pistola o revólver independientemente de su medida", "Aquella que puede dispararse con una sola mano"],
+        "correcta": 1,
+        "explicacion": "📚 Clasificación de las armas.\n1ª Categoría: armas de fuego cortas; armas cuyo cañón no exceda de 30 centímetros o cuya longitud total no exceda de 60 centímetros."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿En qué categoría se clasifican las armas de fuego largas para vigilancia y guardería?",
+        "opciones": ["1ª Categoría", "2ª Categoría", "3ª Categoría", "7ª Categoría"],
+        "correcta": 1,
+        "explicacion": "📚 Clasificación de las armas.\n2ª Categoría: arma de fuego larga... Comprende las armas de fuego largas para vigilancia y las armas de fuego largas rayadas para caza mayor."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué armas comprende la 4ª Categoría?",
+        "opciones": ["Armas blancas", "Armas de fuego antiguas o históricas", "Carabinas y pistolas accionadas por aire u otro gas comprimido", "Escopetas de caza"],
+        "correcta": 2,
+        "explicacion": "📚 Clasificación de las armas.\n4ª Categoría: carabinas, revólveres y pistolas accionadas por aire u otro gas comprimido no asimiladas a escopetas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿A qué categoría pertenecen las armas blancas (cuchillos, machetes, etc.)?",
+        "opciones": ["4ª Categoría", "5ª Categoría", "6ª Categoría", "7ª Categoría"],
+        "correcta": 1,
+        "explicacion": "📚 Clasificación de las armas.\n5ª Categoría: armas blancas."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿En qué categoría se incluyen las ballestas, arcos y fusiles de pesca submarina?",
+        "opciones": ["3ª Categoría", "5ª Categoría", "6ª Categoría", "7ª Categoría"],
+        "correcta": 3,
+        "explicacion": "📚 Clasificación de las armas.\n7ª Categoría: otras armas; comprende las de inyección anestésica, ballestas, arcos, fusiles de pesca submarina..."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Cuál es la función principal de la vaina en un cartucho?",
+        "opciones": ["Perforar el objetivo", "Dar impulso a la bala", "Contener la carga de proyección y alojar la cápsula fulminante", "Dirigir el proyectil en el cañón"],
+        "correcta": 2,
+        "explicacion": "📚 Balística Interior.\nLa vaina, que en su interior se encuentra la carga de proyección... y en la parte inferior... se aloja la cápsula fulminante."
+    }  
 ]
 
 
