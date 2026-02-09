@@ -1,5 +1,5 @@
 .env
 preguntas.json
-__pycache__/
 venv/
 .venv/
+__pycache__/
