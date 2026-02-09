@@ -418,5 +418,145 @@
         "opciones": ["Un grupo de centinelas", "Una unidad designada para establecer una guardia en una instalación ajena", "El equipo de escolta del Coronel", "Una patrulla móvil"],
         "correcta": 1,
         "explicacion": "📚 Artículo 80.\nUnidad o fracción de ella que, separada de su unidad superior, sea designada para establecer una guardia de seguridad en una instalación ajena."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales (OM 50/2011)",
+        "pregunta": "¿Qué documento debe tener una Unidad desde nivel brigada hasta batallón para reflejar su estructura orgánica?",
+        "opciones": ["El Libro de Normas de Régimen Interior", "El Libro de Organización", "El Plan de Seguridad", "La Plantilla Orgánica"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 6.\nLas Unidades desde nivel brigada hasta batallón o grupo inclusive dispondrán de un Libro de Organización que reflejará la estructura orgánica vigente."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales (OM 50/2011)",
+        "pregunta": "¿Qué diferencia existe entre una Base y un Acuartelamiento?",
+        "opciones": ["La Base es temporal y el Acuartelamiento permanente", "La Base puede no tener continuidad física y el Acuartelamiento es un recinto", "El Acuartelamiento tiene unidad de servicios y la Base no", "Son sinónimos"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 7.\nLa Base es el conjunto de propiedades no necesariamente con continuidad física. El Acuartelamiento es un recinto militar donde se alojan unidades."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Cuáles son los tres caracteres con los que se puede ejercer el mando?",
+        "opciones": ["Titular, Suplente y Auxiliar", "Titular, Interino y Accidental", "Jefe, Segundo Jefe y Suboficial", "Titular, Delegado y Comisionado"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nEl mando se podrá ejercer con carácter titular, interino o accidental."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "El mando accidental se asume por ausencia del titular o interino. ¿Puede modificar las normas establecidas?",
+        "opciones": ["Sí, tiene plena potestad", "No, salvo autorización expresa o emergencia", "Sí, pero solo por escrito", "Solo si dura más de un mes"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nNo podrá modificar las instrucciones y normas establecidas, salvo autorización expresa o en caso de emergencia."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 2,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "En la sucesión de mando, en caso de igualdad de empleo y perteneciendo al mismo cuerpo y escala, ¿quién prevalece?",
+        "opciones": ["El de mayor edad", "El más antiguo en el empleo", "El que tenga mejor IPEC", "El primero en el escalafón"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 12.\nEn caso de igualdad en el empleo, prevalecerá el orden en el escalafón, si se trata de personal perteneciente al mismo cuerpo y escala."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 3,
+        "titulo_tema": "Del Régimen Interior",
+        "pregunta": "¿Qué documento establece las normas que rigen la vida y funcionamiento interno de la instalación?",
+        "opciones": ["El Plan de Seguridad", "Las Reales Ordenanzas", "El Libro de Normas de Régimen Interior", "La Orden del Día"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 32.\nEl Libro de Normas de Régimen Interior establecerá las normas que rigen la vida y funcionamiento interno de la instalación."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 4,
+        "titulo_tema": "Los Servicios de las Instalaciones",
+        "pregunta": "¿Cuál es la finalidad de la Unidad de Servicios?",
+        "opciones": ["Dar seguridad perimetral exclusivamente", "Descargar a las unidades alojadas de cometidos que distraigan de su función", "Organizar las guardias de orden", "Controlar el tráfico"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 52.\nSu finalidad es descargar a las unidades alojadas de aquellos cometidos que puedan distraerles de su función específica."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "Según su naturaleza, las guardias pueden ser:",
+        "opciones": ["De seguridad, de orden, de los servicios y aeronáuticas", "Ordinarias y extraordinarias", "Armadas y sin armas", "De oficiales, suboficiales y tropa"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 79.\nAtendiendo a su naturaleza, las guardias pueden ser de seguridad, de orden, de los servicios y aeronáuticas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "¿Qué tipo de guardias garantizan la continuidad de la acción de mando fuera del horario habitual?",
+        "opciones": ["Guardias de seguridad", "Guardias de servicios", "Guardias de orden", "Guardias de honor"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 79.\nSon guardias de orden las que garantizan la continuidad de la acción de mando fuera del horario habitual de trabajo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "¿Qué duración podrá tener la guardia de Tropa de Cuartel?",
+        "opciones": ["Siempre 24 horas", "Entre 24 y 96 horas", "Máximo 48 horas", "Solo horario nocturno"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 95.\nEsta guardia, cuya duración podrá estar comprendida entre las veinticuatro y las noventa y seis horas, se nombrará por turno independiente."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "¿Quién vigila especialmente que se respete el silencio en los alojamientos desde el toque de silencio hasta diana?",
+        "opciones": ["El Cabo de Cuartel", "El Suboficial de Guardia", "Los Imaginarias", "El Cuartelero"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 97.\nRepartidos en turnos, los Imaginarias vigilarán especialmente que se mantenga el orden y se respete el silencio en los alojamientos."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "En caso de coincidencia de guardias, ¿cuál tiene preferencia absoluta?",
+        "opciones": ["Guardia de Orden de la Instalación", "Guardia de Seguridad", "Guardia de Servicios", "La que sea más larga"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 107.\nEn caso de coincidencia de dos o más guardias, el orden de preferencia será: de seguridad, de orden de instalación, de orden de unidad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "¿Se pueden prestar más de dos guardias seguidas?",
+        "opciones": ["Sí, si son de distinta naturaleza", "Sí, en caso de arresto", "No, cualesquiera que sean su clase o duración", "Depende del criterio del Jefe"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 107.\nNo se podrán prestar más de dos guardias seguidas cualesquiera que sean su clase o duración."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Las Guardias (OM 50/2011)",
+        "pregunta": "Como norma general, ¿cómo se nombran las guardias de seguridad en cuanto a antigüedad?",
+        "opciones": ["De menor a mayor antigüedad", "De mayor a menor antigüedad", "Por orden alfabético", "Aleatoriamente"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 105.\nComo norma general, las guardias de seguridad se nombrarán de mayor a menor antigüedad, y en orden inverso para las restantes."
     }
 ]
