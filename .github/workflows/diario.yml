@@ -1,28 +1,37 @@
-name: Publicar Test Diario
+name: Telegram Bot - Daily Broadcast Protocol
 
 on:
   schedule:
-    # Se ejecuta a las 07:00 UTC (Que son las 08:00 en invierno / 09:00 en verano en España)
-    - cron: '0 6 * * *'
+    # Cron Schedule Expression (UTC Time)
+    # Runs at minute 0 of hours: 08, 12, 16, and 20.
+    # Corresponds to approx 09:00, 13:00, 17:00, 21:00 CET (Spain).
+    - cron: '0 8,12,16,20 * * *'
   
-  # Esto añade un botón "Run workflow" en la web de GitHub para probarlo manual
+  # Manual trigger for debugging and testing
   workflow_dispatch:
 
 jobs:
-  ejecutar_bot:
+  deploy-bot:
+    name: Run Python Script
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Descargar tu código del repositorio
+      # Step 1: Clone the repository to the runner
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Instalar Python
+      # Step 2: Initialize Python Runtime Environment
+      - name: Setup Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Instalar las librerías necesarias
-        run: pip install -r requirements.txt
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Lanzar el Bot
+      # Step 4: Execute the main script
+      - name: Execute Bot Payload
         run: python bot.py
