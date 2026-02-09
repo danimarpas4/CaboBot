@@ -708,5 +708,145 @@
         "opciones": ["Sueldo base dividido por 30", "Sueldo más complementos dividido por 30", "Sueldo más complemento de empleo dividido por 60", "Sueldo base dividido por 60"],
         "correcta": 2,
         "explicacion": "📚 Artículo 60.\nSe calculará tomando el sueldo y el complemento de empleo... se dividirá por sesenta aquella cantidad y se multiplicará por el número de días."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿A quién se aplica el Código Penal Militar además de a las Fuerzas Armadas?",
+        "opciones": ["A la Policía Nacional en misiones internacionales", "A la Guardia Civil en tiempo de conflicto armado o estado de sitio", "A los funcionarios civiles de Defensa", "A cualquier ciudadano en zona militar"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nSe aplica a la Guardia Civil en tiempo de conflicto armado, estado de sitio, misiones militares o integrados en unidades de las FAS."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "A efectos del Código Penal Militar, ¿quién se considera 'centinela'?",
+        "opciones": ["Solo quien está en una garita", "El militar que, en acto de servicio de armas y cumpliendo consigna, guarda un puesto con arma de fuego a la vista", "Cualquier militar de guardia", "El Oficial de Guardia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 4.\nEs el militar que, en acto de servicio de armas... guarda un puesto... portando a la vista el arma de fuego. También operadores de transmisiones y vigilancia electrónica."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué se entiende por 'orden' según el artículo 8 del CPM?",
+        "opciones": ["Cualquier mandato de un superior", "Todo mandato relativo al servicio que un superior da a un subordinado en forma adecuada y dentro de sus atribuciones", "Las instrucciones escritas en la Orden del Día", "Los consejos de un superior"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 8.\nEs todo mandato relativo al servicio que un superior militar da a un subordinado, en forma adecuada y dentro de las atribuciones que le corresponden."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Cuál de las siguientes es una Pena Grave según el Código Penal Militar?",
+        "opciones": ["Pérdida de empleo", "Suspensión militar de empleo", "Multa de dos a seis meses", "Prisión de tres meses a tres años"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 11.\nSon penas graves: Prisión superior a tres años, Pérdida de empleo e Inhabilitación absoluta para mando de buque o aeronave."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué delito comete el militar que se niega a obedecer las órdenes legítimas de sus superiores relativas al servicio?",
+        "opciones": ["Sedición", "Insubordinación", "Deslealtad", "Abuso de autoridad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 44 (Insubordinación).\nEl militar que se negare a obedecer o no cumpliere las órdenes legítimas... será castigado con pena de prisión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Cuándo se considera Sedición Militar?",
+        "opciones": ["Cuando un militar insulta a un superior", "Cuando 4 o más militares se niegan a obedecer o hacen reclamaciones colectivas en tumulto", "Cuando se abandona el puesto frente al enemigo", "Cuando se vende material militar"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 38.\nLos militares que, mediante concierto... en número de cuatro o más... se negaren a obedecer o no cumplieren las órdenes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué pena conlleva el delito de Traición Militar con el propósito de favorecer al enemigo?",
+        "opciones": ["Prisión de 15 a 25 años", "Prisión permanente revisable", "Pérdida de destino", "Suspensión de empleo"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 24.\nSerá castigado con la pena de prisión de quince a veinticinco años el militar que... favorezca al enemigo (inducir a rendirse, fugarse, sabotaje...)."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "El superior que maltratare de obra a un subordinado comete el delito de:",
+        "opciones": ["Insubordinación", "Abuso de autoridad", "Extralimitación", "Falta muy grave"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 46 (Abuso de autoridad).\nEl superior que maltratare de obra a un subordinado será castigado con la pena de seis meses a cinco años de prisión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿En qué consiste el delito de Cobardía según el artículo 51?",
+        "opciones": ["Tener miedo en combate", "Rehusar permanecer en el puesto, abandonarlo o incumplir la misión por temor a un riesgo personal", "No presentarse a filas", "Fingir enfermedad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 51.\nEl militar que por temor a un riesgo personal rehusare permanecer o situarse en su puesto, lo abandonare o incumpliere la misión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué ocurre si un militar da a sabiendas información falsa sobre asuntos del servicio?",
+        "opciones": ["Es una falta leve", "Es una falta grave", "Comete delito de Deslealtad", "Comete delito de Perjurio"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 55 (Deslealtad).\nEl militar que sobre asuntos del servicio diere a sabiendas información falsa... será castigado con prisión de seis meses a cuatro años."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "Según el artículo 7, ¿quién se considera 'enemigo'?",
+        "opciones": ["Cualquier país extranjero", "Los miembros de fuerzas armadas en conflicto con España, grupos armados, terroristas, etc.", "Los partidos políticos opositores", "Los delincuentes comunes"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 7.\nMiembros de fuerzas armadas en conflicto con España, fuerzas/bandas que operen a sus órdenes, grupos armados no estatales, etc."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué pena se impone al militar que ultrajare a la Bandera o Himno de España?",
+        "opciones": ["Multa de 1 a 3 meses", "Arresto de 1 mes", "Prisión de 3 meses y un día a 3 años", "Expulsión del ejército"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 36.\nEl militar que ofendiere o ultrajare a España, su Bandera, Himno... será castigado con la pena de tres meses y un día a tres años de prisión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué pena accesoria lleva consigo la condena a prisión superior a 3 años?",
+        "opciones": ["Suspensión de empleo", "Pérdida de empleo", "Revocación de ascensos", "Multa proporcional"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 15.\nLa pena de prisión que exceda de tres años, llevará consigo la accesoria de pérdida de empleo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Es delito insultar a un superior?",
+        "opciones": ["Sí, es un delito de Insubordinación (insulto a superior)", "No, es solo falta grave", "Solo si es por escrito", "Depende de la graduación"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 43.\nEl militar que... coaccionare, amenazare, calumniare o injuriare gravemente a un superior... será castigado con pena de prisión."
     }
 ]
