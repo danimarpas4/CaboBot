@@ -1,20 +1,422 @@
 [
     {
-        "pregunta": "¿Cuál es la sanción máxima por falta grave según el Régimen Disciplinario?",
-        "opciones": ["Arresto de 15 a 30 días", "Arresto de 1 a 14 días", "Pérdida de destino", "Suspensión de empleo"],
-        "correcta": 0,
-        "explicacion": "⚖️ Artículo 11.\nLas faltas graves se sancionan con arresto de 15 a 30 días.\n\n👇"
-    },
-    {
-        "pregunta": "¿Quién ostenta el mando supremo de las Fuerzas Armadas?",
-        "opciones": ["El Presidente del Gobierno", "El Rey", "El JEMAD", "El Ministro de Defensa"],
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "¿Qué constituyen las Reales Ordenanzas para las Fuerzas Armadas?",
+        "opciones": ["Un reglamento disciplinario", "El código de conducta de los militares", "Un manual de instrucción técnica", "La norma suprema del Estado"],
         "correcta": 1,
-        "explicacion": "👑 Constitución Española Art. 62.\nCorresponde al Rey el mando supremo de las FF.AA.\n\n👇"
+        "explicacion": "📚 Artículo 1.\nConstituyen el código de conducta de los militares y definen los principios éticos y las reglas de comportamiento de acuerdo con la Constitución."
     },
     {
-        "pregunta": "En topografía, ¿qué distancia hay entre dos curvas de nivel?",
-        "opciones": ["15", "20", "25", "-20"],
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "¿Cuál es el primer y más fundamental deber del militar?",
+        "opciones": ["La obediencia debida", "La disposición permanente para defender a España", "El respeto a la jerarquía", "La asistencia puntual al servicio"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 3.\nLa disposición permanente para defender a España, incluso con la entrega de la vida cuando fuera necesario."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "¿A qué características ajustará su comportamiento el militar?",
+        "opciones": ["Valor, fuerza y honor", "Disciplina, jerarquía y unidad", "Obediencia, silencio y trabajo", "Eficacia, rapidez y austeridad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 7.\nAjustará su comportamiento a las características de las Fuerzas Armadas de disciplina, jerarquía y unidad, indispensables para la máxima eficacia."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Del Militar",
+        "pregunta": "Según el Art. 14, ¿qué demuestra el llegar tarde a su obligación?",
+        "opciones": ["Falta de compañerismo", "Gran desidia e ineptitud para la carrera de las armas", "Poca organización", "Falta de respeto al superior"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 14 (Espíritu militar).\nEl llegar tarde a su obligación, aunque sea de minutos, son pruebas de gran desidia e ineptitud para la carrera de las armas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Del Militar",
+        "pregunta": "¿Cuáles son las virtudes fundamentales del militar según el Art. 17?",
+        "opciones": ["Valor, honor y lealtad", "Disciplina, valor, prontitud en la obediencia y exactitud en el servicio", "Compañerismo, sacrificio y austeridad", "Integridad, neutralidad y eficacia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 17.\nTendrá presente que la disciplina, valor, prontitud en la obediencia y exactitud en el servicio son virtudes a las que nunca ha de faltar."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Disciplina",
+        "pregunta": "Si un militar tiene una objeción sobre una orden recibida, ¿qué hará?",
+        "opciones": ["No cumplirla", "Comentarlo con los compañeros", "La formularla ante quien se la hubiera dado", "Presentar un recurso después"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 49.\nLa formulará ante quien se la hubiera dado. Si su incumplimiento perjudicase a la misión, se reservará la objeción hasta haberla cumplido."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Disciplina",
+        "pregunta": "¿Debe un militar atender indicaciones de otro de empleo inferior que esté de servicio?",
+        "opciones": ["No, la jerarquía manda", "Sí, atenderá sus indicaciones o instrucciones", "Solo si es Oficial", "Solo si es de su misma unidad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 50.\nAtenderá las indicaciones o instrucciones de otro que, aun siendo de empleo inferior, se encuentre de servicio y actúe por órdenes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 4,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Puede compartirse la responsabilidad en el ejercicio del mando?",
+        "opciones": ["Sí, en el segundo jefe", "Sí, en operaciones", "No es renunciable ni puede ser compartida", "Depende de la orden"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 55.\nLa responsabilidad en el ejercicio del mando militar no es renunciable ni puede ser compartida."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 4,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Qué hará el mando si la evolución de los acontecimientos aconseja variar una orden?",
+        "opciones": ["Mantenerla para no perder autoridad", "No se empeñará en ella", "Pedir permiso al superior", "Someterlo a votación"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 61.\nMantendrá sus órdenes con determinación, pero no se empeñará en ellas si la evolución de los acontecimientos aconseja variarlas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "En el uso legítimo de la fuerza, el militar hará un uso:",
+        "opciones": ["Contundente y rápido", "Gradual y proporcionado", "Mínimo e indispensable", "Disuasorio"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 84.\nHará un uso gradual y proporcionado de la misma, de acuerdo con las reglas de enfrentamiento."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "¿Qué hará el que tuviere orden de conservar su puesto a toda costa?",
+        "opciones": ["Pedir evacuación si hay peligro", "Lo hará", "Interpretar la orden según la situación", "Replegarse ordenadamente"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 90.\nEl que tuviere orden de conservar su puesto a toda costa, lo hará."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "En misiones de paz, ¿cómo actuará el militar respecto a la cultura local?",
+        "opciones": ["Impondrá sus costumbres", "Ignorará la cultura local", "Respetará la cultura y costumbres salvo que comprometan la misión", "Evitará todo contacto"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 96.\nRespetará la cultura y costumbres propias de la zona de despliegue, salvo que comprometan la misión encomendada."
+    }
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "Según el RD 194/2010, ¿quién es el responsable de la seguridad de la unidad?",
+        "opciones": ["El oficial de guardia", "El jefe de seguridad", "El jefe de la unidad", "El Suboficial Mayor"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 7.\nEl jefe de la unidad será el responsable de su seguridad y elaborará el plan de seguridad de la unidad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué clasificación de materia clasificada tendrá, como norma general, el Plan de Seguridad?",
+        "opciones": ["Confidencial", "Difusión Limitada", "Secreto", "Reservado"],
         "correcta": 3,
-        "explicacion": "💧 Son 20 entre curvas de nivel y 100 entre directoras, puto pollo.\n\n👇 "
+        "explicacion": "📚 Artículo 9.\nTendrá carácter de materia clasificada en la categoría de reservado, si bien algunos apartados podrán tener clasificación inferior para su difusión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿A quién afecta la seguridad en las Fuerzas Armadas según el Artículo 4?",
+        "opciones": ["Solo a la Policía Militar", "Solo a la guardia de seguridad", "A todos sus miembros", "A los oficiales y suboficiales"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 4.\nLa seguridad en las Fuerzas Armadas afecta a todos sus miembros; cada uno le prestará atención permanente."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cómo prestarán su servicio los componentes de la guardia de seguridad durante la ejecución de la misma?",
+        "opciones": ["Como centinelas puros", "Como agentes de seguridad privada", "Como policía militar, naval o aérea", "Como auxiliares del mando"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 15.\nPrestarán su servicio como policía militar, naval o aérea durante la ejecución de la misma, llevando la identificación visual que lo acredite."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "El cabo de guardia inspeccionará los puestos y pasará revista de armas:",
+        "opciones": ["Solo al finalizar la guardia", "Una vez al día", "Antes y después de la realización de cualquier relevo", "Cuando se lo ordene el Oficial"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 21.\nInspeccionará los puestos [...] y pasará revista de armas, antes y después de la realización de cualquier relevo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué es un centinela según el RD 194/2010?",
+        "opciones": ["Cualquier miembro de la guardia", "Un componente que guarda un puesto confiado a su responsabilidad portando arma de fuego a la vista", "El jefe de la patrulla", "El encargado de las cámaras de seguridad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 24.\nSon centinelas los componentes [...] que, en acto de servicio de armas y cumpliendo una consigna, guardan un puesto confiado a su responsabilidad portando a la vista el arma de fuego."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Puede el centinela entregar su arma a otra persona?",
+        "opciones": ["Sí, si es un oficial", "Sí, si es su relevo o el Cabo de Guardia", "Solo al Jefe de la Unidad", "Nunca, bajo ningún pretexto"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 25.\nNunca dejará el arma de la mano ni la entregará a persona alguna bajo ningún pretexto."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cómo debe ser el uso del arma por parte del centinela si resulta amenazada la seguridad?",
+        "opciones": ["Inmediato y letal", "Disuasorio exclusivamente", "Gradual y proporcionado", "Solo tras recibir orden expresa"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 25.\nPodrá hacer uso gradual y proporcionado de su arma, procurando causar el menor daño posible, previas las conminaciones necesarias."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué diferencia principal hay entre un centinela y un vigilante?",
+        "opciones": ["El vigilante no lleva arma", "El vigilante ocupa puestos que complementan al centinela y puede ir sin arma", "El vigilante tiene más autoridad", "No hay diferencia, son sinónimos"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 28.\nLos vigilantes ocupan puestos que complementan los de centinela. Pueden ser fijos o móviles, así como cumplir sus cometidos con armas o sin ellas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué carácter tienen los miembros de la Policía Militar en el ejercicio de sus funciones?",
+        "opciones": ["De autoridad administrativa", "Agente de la autoridad", "Mero auxiliar", "Personal civil"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 29.\nTendrán el carácter de agente de la autoridad en el ejercicio de sus funciones."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cuándo intervendrá la Policía Militar ante delitos flagrantes?",
+        "opciones": ["Siempre", "Nunca, es competencia civil", "Estando de servicio y en ausencia de las fuerzas y cuerpos de seguridad", "Solo dentro del cuartel"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 32.\nEstando de servicio y en ausencia de miembros de las fuerzas y cuerpos de seguridad [...] intervendrán ante delitos flagrantes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "Como norma general, ¿cuál será la duración máxima de las guardias de seguridad?",
+        "opciones": ["12 horas", "48 horas", "24 horas", "Una semana"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 81.\nComo norma general, la duración de estas guardias no superará las veinticuatro horas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿Es compatible la guardia de seguridad con otros servicios?",
+        "opciones": ["Sí, si hay poco personal", "Sí, con servicios administrativos", "Como norma general exigirá dedicación exclusiva y será incompatible", "Depende del Capitán"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 80.\nComo norma general, una guardia de seguridad exigirá dedicación exclusiva y su realización será incompatible con otras guardias."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿De quién depende el Jefe de la guardia de seguridad fuera del horario de trabajo?",
+        "opciones": ["Del Jefe de la Unidad", "Del Capitán de Cuartel", "Del Suboficial de Guardia", "Del Cabo de Guardia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 84.\nComo norma general, dependerá directamente del jefe de la instalación y, fuera de las horas habituales de trabajo, del capitán de cuartel."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿Qué es un destacamento de seguridad?",
+        "opciones": ["Un grupo de centinelas", "Una unidad designada para establecer una guardia en una instalación ajena", "El equipo de escolta del Coronel", "Una patrulla móvil"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 80.\nUnidad o fracción de ella que, separada de su unidad superior, sea designada para establecer una guardia de seguridad en una instalación ajena."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "Según el RD 194/2010, ¿quién es el responsable de la seguridad de la unidad?",
+        "opciones": ["El oficial de guardia", "El jefe de seguridad", "El jefe de la unidad", "El Suboficial Mayor"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 7.\nEl jefe de la unidad será el responsable de su seguridad y elaborará el plan de seguridad de la unidad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué clasificación de materia clasificada tendrá, como norma general, el Plan de Seguridad?",
+        "opciones": ["Confidencial", "Difusión Limitada", "Secreto", "Reservado"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 9.\nTendrá carácter de materia clasificada en la categoría de reservado, si bien algunos apartados podrán tener clasificación inferior para su difusión."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿A quién afecta la seguridad en las Fuerzas Armadas según el Artículo 4?",
+        "opciones": ["Solo a la Policía Militar", "Solo a la guardia de seguridad", "A todos sus miembros", "A los oficiales y suboficiales"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 4.\nLa seguridad en las Fuerzas Armadas afecta a todos sus miembros; cada uno le prestará atención permanente."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cómo prestarán su servicio los componentes de la guardia de seguridad durante la ejecución de la misma?",
+        "opciones": ["Como centinelas puros", "Como agentes de seguridad privada", "Como policía militar, naval o aérea", "Como auxiliares del mando"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 15.\nPrestarán su servicio como policía militar, naval o aérea durante la ejecución de la misma, llevando la identificación visual que lo acredite."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "El cabo de guardia inspeccionará los puestos y pasará revista de armas:",
+        "opciones": ["Solo al finalizar la guardia", "Una vez al día", "Antes y después de la realización de cualquier relevo", "Cuando se lo ordene el Oficial"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 21.\nInspeccionará los puestos [...] y pasará revista de armas, antes y después de la realización de cualquier relevo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué es un centinela según el RD 194/2010?",
+        "opciones": ["Cualquier miembro de la guardia", "Un componente que guarda un puesto confiado a su responsabilidad portando arma de fuego a la vista", "El jefe de la patrulla", "El encargado de las cámaras de seguridad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 24.\nSon centinelas los componentes [...] que, en acto de servicio de armas y cumpliendo una consigna, guardan un puesto confiado a su responsabilidad portando a la vista el arma de fuego."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Puede el centinela entregar su arma a otra persona?",
+        "opciones": ["Sí, si es un oficial", "Sí, si es su relevo o el Cabo de Guardia", "Solo al Jefe de la Unidad", "Nunca, bajo ningún pretexto"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 25.\nNunca dejará el arma de la mano ni la entregará a persona alguna bajo ningún pretexto."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cómo debe ser el uso del arma por parte del centinela si resulta amenazada la seguridad?",
+        "opciones": ["Inmediato y letal", "Disuasorio exclusivamente", "Gradual y proporcionado", "Solo tras recibir orden expresa"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 25.\nPodrá hacer uso gradual y proporcionado de su arma, procurando causar el menor daño posible, previas las conminaciones necesarias."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué diferencia principal hay entre un centinela y un vigilante?",
+        "opciones": ["El vigilante no lleva arma", "El vigilante ocupa puestos que complementan al centinela y puede ir sin arma", "El vigilante tiene más autoridad", "No hay diferencia, son sinónimos"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 28.\nLos vigilantes ocupan puestos que complementan los de centinela. Pueden ser fijos o móviles, así como cumplir sus cometidos con armas o sin ellas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Qué carácter tienen los miembros de la Policía Militar en el ejercicio de sus funciones?",
+        "opciones": ["De autoridad administrativa", "Agente de la autoridad", "Mero auxiliar", "Personal civil"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 29.\nTendrán el carácter de agente de la autoridad en el ejercicio de sus funciones."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 1,
+        "titulo_tema": "Normas de seguridad en las FAS (RD 194/2010)",
+        "pregunta": "¿Cuándo intervendrá la Policía Militar ante delitos flagrantes?",
+        "opciones": ["Siempre", "Nunca, es competencia civil", "Estando de servicio y en ausencia de las fuerzas y cuerpos de seguridad", "Solo dentro del cuartel"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 32.\nEstando de servicio y en ausencia de miembros de las fuerzas y cuerpos de seguridad [...] intervendrán ante delitos flagrantes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "Como norma general, ¿cuál será la duración máxima de las guardias de seguridad?",
+        "opciones": ["12 horas", "48 horas", "24 horas", "Una semana"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 81.\nComo norma general, la duración de estas guardias no superará las veinticuatro horas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿Es compatible la guardia de seguridad con otros servicios?",
+        "opciones": ["Sí, si hay poco personal", "Sí, con servicios administrativos", "Como norma general exigirá dedicación exclusiva y será incompatible", "Depende del Capitán"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 80.\nComo norma general, una guardia de seguridad exigirá dedicación exclusiva y su realización será incompatible con otras guardias."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿De quién depende el Jefe de la guardia de seguridad fuera del horario de trabajo?",
+        "opciones": ["Del Jefe de la Unidad", "Del Capitán de Cuartel", "Del Suboficial de Guardia", "Del Cabo de Guardia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 84.\nComo norma general, dependerá directamente del jefe de la instalación y, fuera de las horas habituales de trabajo, del capitán de cuartel."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 2,
+        "tema": 2,
+        "titulo_tema": "Normas sobre Mando y Régimen Interior (OM 50/2011)",
+        "pregunta": "¿Qué es un destacamento de seguridad?",
+        "opciones": ["Un grupo de centinelas", "Una unidad designada para establecer una guardia en una instalación ajena", "El equipo de escolta del Coronel", "Una patrulla móvil"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 80.\nUnidad o fracción de ella que, separada de su unidad superior, sea designada para establecer una guardia de seguridad en una instalación ajena."
     }
 ]
