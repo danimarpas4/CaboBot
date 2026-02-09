@@ -118,7 +118,7 @@
         "opciones": ["Impondrá sus costumbres", "Ignorará la cultura local", "Respetará la cultura y costumbres salvo que comprometan la misión", "Evitará todo contacto"],
         "correcta": 2,
         "explicacion": "📚 Artículo 96.\nRespetará la cultura y costumbres propias de la zona de despliegue, salvo que comprometan la misión encomendada."
-    }
+    },
     {
         "capitulo": 1,
         "bloque": 2,
