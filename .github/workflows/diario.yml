@@ -5,7 +5,7 @@ on:
     # Cron Schedule Expression (UTC Time)
     # Runs at minute 0 of hours: 08, 12, 16, and 20.
     # Corresponds to approx 09:00, 13:00, 17:00, 21:00 CET (Spain).
-    - cron: '0 8,12,16,20 * * *'
+    - cron: '0 7,11,15,19 * * *'
   
   # Manual trigger for debugging and testing
   workflow_dispatch:
