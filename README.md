@@ -36,8 +36,8 @@
 | Block / Bloque | Topic / Tema | Source / Fuente |
 | :--- | :--- | :--- |
 | **II - Topografía** | Cartografía & Orientación | UTM coordinates, scales, and compass usage. |
-| **III - Armament** | HK G-36 & Pistola USP | Technical specs, safety norms, and malfunctions. |
-| **VII - Leadership** | Model K-2 & Mission Command | Leadership dimensions and VUCA environments. |
+| **III - Armament**  | HK G-36 & Pistola USP | Technical specs, safety norms, and malfunctions. |
+| **VII - Leadership**| Model K-2 & Mission Command | Leadership dimensions and VUCA environments. |
 
 ---
 
