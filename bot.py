@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHAT_ID = "@testpromilitar" # Asegúrate de que este es tu canal real
+CHAT_ID = "@testpromilitar" 
 
 if not TOKEN:
     raise ValueError("[CRITICAL] No se encontró TELEGRAM_TOKEN en los Secrets de GitHub")
@@ -20,14 +20,12 @@ if not TOKEN:
 API_URL = f"https://api.telegram.org/bot{TOKEN}/sendPoll"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ÚNICA FUENTE DE DATOS: preguntas.json
 FINAL_DB_PATH = os.path.join(BASE_DIR, 'preguntas.json')
 
-BATCH_SIZE = 3      # Número de preguntas por envío
-DELAY_SECONDS = 3   # Pausa entre preguntas
+BATCH_SIZE = 3      
+DELAY_SECONDS = 3   
 
 def load_question_ledger():
-    # Verificamos si existe el archivo real. Si no, cerramos.
     if not os.path.exists(FINAL_DB_PATH):
         print(f"[CRITICAL] No se encuentra el archivo {FINAL_DB_PATH}. El bot no enviará nada.")
         return []
@@ -40,26 +38,45 @@ def load_question_ledger():
         print(f"[CRITICAL] Error leyendo el archivo JSON: {e}")
         return []
 
+def obtener_saludo():
+    # Obtenemos la hora actual en Madrid (asumiendo UTC+1)
+    hora = (time.gmtime().tm_hour + 1) % 24 
+    
+    if 6 <= hora < 12:
+        return "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
+    elif 12 <= hora < 15:
+        return "☀️ **Turno de Mediodía**: ¡Aprovechad el descanso para repasar!"
+    elif 15 <= hora < 20:
+        return "🌆 **Turno de Tarde**: ¡Vamos con otra tanda de estudio!"
+    else:
+        return "🌙 **Turno de Noche**: Último esfuerzo del día, ¡ánimo!"
+
 def broadcast_batch():
     questions_pool = load_question_ledger()
     
     if not questions_pool:
         return
 
-    # --- LÓGICA ANTI-REPETICIÓN ---
-    # Semilla basada en la fecha para que el orden cambie cada día
-    # Añadimos la hora (%H) para que cada turno de envío tenga su propio lote único
-    semilla_unidada = time.strftime("%Y%m%d%H")
-    random.seed(semilla_unidada)
+    # --- LÓGICA ANTI-REPETICIÓN HORARIA ---
+    # Usamos AñoMesDíaHora para que cada turno sea único
+    semilla_unificada = time.strftime("%Y%m%d%H")
+    random.seed(semilla_unificada)
     
-    # Barajamos todo el temario real
     random.shuffle(questions_pool)
-
-    # Seleccionamos el lote de hoy
     selected_batch = questions_pool[:BATCH_SIZE]
 
-    print(f"[INIT] Enviando lote real del día: {dia_actual}")
+    # CORRECCIÓN: Usamos la variable correcta para el log
+    print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
 
+    # Enviar saludo inicial
+    saludo = obtener_saludo()
+    try:
+        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
+                      data={"chat_id": CHAT_ID, "text": saludo, "parse_mode": "Markdown"})
+    except Exception as e:
+        print(f"[ERROR] No se pudo enviar el saludo: {e}")
+    
+    # Enviar encuestas
     for index, item in enumerate(selected_batch):
         payload = {
             "chat_id": CHAT_ID,
@@ -84,6 +101,17 @@ def broadcast_batch():
             time.sleep(DELAY_SECONDS)
 
     print("[DONE] Proceso finalizado.")
+
+def enviar_informe_semanal():
+    questions = load_question_ledger()
+    total = len(questions)
+    # 21 preguntas al día (3 preguntas x 7 turnos)
+    mensaje = f"📊 **INFORME SEMANAL CABOBOT**\n\n✅ Tienes {total} preguntas en total.\n⏳ Al ritmo actual, tienes temario para {total // 21} días más."
+    try:
+        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
+                      data={"chat_id": CHAT_ID, "text": mensaje, "parse_mode": "Markdown"})
+    except Exception as e:
+        print(f"[ERROR] No se pudo enviar el informe: {e}")
 
 if __name__ == "__main__":
     broadcast_batch()
