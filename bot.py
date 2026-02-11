@@ -95,26 +95,43 @@ def broadcast_batch():
     if not questions_pool:
         return
 
-    # --- LÓGICA ANTI-REPETICIÓN HORARIA ---
-    # Usamos AñoMesDíaHora para que cada turno sea único
+    # --- LÓGICA ANTI-REPETICIÓN ---
     semilla_unificada = time.strftime("%Y%m%d%H")
     random.seed(semilla_unificada)
     
     random.shuffle(questions_pool)
     selected_batch = questions_pool[:BATCH_SIZE]
 
-    # CORRECCIÓN: Usamos la variable correcta para el log
     print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
 
-    # Enviar saludo inicial
+    # 1. DEFINIR EL BOTÓN DE COMPARTIR
+    # Cambia 'https://t.me/tu_canal' por el enlace real de tu canal
+    url_invitacion = "https://t.me/testpromilitar" 
+    keyboard = {
+        "inline_keyboard": [[
+            {
+                "text": "📢 Compartir canal con compañeros",
+                "url": f"https://t.me/share/url?url={url_invitacion}&text=¡Mira este canal para preparar el ascenso!"
+            }
+        ]]
+    }
+
+    # 2. ENVIAR SALUDO CON EL BOTÓN
     saludo = obtener_saludo()
     try:
-        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-                      data={"chat_id": CHAT_ID, "text": saludo, "parse_mode": "Markdown"})
+        requests.post(
+            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
+            json={
+                "chat_id": CHAT_ID, 
+                "text": saludo, 
+                "parse_mode": "Markdown",
+                "reply_markup": keyboard # Aquí añadimos el botón
+            }
+        )
     except Exception as e:
         print(f"[ERROR] No se pudo enviar el saludo: {e}")
     
-    # Enviar encuestas
+    # 3. ENVIAR LAS ENCUESTAS (Igual que antes)
     for index, item in enumerate(selected_batch):
         payload = {
             "chat_id": CHAT_ID,
