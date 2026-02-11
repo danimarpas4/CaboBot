@@ -4,7 +4,7 @@ import random
 import os
 import time
 from dotenv import load_dotenv
-
+from datetime import datetime
 # ==========================================
 # CONFIGURATION & CONSTANTS
 # ==========================================
@@ -39,9 +39,15 @@ def load_question_ledger():
         return []
 
 def obtener_saludo():
-    # Obtenemos la hora actual en Madrid (UTC+1)
+    # 1. Configuración de la fecha del examen (AQUÍ PONES LA FECHA REAL)
+    fecha_examen = datetime(2026, 6, 15) # Ejemplo: 15 de Junio de 2026
+    hoy = datetime.now()
+    dias_restantes = (fecha_examen - hoy).days
+    
+    # 2. Lógica de la hora (Madrid UTC+1)
     hora = (time.gmtime().tm_hour + 1) % 24 
     
+    # 3. Frases de felicitación nocturna
     felicitaciones = [
         "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
@@ -50,27 +56,28 @@ def obtener_saludo():
         "Orgulloso de ver a 301 aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
     
-    if 6 <= hora < 12:
-        return "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
+    # 4. Construcción del saludo con cuenta atrás
+    base_saludo = f"⏳ **Cuenta atrás: ¡Solo quedan {dias_restantes} días para el examen!**\n\n"
+    
+    if 6 <= hora < 13:
+        return base_saludo + "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
     elif 13 <= hora < 16:
-        return "☀️ **Turno de Mediodía**: ¡Aprovechad el descanso para repasar!"
+        return base_saludo + "☀️ **Turno de Mediodía**: ¡Aprovechad el descanso para repasar!"
     elif 16 <= hora < 20:
-        return "🌆 **Turno de Tarde**: ¡Vamos con otra tanda de estudio!"
-    elif 20 <= hora < 24:
-        # ESTA ES LA FELICITACIÓN DIARIA
+        return base_saludo + "🌆 **Turno de Tarde**: ¡Vamos con otra tanda de estudio!"
+    elif 20 <= hora < 23:
         random.seed(time.strftime("%Y%m%d"))
         frase_hoy = random.choice(felicitaciones)
         
-        # IMPORTANTE: Después de elegir la frase, reseteamos la semilla con la HORA 
-        # para que las preguntas que vienen después sigan siendo aleatorias por turno.
+        # Reset de semilla para las preguntas
         semilla_unificada = time.strftime("%Y%m%d%H")
         random.seed(semilla_unificada)
         
-        return (f"🌙 **Turno de Noche**: ¡Último esfuerzo del día!\n\n"
-                f"🏆 **CUADRO DE HONOR** 🏆\n"
+        return (f"{base_saludo}🌙 **Turno de Noche**: ¡Último esfuerzo del día!\n\n"
+                f"🏆 **CUADRO DE HONOR**\n"
                 f"{frase_hoy}")
     else:
-        return "🌙 **Turno de Madrugada**: Para los que no descansan. ¡Ánimo!"
+        return "🌙 **Turno de Madrugada**: Ánimo a los que seguís dándole. 🪖"
 
 def broadcast_batch():
     questions_pool = load_question_ledger()
