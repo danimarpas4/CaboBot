@@ -48,8 +48,9 @@ def broadcast_batch():
 
     # --- LÓGICA ANTI-REPETICIÓN ---
     # Semilla basada en la fecha para que el orden cambie cada día
-    dia_actual = time.strftime("%Y%m%d")
-    random.seed(dia_actual)
+    # Añadimos la hora (%H) para que cada turno de envío tenga su propio lote único
+    semilla_unidada = time.strftime("%Y%m%d%H")
+    random.seed(semilla_unidada)
     
     # Barajamos todo el temario real
     random.shuffle(questions_pool)
