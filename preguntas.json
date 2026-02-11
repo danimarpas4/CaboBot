@@ -1744,10 +1744,10 @@
         "bloque": 2,
         "tema": 2,
         "titulo_tema": "Orientación",
-        "pregunta": "Para localizar el Norte Geográfico de noche mediante la Osa Mayor, ¿cuántas veces debemos prolongar la distancia entre las guardas (Merak y Dubhe)?",
+        "pregunta": "Para localizar el Norte Geográfico de noche mediante la Osa Mayor, ¿cuántas veces debemos prolongar la distancia entre las dos estrellas posteriores hasta encontrar la estrella polar, situada en la Osa Menor?",
         "opciones": ["3 veces", "4 veces", "5 veces", "10 veces"],
         "correcta": 2,
-        "explicacion": "📚 Apartado 2.11.4.\nLlevando 5 veces la distancia entre las estrellas del costado del carro opuesto al timón (Merak y Dubhe) en la dirección de éstas."
+        "explicacion": "📚 Apartado 2.11.4.\nLocalizar en la bóveda celeste la constelación Osa Mayor y prolongar la línea que une las dos estrellas posteriores 5 veces la distancia que separa dichas estrellas hasta encontrar una estrella de brillo muy vivo que es la estrella Polar."
     },
     {
         "capitulo": 2,
