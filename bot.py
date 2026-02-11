@@ -39,17 +39,38 @@ def load_question_ledger():
         return []
 
 def obtener_saludo():
-    # Obtenemos la hora actual en Madrid (asumiendo UTC+1)
+    # Obtenemos la hora actual en Madrid (UTC+1)
     hora = (time.gmtime().tm_hour + 1) % 24 
+    
+    felicitaciones = [
+        "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
+        "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
+        "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
+        "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
+        "Orgulloso de ver a 301 aspirantes dándolo todo. ¡A por ello pistolos!🎯"
+    ]
     
     if 6 <= hora < 12:
         return "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
-    elif 12 <= hora < 15:
+    elif 13 <= hora < 16:
         return "☀️ **Turno de Mediodía**: ¡Aprovechad el descanso para repasar!"
-    elif 15 <= hora < 20:
+    elif 16 <= hora < 20:
         return "🌆 **Turno de Tarde**: ¡Vamos con otra tanda de estudio!"
+    elif 20 <= hora < 24:
+        # ESTA ES LA FELICITACIÓN DIARIA
+        random.seed(time.strftime("%Y%m%d"))
+        frase_hoy = random.choice(felicitaciones)
+        
+        # IMPORTANTE: Después de elegir la frase, reseteamos la semilla con la HORA 
+        # para que las preguntas que vienen después sigan siendo aleatorias por turno.
+        semilla_unificada = time.strftime("%Y%m%d%H")
+        random.seed(semilla_unificada)
+        
+        return (f"🌙 **Turno de Noche**: ¡Último esfuerzo del día!\n\n"
+                f"🏆 **CUADRO DE HONOR** 🏆\n"
+                f"{frase_hoy}")
     else:
-        return "🌙 **Turno de Noche**: Último esfuerzo del día, ¡ánimo!"
+        return "🌙 **Turno de Madrugada**: Para los que no descansan. ¡Ánimo!"
 
 def broadcast_batch():
     questions_pool = load_question_ledger()
