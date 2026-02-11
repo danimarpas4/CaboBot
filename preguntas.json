@@ -1251,6 +1251,46 @@
     },
     {
         "capitulo": 1,
+        "bloque": 7,s
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "Liderazgo. Todos los analistas coinciden en que el futuro entorno de combate será altamente...",
+        "opciones": ["intratable", "inestable", "VUCA", "incierto"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 2.\nTodos los analistas coinciden en que el futuro entorno de combate será altamente inestable y con todas las características del entorno VUCA."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "Liderazgo. El mando orientado a la misión (MoM) es una cultura de...",
+        "opciones": ["iniciativa", "eficacia", "liderazgo", "descentralización"],
+        "correcta": 2,
+        "explicacion": "📚 Tema 2.\nEl mando orientado a la misión (MoM) es una cultura de liderazgo, una filosofía de mando que tiende a la descentralización..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "Liderazgo. El concepto de Mando orientado a la misión (MoM), es una filosofía de mando descentralizado que se basa en dos pilares fundamentales: ______ y ______.",
+        "opciones": ["La confianza y el entendimiento mutuo", "Iniciativa y Compromiso", "Liderazgo y Descentralización", "La confianza y el entendimiento propio"],
+        "correcta": 0,
+        "explicacion": "📚 Tema 2.\nEl concepto de Mando orientado a la misión (MoM), es una filosofía de mando descentralizado que se basa en dos pilares fundamentales: la confianza y el entendimiento mutuo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 2,
+        "titulo_tema": "Mando orientado a la misión (MoM)",
+        "pregunta": "Liderazgo. En el siglo XXI, entramos en el ámbito donde prima la: _______.",
+        "opciones": ["cultura de liderazgo", "dimension emocional", "iniciativa", "tecnología"],
+        "correcta": 1,
+        "explicacion": "📚 Tema 2.\nEn el siglo XXI, entramos en el ámbito donde prima la dimensión emocional, evolucionando el combatiente de ser un mero recurso humano..."
+    },
+    {
+        "capitulo": 1,
         "bloque": 7,
         "tema": 1,
         "titulo_tema": "Modelo de liderazgo K-2",
@@ -1258,6 +1298,16 @@
         "opciones": ["Velocidad, Unión, Calidad y Astucia", "Volátil, Incierto, Complejo y Ambiguo", "Valor, Unidad, Compañerismo y Abnegación", "Visión, Utilidad, Claridad y Agilidad"],
         "correcta": 1,
         "explicacion": "📚 Tema 1 (Punto 1).\nUn entorno VUCA (Volátil, Incierto, Complejo y Ambiguo), que conjuga la inversión a largo plazo con una sólida formación en valores."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 7,
+        "tema": 1,
+        "titulo_tema": "Modelo de liderazgo K-2",
+        "pregunta": "Liderazgo. El punto de partida tiene como objetivo desarrollar un concepto que proporcione unidad de doctrina en materia de liderazgo. Dicho concepto tiene tres premisas fundamentales: Se apoya en un modelo, se aprende en la formación y se adquiere con _____",
+        "opciones": ["la paciencia", "la antigüedad", "la formación", "la experiencia"],
+        "correcta": 3,
+        "explicacion": "📚 Tema 1 (Punto 2).\nEl punto de partida tiene como objetivo desarrollar un concepto que proporcione unidad de doctrina en materia de liderazgo. Dicho concepto tiene tres premisas fundamentales: Se apoya en un modelo, se aprende en la formación y se adquiere con la experiencia."
     },
     {
         "capitulo": 1,
@@ -1484,10 +1534,10 @@
         "bloque": 1,
         "tema": 2,
         "titulo_tema": "La Escuadra y el Equipo",
-        "pregunta": "¿Para qué situaciones es más adecuada la formación en 'Columna de a uno'?",
-        "opciones": ["Para el asalto a una posición", "Para avanzar por terreno abierto bajo fuego enemigo", "Para desplazamientos rápidos, de noche o con poca visibilidad", "Para ofrecer el máximo frente de fuego"],
-        "correcta": 2,
-        "explicacion": "📚 Formaciones.\nColumna de a uno: Es la formación de marcha por excelencia. Se utiliza para desplazamientos rápidos, de noche, con niebla o por terreno muy cubierto."
+        "pregunta": "¿Para qué situaciones es más adecuada la formación en 'hilera'?",
+        "opciones": ["Es idóneo para la infiltración. ", "Para avanzar por terreno abierto bajo fuego enemigo", "Para desplazamientos rápidos, de noche o con poca visibilidad", "Para ofrecer el máximo frente de fuego"],
+        "correcta": 0,
+        "explicacion": "📚 Formaciones.\nHilera: Es idóneo para la infiltración. Disposición de hombres uno detrás de otro, adoptando una formación sensiblemente triangular para obtener mayor seguridad y potencia de fuego en todas direcciones. El cabo levantará un brazo."
     },
     {
         "capitulo": 2,
@@ -1495,19 +1545,19 @@
         "tema": 2,
         "titulo_tema": "La Escuadra y el Equipo",
         "pregunta": "¿Qué formación adopta la escuadra para cruzar zonas batidas por el fuego enemigo o para el asalto?",
-        "opciones": ["Columna de a uno", "Cuña", "Línea o Guerrilla", "Rombo"],
+        "opciones": ["Hilera", "Cuña", "Línea o Guerrilla", "Rombo"],
         "correcta": 2,
-        "explicacion": "📚 Formaciones.\nLínea o Guerrilla: Se adopta para cruzar zonas batidas por el fuego enemigo en los últimos momentos del asalto. Permite el máximo volumen de fuego al frente."
+        "explicacion": "📚 Formaciones.\nFila o guerrilla: Se utiliza para franquear crestas y divisorias, cruzar zonas muy despejadas o batidas por el fuego y para ejecutar el asalto. Es el despliegue de mayor dificultad para la acción del mando. "
     },
     {
         "capitulo": 2,
         "bloque": 1,
         "tema": 2,
         "titulo_tema": "La Escuadra y el Equipo",
-        "pregunta": "¿Qué ventaja principal ofrece la formación en 'Cuña'?",
-        "opciones": ["Máxima velocidad de desplazamiento", "Buen frente de fuego y seguridad a los flancos", "Máxima ocultación", "Control absoluto del jefe de escuadra"],
-        "correcta": 1,
-        "explicacion": "📚 Formaciones.\nCuña: Permite hacer fuego al frente y a los flancos. Es adecuada para avanzar por terreno descubierto pero no batido intensamente."
+        "pregunta": "¿Qué ventaja principal ofrece la formación en 'Hilera'?",
+        "opciones": ["Facilitar la acción del mando. ", "Buen frente de fuego y seguridad a los flancos", "Máxima ocultación", "Control absoluto del jefe de escuadra"],
+        "correcta": 0,
+        "explicacion": "📚 Formaciones.\nHilera: apta para: . Facilitar la acción del mando. . Desplazamientos con rapidez. . Utilización de itinerarios estrechos. . Franqueamiento de puntos de paso obligado. . Es idóneo para la infiltración. . En situaciones de escasa visibilidad. "
     },
     {
         "capitulo": 2,
@@ -1954,7 +2004,7 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "¿De qué material están fabricados el cajón de mecanismos, la empuñadura, el culatín y el guardamanos?",
+        "pregunta": "HK G-36E. ¿De qué material están fabricados el cajón de mecanismos, la empuñadura, el culatín y el guardamanos?",
         "opciones": ["Acero estampado", "Aleación ligera de aluminio", "Material sintético altamente resistente", "Madera laminada"],
         "correcta": 2,
         "explicacion": "📚 Datos Generales.\nEstán fabricados de material sintético altamente resistente, resultando un arma muy ligera."
@@ -1984,7 +2034,7 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "En la descripción general del arma, ¿qué pieza corresponde al número 1?",
+        "pregunta": "HK G-36E. En la descripción general del arma, ¿qué pieza corresponde al número 1?",
         "opciones": ["El cañón", "La bocacha apagallamas", "La palanca de montar", "El tapón de gases"],
         "correcta": 1,
         "explicacion": "📚 Descripción General.\n1.- Bocacha apagallamas."
@@ -2004,7 +2054,7 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "Si se produce una interrupción por 'Vaina no expulsada', ¿cuál puede ser una causa probable?",
+        "pregunta": "HK G-36E. Si se produce una interrupción por 'Vaina no expulsada', ¿cuál puede ser una causa probable?",
         "opciones": ["Aguja percutora rota", "Recámara sucia o extractor roto", "Cargador mal colocado", "Seguro puesto"],
         "correcta": 1,
         "explicacion": "📚 Tabla de Interrupciones.\nVaina no expulsada: Recámara sucia, extractor roto o muelle del extractor roto."
@@ -2014,7 +2064,7 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "Si observamos una 'Expulsión violenta de vainas', ¿a qué se debe generalmente?",
+        "pregunta": "HK G-36E. Si observamos una 'Expulsión violenta de vainas', ¿a qué se debe generalmente?",
         "opciones": ["A que el paso de gases es excesivo", "A que el muelle recuperador está muy fuerte", "A que la munición es defectuosa", "A que el cierre está sucio"],
         "correcta": 0,
         "explicacion": "📚 Tabla de Interrupciones.\nExpulsión violenta... Causa: El paso de gases es excesivo. Remedio: Reducir el paso de gases."
@@ -2024,7 +2074,7 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "¿Es necesario utilizar herramientas especiales para el desmontaje básico de limpieza?",
+        "pregunta": "HK G-36E. ¿Es necesario utilizar herramientas especiales para el desmontaje básico de limpieza?",
         "opciones": ["Sí, un destornillador plano", "Sí, un botador especial", "No, se desmonta con facilidad sin herramientas", "Sí, la llave del HK"],
         "correcta": 2,
         "explicacion": "📚 Datos Generales.\nEl fusil G36 E se desmonta con facilidad en sus componentes principales, sin necesidad de herramientas."
@@ -2094,7 +2144,7 @@
         "bloque": 3,
         "tema": 3,
         "titulo_tema": "Pistola HK USP",
-        "pregunta": "¿De qué material está fabricado el armazón de la pistola?",
+        "pregunta": "HK USP. ¿De qué material está fabricado el armazón de la pistola?",
         "opciones": ["Acero inoxidable", "Aluminio aeronáutico", "Polímero reforzado con fibra de vidrio", "Aleación ligera"],
         "correcta": 2,
         "explicacion": "📚 Características Generales.\nEl armazón está fabricado en polímero integral... mezcla de plástico poliamídico y fibra de vidrio."
@@ -2104,7 +2154,7 @@
         "bloque": 3,
         "tema": 3,
         "titulo_tema": "Pistola HK USP",
-        "pregunta": "¿Qué función tiene la palanca de retenida de la corredera?",
+        "pregunta": "HK USP. ¿Qué función tiene la palanca de retenida de la corredera?",
         "opciones": ["Solo desmontar el arma", "Mantener la corredera abierta cuando el cargador está vacío", "Activar el seguro", "Expulsar el cargador"],
         "correcta": 1,
         "explicacion": "📚 Funcionamiento.\nTras producirse el disparo del último cartucho... la palanca de retención de la corredera mantiene el sistema de cierre en posición abierta."
@@ -2124,7 +2174,7 @@
         "bloque": 3,
         "tema": 3,
         "titulo_tema": "Pistola HK USP",
-        "pregunta": "¿Qué ocurre tras el disparo durante la secuencia de funcionamiento?",
+        "pregunta": "HK USP. ¿Qué ocurre tras el disparo durante la secuencia de funcionamiento?",
         "opciones": ["El cañón permanece fijo y solo se mueve la corredera", "El grupo cañón-corredera retrocede unido un breve recorrido hasta que el cañón bascula y se desbloquea", "Los gases empujan el pistón", "El martillo se queda abatido"],
         "correcta": 1,
         "explicacion": "📚 Secuencia de funcionamiento.\nTras producirse el disparo... el grupo cañón-corredera se desplaza, bloqueado, hacia atrás. Tras retroceder conjuntamente... el descenso del cañón produce el desbloqueo."
@@ -2134,7 +2184,7 @@
         "bloque": 3,
         "tema": 3,
         "titulo_tema": "Pistola HK USP",
-        "pregunta": "¿Qué pieza del despiece básico contiene el muelle recuperador?",
+        "pregunta": "HK USP. ¿Qué pieza del despiece básico contiene el muelle recuperador?",
         "opciones": ["El cañón", "La corredera", "El eje de la palanca de retenida", "El conjunto de recuperación (varilla guía y muelle)"],
         "correcta": 3,
         "explicacion": "📚 Despiece.\nEl conjunto de recuperación formado por el muelle recuperador y su varilla guía es una pieza independiente en el despiece básico."
@@ -2164,7 +2214,7 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "¿Cómo se realiza la alimentación de la ametralladora?",
+        "pregunta": "MG-42. ¿Cómo se realiza la alimentación de la ametralladora?",
         "opciones": ["Mediante cargadores de petaca de 30 cartuchos", "Mediante cinta de eslabón irreintegrable (desintegrable)", "Mediante tambor de 100 cartuchos", "Mediante peine de 5 cartuchos"],
         "correcta": 1,
         "explicacion": "Alimentación.\nLa alimentación se realiza mediante cinta de eslabón irreintegrable (generalmente de 50 cartuchos, que pueden empalmarse)."
@@ -2184,7 +2234,7 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "En ambientes secos y polvorientos (desiertos), ¿cómo debe ser el engrase del arma?",
+        "pregunta": "MG-42. En ambientes secos y polvorientos (desiertos), ¿cómo debe ser el engrase del arma?",
         "opciones": ["Abundante para evitar la fricción", "Moderado", "Debe evitarse el exceso de grasa, estando más segura seca y limpia", "Solo con aceite de motor"],
         "correcta": 2,
         "explicacion": "Mantenimiento.\nEn ambientes secos y polvorientos... un arma excesivamente engrasada está más expuesta a interrupciones que estando seca y limpia, sin engrase alguno."
@@ -2194,7 +2244,7 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "¿Quién debe llevar a cabo las inspecciones técnicas del arma?",
+        "pregunta": "MG-42. ¿Quién debe llevar a cabo las inspecciones técnicas del arma?",
         "opciones": ["El usuario del arma", "El jefe de pelotón", "Los especialistas con las herramientas adecuadas", "El oficial de servicio"],
         "correcta": 2,
         "explicacion": "Mantenimiento.\nLas inspecciones técnicas se llevan a cabo por los especialistas con las herramientas adecuadas, tales como medidores, calibradores, etc."
@@ -2234,7 +2284,7 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "¿Qué elemento se utiliza para montar el arma (llevar el cierre atrás)?",
+        "pregunta": "MG-42. ¿Qué elemento se utiliza para montar el arma (llevar el cierre atrás)?",
         "opciones": ["El disparador", "La palanca de montar", "El guardamonte", "La ventana de alimentación"],
         "correcta": 1,
         "explicacion": "Manejo.\nPara montar el arma se utiliza la palanca de montar, tirando de ella enérgicamente hacia atrás."
