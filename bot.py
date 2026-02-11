@@ -3,8 +3,10 @@ import json
 import random
 import os
 import time
+import urllib.parse  # Necesario para el enlace de compartir profesional
 from dotenv import load_dotenv
 from datetime import datetime
+
 # ==========================================
 # CONFIGURATION & CONSTANTS
 # ==========================================
@@ -20,6 +22,7 @@ if not TOKEN:
 API_URL = f"https://api.telegram.org/bot{TOKEN}/sendPoll"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# ÚNICA FUENTE DE DATOS: preguntas.json
 FINAL_DB_PATH = os.path.join(BASE_DIR, 'preguntas.json')
 
 BATCH_SIZE = 3      
@@ -51,11 +54,19 @@ def obtener_saludo():
     felicitaciones = [
         "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
 
+
+
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
+
+
 
         "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
 
+
+
         "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
+
+
 
         "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
@@ -104,20 +115,30 @@ def broadcast_batch():
 
     print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
 
-    # 1. DEFINIR EL BOTÓN DE COMPARTIR
-    # Cambia 'https://t.me/tu_canal' por el enlace real de tu canal
+    # 1. CONFIGURACIÓN DEL BOTÓN PROFESIONAL DE COMPARTIR
     url_invitacion = "https://t.me/testpromilitar" 
+    texto_compartir = "🪖 ¡Compañero! Estoy preparando el ascenso con este bot. Envía tests diarios y tiene cuenta atrás para el examen. ¡Únete aquí!"
+    
+    # Codificamos el texto para que funcione correctamente en la URL de Telegram
+    texto_encoded = urllib.parse.quote(texto_compartir)
+    link_final = f"https://t.me/share/url?url={url_invitacion}&text={texto_encoded}"
+
     keyboard = {
         "inline_keyboard": [[
             {
-                "text": "📢 Compartir canal con compañeros",
-                "url": f"https://t.me/share/url?url={url_invitacion}&text=¡Mira este canal para preparar el ascenso!"
+                "text": "📢 RECOMENDAR A UN COMPAÑERO",
+                "url": link_final
             }
         ]]
     }
 
-    # 2. ENVIAR SALUDO CON EL BOTÓN
+    # 2. ENVIAR SALUDO CON EL BOTÓN Y MODO SILENCIOSO EN NOCHE/MADRUGADA
     saludo = obtener_saludo()
+    hora_actual = (time.gmtime().tm_hour + 1) % 24
+    
+    # Si es de noche (23h a 06h), enviamos sin notificación
+    notificacion_desactivada = True if (hora_actual >= 23 or hora_actual < 6) else False
+
     try:
         requests.post(
             f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
@@ -125,13 +146,14 @@ def broadcast_batch():
                 "chat_id": CHAT_ID, 
                 "text": saludo, 
                 "parse_mode": "Markdown",
-                "reply_markup": keyboard # Aquí añadimos el botón
+                "reply_markup": keyboard,
+                "disable_notification": notificacion_desactivada
             }
         )
     except Exception as e:
         print(f"[ERROR] No se pudo enviar el saludo: {e}")
     
-    # 3. ENVIAR LAS ENCUESTAS (Igual que antes)
+    # 3. ENVIAR LAS ENCUESTAS
     for index, item in enumerate(selected_batch):
         payload = {
             "chat_id": CHAT_ID,
@@ -140,7 +162,8 @@ def broadcast_batch():
             "type": "quiz",
             "correct_option_id": item["correcta"],
             "explanation": item.get("explicacion", ""),
-            "is_anonymous": True 
+            "is_anonymous": True,
+            "disable_notification": notificacion_desactivada
         }
 
         try:
