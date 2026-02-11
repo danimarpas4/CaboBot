@@ -39,8 +39,8 @@ def load_question_ledger():
         return []
 
 def obtener_saludo():
-    # 1. Configuración de la fecha del examen (AQUÍ PONES LA FECHA REAL)
-    fecha_examen = datetime(2026, 6, 15) # Ejemplo: 15 de Junio de 2026
+    # 1. Configuración de la fecha del examen: 25 de Febrero de 2026
+    fecha_examen = datetime(2026, 2, 25) 
     hoy = datetime.now()
     dias_restantes = (fecha_examen - hoy).days
     
@@ -50,15 +50,25 @@ def obtener_saludo():
     # 3. Frases de felicitación nocturna
     felicitaciones = [
         "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
+
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
+
         "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
+
         "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
+
         "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
     
-    # 4. Construcción del saludo con cuenta atrás
-    base_saludo = f"⏳ **Cuenta atrás: ¡Solo quedan {dias_restantes} días para el examen!**\n\n"
+    # 4. Construcción del mensaje de Cuenta Atrás
+    if dias_restantes > 0:
+        base_saludo = f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias_restantes} días para el examen!** 🎯\n\n"
+    elif dias_restantes == 0:
+        base_saludo = "🔥 **¡HA LLEGADO EL DÍA! Hoy se decide todo. ¡Mucha fuerza, guerreros!** 🪖\n\n"
+    else:
+        base_saludo = "✅ **Ciclo de examen finalizado. ¡Esperamos vuestros aptos!** 🥂\n\n"
     
+    # 5. Saludos por turnos
     if 6 <= hora < 13:
         return base_saludo + "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
     elif 13 <= hora < 16:
@@ -69,7 +79,7 @@ def obtener_saludo():
         random.seed(time.strftime("%Y%m%d"))
         frase_hoy = random.choice(felicitaciones)
         
-        # Reset de semilla para las preguntas
+        # Reset de semilla para las preguntas siguientes
         semilla_unificada = time.strftime("%Y%m%d%H")
         random.seed(semilla_unificada)
         
@@ -77,7 +87,7 @@ def obtener_saludo():
                 f"🏆 **CUADRO DE HONOR**\n"
                 f"{frase_hoy}")
     else:
-        return "🌙 **Turno de Madrugada**: Ánimo a los que seguís dándole. 🪖"
+        return "🌙 **Turno de Madrugada**: Estudiando mientras otros duermen. Así se gana. 🪖"
 
 def broadcast_batch():
     questions_pool = load_question_ledger()
