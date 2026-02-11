@@ -53,7 +53,7 @@ def obtener_saludo():
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
         "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
         "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
-        "Orgulloso de ver a 301 aspirantes dándolo todo. ¡A por ello pistolos!🎯"
+        "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
     
     # 4. Construcción del saludo con cuenta atrás
