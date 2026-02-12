@@ -115,7 +115,7 @@ def broadcast_batch():
 
     print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
 
-    # 1. CONFIGURACIÓN DEL BOTÓN PROFESIONAL DE COMPARTIR
+    # 1. CONFIGURACIÓN DEL BOTÓN DE COMPARTIR
     url_invitacion = "https://t.me/testpromilitar" 
     texto_compartir = "🪖 ¡Compañero! Estoy preparando el ascenso con este bot. Envía tests diarios y tiene cuenta atrás para el examen. ¡Únete aquí!"
     
@@ -132,12 +132,12 @@ def broadcast_batch():
         ]]
     }
 
-    # 2. ENVIAR SALUDO CON EL BOTÓN Y MODO SILENCIOSO EN NOCHE/MADRUGADA
+    # 2. ENVIAR SALUDO (ESTE SÍ SUENA 🔔, SALVO QUE SEA DE NOCHE)
     saludo = obtener_saludo()
     hora_actual = (time.gmtime().tm_hour + 1) % 24
     
-    # Si es de noche (23h a 06h), enviamos sin notificación
-    notificacion_desactivada = True if (hora_actual >= 23 or hora_actual < 6) else False
+    # Si es de noche (23h a 06h), silencio total. Si es de día, suena para avisar.
+    es_noche = True if (hora_actual >= 23 or hora_actual < 6) else False
 
     try:
         requests.post(
@@ -147,13 +147,14 @@ def broadcast_batch():
                 "text": saludo, 
                 "parse_mode": "Markdown",
                 "reply_markup": keyboard,
-                "disable_notification": notificacion_desactivada
+                "disable_notification": es_noche 
             }
         )
     except Exception as e:
         print(f"[ERROR] No se pudo enviar el saludo: {e}")
     
-    # 3. ENVIAR LAS ENCUESTAS
+    # 3. ENVIAR LAS ENCUESTAS (ESTAS SON MUDAS 🔕)
+    # Así no saturamos el grupo de comentarios con 3 notificaciones seguidas
     for index, item in enumerate(selected_batch):
         payload = {
             "chat_id": CHAT_ID,
@@ -163,12 +164,11 @@ def broadcast_batch():
             "correct_option_id": item["correcta"],
             "explanation": item.get("explicacion", ""),
             "is_anonymous": True,
-            "disable_notification": notificacion_desactivada
+            "disable_notification": True # <--- SIEMPRE SILENCIO AQUÍ
         }
 
         try:
             response = requests.post(API_URL, data=payload)
-            # IMPORTANTE: Mantenemos la validación de éxito en 200
             if response.status_code == 200:
                 print(f"[SUCCESS] Pregunta {index + 1} enviada.")
             else:
@@ -176,14 +176,12 @@ def broadcast_batch():
         except Exception as e:
             print(f"[EXCEPTION] Error de conexión: {e}")
 
-        # Pequeña pausa entre preguntas
         if index < len(selected_batch) - 1:
             time.sleep(DELAY_SECONDS)
 
     # ==========================================
-    # 4. MENSAJE DE CIERRE (CTA FINAL)
+    # 4. MENSAJE DE CIERRE (CTA FINAL - MUDO 🔕)
     # ==========================================
-    # Esperamos un poco después de la última pregunta para que no salga pegado
     time.sleep(DELAY_SECONDS)
 
     texto_cierre = (
@@ -192,7 +190,7 @@ def broadcast_batch():
         "¡Cuantos más seamos, mejor nivel habrá! 👇"
     )
 
-    # Reutilizamos el 'link_final' que creamos al principio para no repetir código
+    # Reutilizamos el 'link_final'
     keyboard_cierre = {
         "inline_keyboard": [[
             {
@@ -210,8 +208,7 @@ def broadcast_batch():
                 "text": texto_cierre, 
                 "parse_mode": "Markdown",
                 "reply_markup": keyboard_cierre,
-                # Siempre desactivamos notificación en el cierre para no saturar (solo aparece)
-                "disable_notification": True 
+                "disable_notification": True # <--- SIEMPRE SILENCIO
             }
         )
         print("[SUCCESS] Mensaje de cierre enviado.")
