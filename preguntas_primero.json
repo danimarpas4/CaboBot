@@ -1,0 +1,332 @@
+[
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Qué constituyen las Reales Ordenanzas para las Fuerzas Armadas?",
+        "opciones": ["Un manual de táctica", "El código de conducta de los militares", "Un reglamento de uniformidad", "La ley de la carrera militar"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nConstituyen el código de conducta de todos los miembros de las Fuerzas Armadas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Cuál es el primer y más fundamental deber del militar?",
+        "opciones": ["La obediencia", "La puntualidad", "La disposición permanente para defender a España", "El compañerismo"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 3.\nLa disposición permanente para defender a España, incluso con la entrega de la vida cuando fuera necesario."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿A qué ajustará su conducta el militar según el artículo 4?",
+        "opciones": ["Al respeto de las personas y los derechos fundamentales", "A la jerarquía únicamente", "Al reglamento de su unidad", "A las órdenes de la autoridad civil"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 4.\nEl militar ajustará su conducta al respeto de las personas, de sus derechos fundamentales y libertades públicas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO]¿A qué características ajustará su comportamiento el militar?",
+        "opciones": ["Valor, fuerza y honor", "Disciplina, jerarquía y unidad", "Obediencia, silencio y trabajo", "Eficacia, rapidez y austeridad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 7.\nAjustará su comportamiento a las características de las Fuerzas Armadas de disciplina, jerarquía y unidad, indispensables para la máxima eficacia."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Del Militar",
+        "pregunta": "[RROO] Según el Art. 14, ¿qué demuestra el llegar tarde a su obligación?",
+        "opciones": ["Falta de compañerismo", "Gran desidia e ineptitud para la carrera de las armas", "Poca organización", "Falta de respeto al superior"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 14 (Espíritu militar).\nEl llegar tarde a su obligación, aunque sea de minutos, son pruebas de gran desidia e ineptitud para la carrera de las armas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Del Juramento o Promesa ante la Bandera",
+        "pregunta": "[RROO] ¿Qué representa la Bandera de España según el artículo 6?",
+        "opciones": ["La historia militar", "La soberanía, independencia, unidad e integridad de la Patria", "El mando supremo del Rey", "La Constitución Española"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 6.\nEs el signo de la soberanía, independencia, unidad e integridad de la Patria y representa sus valores superiores."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Del Militar",
+        "pregunta": "[RROO] ¿Cuáles son las virtudes fundamentales del militar según el Art. 17?",
+        "opciones": ["Valor, honor y lealtad", "Disciplina, valor, prontitud en la obediencia y exactitud en el servicio", "Compañerismo, sacrificio y austeridad", "Integridad, neutralidad y eficacia"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 17.\nTendrá presente que la disciplina, valor, prontitud en la obediencia y exactitud en el servicio son virtudes a las que nunca ha de faltar."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Disciplina",
+        "pregunta": "[RROO] Si un militar tiene una objeción sobre una orden recibida, ¿qué hará?",
+        "opciones": ["No cumplirla", "Comentarlo con los compañeros", "La formularla ante quien se la hubiera dado", "Presentar un recurso después"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 49.\nLa formulará ante quien se la hubiera dado. Si su incumplimiento perjudicase a la misión, se reservará la objeción hasta haberla cumplido."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Ética Militar",
+        "pregunta": "[RROO] ¿Qué factor de cohesión obliga a mandar con responsabilidad y a obedecer lo mandado?",
+        "opciones": ["El sueldo", "La disciplina", "El entrenamiento", "La antigüedad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nLa disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado, será practicada y exigida en las Fuerzas Armadas como norma de actuación"
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Disciplina",
+        "pregunta": "[RROO]¿Debe un militar atender indicaciones de otro de empleo inferior que esté de servicio?",
+        "opciones": ["No, la jerarquía manda", "Sí, atenderá sus indicaciones o instrucciones", "Solo si es Oficial", "Solo si es de su misma unidad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 50.\nAtenderá las indicaciones o instrucciones de otro que, aun siendo de empleo inferior, se encuentre de servicio y actúe por órdenes..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Según el Artículo 1, ¿qué constituyen las Reales Ordenanzas?",
+        "opciones": ["Un código penal", "El código de conducta de los militares", "Un manual técnico", "Una guía de combate"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nLas Reales Ordenanzas para las Fuerzas Armadas constituyen el código de conducta de todos los miembros de las Fuerzas Armadas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Qué definen las Reales Ordenanzas según el Art. 1?",
+        "opciones": ["Los sueldos", "Los principios éticos y las reglas de comportamiento", "Los tipos de armamento", "La estructura del ministerio"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nDefinen los principios éticos y las reglas de comportamiento de acuerdo con la Constitución y el resto del ordenamiento jurídico."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Ámbito de aplicación",
+        "pregunta": "[RROO] Según el Art. 2, ¿a quién son de aplicación las Reales Ordenanzas?",
+        "opciones": ["Solo a la tropa", "A todos los militares profesionales", "Solo a oficiales", "Al personal civil"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 2.\nSon de aplicación a todos los militares profesionales y a los alumnos de la enseñanza militar de formación."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Ámbito de aplicación",
+        "pregunta": "[RROO] ¿Están sujetos a las Reales Ordenanzas los alumnos de enseñanza militar (Art. 2)?",
+        "opciones": ["No", "Sí", "Solo en maniobras", "Depende del curso"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 2.\nSon de aplicación a todos los militares profesionales y a los alumnos de la enseñanza militar de formación."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Primer deber",
+        "pregunta": "[RROO] ¿Cuál es el primer y más fundamental deber del militar (Art. 3)?",
+        "opciones": ["Obedecer", "La disposición permanente para defender a España", "La puntualidad", "El saludo"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 3.\nLa disposición permanente para defender a España, incluso con la entrega de la vida cuando fuera necesario."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Primer deber",
+        "pregunta": "[RROO] ¿Hasta qué extremo debe llegar la defensa de España según el Art. 3?",
+        "opciones": ["Hasta ser herido", "Hasta la entrega de la vida cuando fuera necesario", "Hasta que acabe el contrato", "Hasta la retirada"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 3.\nIncluso con la entrega de la vida cuando fuera necesario."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Conducta",
+        "pregunta": "[RROO] Según el Art. 4, el militar ajustará su conducta al respeto de las personas y...",
+        "opciones": ["Al bien común", "A sus intereses", "A la política", "A la economía"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 4.\nEl militar ajustará su conducta al respeto de las personas, al bien común y al derecho internacional."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Actuación",
+        "pregunta": "[RROO] ¿Con arreglo a que principios debe actuar el militar según el Art. 5?",
+        "opciones": ["Eficacia, honradez y promoción del entorno cultural y medioambiental", "Rapidez y fuerza", "Miedo y castigo", "Lujo y poder"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 5.\nDeberá actuar con arreglo a los principios de objetividad, integridad, neutralidad, responsabilidad, imparcialidad, confidencialidad, dedicación al servicio, transparencia, ejemplaridad, austeridad, accesibilidad, eficacia, honradez y promoción del entorno cultural y medioambiental."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Símbolos",
+        "pregunta": "[RROO] ¿El militar, hacia qué mostrará el máximo respeto según el Art. 6?",
+        "opciones": ["Símbolos de la Patria", "Decorativos", "Opcionales", "Antiguos"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 6.\nMostrará el máximo respeto a la Bandera y Escudo de España y al Himno Nacional como símbolos de la Patria transmitidos por la historia."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disciplina",
+        "pregunta": "[RROO] ¿Qué es la disciplina según el Art. 10?",
+        "opciones": ["Obediencia ciega", "Factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado", "El reglamento de sanciones", "La autoridad del mando"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nLa disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado,será practicada y exigida en las Fuerzas Armadas como norma de actuación. Tiene su expresión colectiva en el acatamiento a la Constitución y su manifestación individual en el cumplimiento de las órdenes recibidas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disciplina",
+        "pregunta": "[RROO] ¿Qué obliga la disciplina según el Art. 10?",
+        "opciones": ["A mandar con responsabilidad y obedecer lo mandado", "Solo a obedecer", "Solo a mandar", "A callar"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 10.\nObliga a mandar con responsabilidad y a obedecer lo mandado."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Dignidad",
+        "pregunta": "[RROO] ¿Qué debe respetar el militar según el Art. 11?",
+        "opciones": ["La dignidad de la persona y sus derechos inviolables", "La antigüedad", "El uniforme", "El armamento"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 11.\nLa dignidad y los derechos inviolables de la persona son valores que tiene obligación de respetar y derecho a exigir."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disponibilidad",
+        "pregunta": "[RROO] ¿Cuál es la disponibilidad del militar para el servicio (Art. 12)?",
+        "opciones": ["De 8 a 15", "Permanente", "Según convenio", "Cuando le llamen"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 12.\nEstará en disponibilidad permanente para el servicio."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Tradición",
+        "pregunta": "[RROO] ¿Qué debe hacer el militar con las tradiciones de su unidad (Art. 16)?",
+        "opciones": ["Conservarlas y transmitirlas", "Olvidarlas", "Cambiarlas", "Escribirlas"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 16.\nConservará y transmitirá el historial, tradiciones y símbolos de su unidad, para perpetuar su recuerdo, contribuir a fomentar el espíritu de unidad y reforzar las virtudes militares de sus componentes."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Uniformidad",
+        "pregunta": "[RROO] ¿Cómo vestirá el uniforme el militar (Art. 22)?",
+        "opciones": ["Con orgullo y propiedad", "Limpio", "Planchado", "Reglamentario"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 22.\nVestirá el uniforme con orgullo y propiedad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 2,
+        "titulo_tema": "Responsabilidad",
+        "pregunta": "[RROO] ¿Es compartible la responsabilidad del mando (Art. 27)?",
+        "opciones": ["Sí", "No", "A veces", "Si se delega"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 27.\nLa responsabilidad en el ejercicio del mando militar no es renunciable ni puede ser compartida."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 3,
+        "titulo_tema": "De la Ética Militar",
+        "pregunta": "[BLOQUE 1] ¿Qué factor de cohesión obliga a mandar con responsabilidad y a obedecer lo mandado?",
+        "opciones": ["El sueldo", "La disciplina", "El entrenamiento", "La antigüedad"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 10.\nLa disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado, será practicada y exigida en las Fuerzas Armadas como norma de actuación"
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 4,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Puede compartirse la responsabilidad en el ejercicio del mando?",
+        "opciones": ["Sí, en el segundo jefe", "Sí, en operaciones", "No es renunciable ni puede ser compartida", "Depende de la orden"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 55.\nLa responsabilidad en el ejercicio del mando militar no es renunciable ni puede ser compartida."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 4,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Qué hará el mando si la evolución de los acontecimientos aconseja variar una orden?",
+        "opciones": ["Mantenerla para no perder autoridad", "No se empeñará en ella", "Pedir permiso al superior", "Someterlo a votación"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 61.\nMantendrá sus órdenes con determinación, pero no se empeñará en ellas si la evolución de los acontecimientos aconseja variarlas."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "En misiones de paz, ¿cómo actuará el militar respecto a la cultura local?",
+        "opciones": ["Impondrá sus costumbres", "Ignorará la cultura local", "Respetará la cultura y costumbres salvo que comprometan la misión", "Evitará todo contacto"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 96.\nRespetará la cultura y costumbres propias de la zona de despliegue, salvo que comprometan la misión encomendada."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "¿Qué hará el que tuviere orden de conservar su puesto a toda costa?",
+        "opciones": ["Pedir evacuación si hay peligro", "Lo hará", "Interpretar la orden según la situación", "Replegarse ordenadamente"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 90.\nEl que tuviere orden de conservar su puesto a toda costa, lo hará."
+    },  
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 5,
+        "titulo_tema": "De las Operaciones",
+        "pregunta": "En el uso legítimo de la fuerza, el militar hará un uso:",
+        "opciones": ["Contundente y rápido", "Gradual y proporcionado", "Mínimo e indispensable", "Disuasorio"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 84.\nHará un uso gradual y proporcionado de la misma, de acuerdo con las reglas de enfrentamiento."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 4,
+        "titulo_tema": "De la Acción del Mando",
+        "pregunta": "¿Qué hará el mando si la evolución de los acontecimientos aconseja variar una orden?",
+        "opciones": ["Mantenerla para no perder autoridad", "No se empeñará en ella", "Pedir permiso al superior", "Someterlo a votación"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 61.\nMantendrá sus órdenes con determinación, pero no se empeñará en ellas si la evolución de los acontecimientos aconseja variarlas."
+    }
+] 

@@ -1,0 +1,16 @@
+name: Informe Semanal de Temario
+on:
+  schedule:
+    - cron: '0 21 * * 0' # Todos los domingos a las 22:00 (España)
+  workflow_dispatch:
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Ejecutar informe
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          pip install python-dotenv requests
+          python -c "import bot; bot.enviar_informe_semanal()"
