@@ -1,16 +1,26 @@
-name: Informe Semanal de Temario
+name: 🕵️‍♂️ Pedir Informe Privado
+
 on:
-  schedule:
-    - cron: '0 21 * * 0' # Todos los domingos a las 22:00 (España)
-  workflow_dispatch:
+  workflow_dispatch:  # Esto crea el botón manual
+
 jobs:
-  report:
+  enviar-informe:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Ejecutar informe
+      - name: Descargar repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar librerías
+        run: pip install python-dotenv requests
+
+      - name: GENERAR INFORME
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-        run: |
-          pip install python-dotenv requests
-          python -c "import bot; bot.enviar_informe_semanal()"
+          ADMIN_ID: ${{ secrets.ADMIN_ID }}
+        # TRUCO: Importamos el bot pero solo ejecutamos la función de informe
+        run: python -c "from bot import enviar_informe_semanal; enviar_informe_semanal()"
