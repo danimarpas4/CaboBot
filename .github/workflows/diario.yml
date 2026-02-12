@@ -4,29 +4,31 @@ on:
   schedule:
     # -----------------------------------------------------------
     # HORARIO UTC (GitHub) vs HORA ESPAÑA (Invierno UTC+1)
-    # Hemos adelantado todo 1 hora respecto a la versión anterior
     # -----------------------------------------------------------
     
-    # 🌅 TURNO MAÑANA (08:00 España)
+    # 🌅 TURNO 1 (08:00 España)
     - cron: '0 7 * * *'
     
-    # ☀️ TURNO MEDIODÍA (12:00 España)
+    # ☕ TURNO 2 (10:00 España)
+    - cron: '0 9 * * *'
+    
+    # ☀️ TURNO 3 (12:00 España)
     - cron: '0 11 * * *'
     
-    # 🌆 TURNO TARDE (15:00 España)
-    - cron: '0 14 * * *'
+    # 🍽️ TURNO 4 (14:00 España)
+    - cron: '0 13 * * *'
     
-    # 🌙 TURNO NOCHE (20:00 España)
-    - cron: '0 19 * * *'
+    # 🌆 TURNO 5 (16:00 España)
+    - cron: '0 15 * * *'
     
+    # 🏃 TURNO 6 (19:00 España)
+    - cron: '0 18 * * *'
+    
+    # 🌙 TURNO 7 (21:00 España)
+    - cron: '0 20 * * *'
+
     # 🦉 CIERRE DE DÍA (23:00 España)
     - cron: '0 22 * * *'
-    
-    # 🧟 MADRUGADA 1 (02:00 España)
-    - cron: '0 1 * * *'
-    
-    # 🧟 MADRUGADA 2 (05:00 España)
-    - cron: '0 4 * * *'
   
   workflow_dispatch:      # Permite activar el botón manual
 
