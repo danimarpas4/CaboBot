@@ -2295,9 +2295,9 @@
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
         "pregunta": "HK G-36E. Si observamos una 'Expulsión violenta de vainas', ¿a qué se debe generalmente?",
-        "opciones": ["A que el paso de gases es excesivo", "A que el muelle recuperador está muy fuerte", "A que la munición es defectuosa", "A que el cierre está sucio"],
+        "opciones": ["El ajuste del brocal está graduado para un paso de gases demasiado pequeño", "A que el muelle recuperador está muy fuerte", "A que la munición es defectuosa", "A que el cierre está sucio"],
         "correcta": 0,
-        "explicacion": "📚 Tabla de Interrupciones.\nExpulsión violenta... Causa: El paso de gases es excesivo. Remedio: Reducir el paso de gases."
+        "explicacion": "📚 Tabla de Interrupciones.\nExpulsión violenta... Causa: El ajuste del brocal está graduado para un paso de gases demasiado pequeño"
     },
     {
         "capitulo": 2,
@@ -2505,9 +2505,9 @@
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
         "pregunta": "¿Cuál es la cadencia de tiro teórica aproximada de la MG-42?",
-        "opciones": ["600 disparos/minuto", "800 disparos/minuto", "1.100 - 1.300 disparos/minuto", "1.800 disparos/minuto"],
+        "opciones": ["600 disparos/minuto", "800 disparos/minuto", "1.300 disparos/minuto", "1.800 disparos/minuto"],
         "correcta": 2,
-        "explicacion": "Datos Técnicos.\nLa MG-42 se caracteriza por una cadencia de tiro muy elevada, situada teóricamente entre 1.100 y 1.300 disparos por minuto."
+        "explicacion": "Datos Técnicos.\nLa MG-42 se caracteriza por una cadencia de tiro muy elevada, situada teóricamente en 1.300 disparos por minuto."
     },
     {
         "capitulo": 2,
