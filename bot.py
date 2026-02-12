@@ -3,20 +3,18 @@ import json
 import random
 import os
 import time
-import urllib.parse  # Necesario para el enlace de compartir profesional
+import urllib.parse
 from dotenv import load_dotenv
 from datetime import datetime
-import sys
 
 # ==========================================
-# CONFIGURATION & CONSTANTS
+# CONFIGURACIÓN
 # ==========================================
 
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = "@testpromilitar" 
-ADMIN_ID = os.getenv("ADMIN_ID")
 
 if not TOKEN:
     raise ValueError("[CRITICAL] No se encontró TELEGRAM_TOKEN en los Secrets de GitHub")
@@ -58,7 +56,15 @@ def obtener_saludo():
 
 
 
+
+
+
+
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
+
+
+
+
 
 
 
@@ -66,7 +72,15 @@ def obtener_saludo():
 
 
 
+
+
+
+
         "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
+
+
+
+
 
 
 
@@ -156,7 +170,6 @@ def broadcast_batch():
         print(f"[ERROR] No se pudo enviar el saludo: {e}")
     
     # 3. ENVIAR LAS ENCUESTAS (ESTAS SON MUDAS 🔕)
-    # Así no saturamos el grupo de comentarios con 3 notificaciones seguidas
     for index, item in enumerate(selected_batch):
         payload = {
             "chat_id": CHAT_ID,
@@ -181,9 +194,7 @@ def broadcast_batch():
         if index < len(selected_batch) - 1:
             time.sleep(DELAY_SECONDS)
 
-    # ==========================================
-    # 4. MENSAJE DE CIERRE (CTA FINAL - MUDO 🔕)
-    # ==========================================
+    # 4. MENSAJE DE CIERRE (MUDO 🔕)
     time.sleep(DELAY_SECONDS)
 
     texto_cierre = (
@@ -192,7 +203,6 @@ def broadcast_batch():
         "¡Cuantos más seamos, mejor nivel habrá! 👇"
     )
 
-    # Reutilizamos el 'link_final'
     keyboard_cierre = {
         "inline_keyboard": [[
             {
@@ -219,49 +229,5 @@ def broadcast_batch():
 
     print("[DONE] Proceso finalizado.")
 
-def enviar_informe_semanal():
-    # Si no hay ADMIN_ID configurado, avisamos por consola y no enviamos nada para evitar spam
-    if not ADMIN_ID:
-        print("[WARNING] No hay ADMIN_ID configurado. Informe omitido.")
-        return
-
-    questions = load_question_ledger()
-    total = len(questions)
-    
-    # Cálculo estimado (21 preguntas al día aprox)
-    dias_restantes = total // 21
-    
-    mensaje = (
-        f"🕵️‍♂️ **INFORME PRIVADO PARA EL MANDO**\n\n"
-        f"✅ Total preguntas en base de datos: {total}\n"
-        f"⏳ Stock estimado para: {dias_restantes} días.\n"
-        f"🤖 Estado del sistema: 100% Operativo"
-    )
-    
-    try:
-        # AQUÍ ESTÁ EL CAMBIO CLAVE: Usamos ADMIN_ID en lugar de CHAT_ID
-        requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-            data={
-                "chat_id": ADMIN_ID,  # <--- ENVÍA SOLO A TI
-                "text": mensaje, 
-                "parse_mode": "Markdown"
-            }
-        )
-        print(f"[SUCCESS] Informe privado enviado al admin ({ADMIN_ID})")
-    except Exception as e:
-        print(f"[ERROR] No se pudo enviar el informe: {e}")
-
-# 2. CAMBIA EL FINAL DEL ARCHIVO POR ESTO:
 if __name__ == "__main__":
-    # Comprobamos si hemos recibido la orden secreta "informe"
-    if len(sys.argv) > 1 and sys.argv[1] == "informe":
-        print("🕵️‍♂️ MODO PRIVADO: Generando informe para el mando...")
-        # ESTA FUNCIÓN SOLO USA ADMIN_ID (TU CHAT PRIVADO)
-        enviar_informe_semanal()
-        
-    # Si NO hay orden, asumimos que es el cron diario normal
-    else:
-        print("📢 MODO PÚBLICO: Enviando preguntas al canal...")
-        # ESTA FUNCIÓN USA CHAT_ID (EL CANAL PÚBLICO)
-        broadcast_batch()
+    broadcast_batch()
