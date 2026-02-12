@@ -6,6 +6,7 @@ import time
 import urllib.parse  # Necesario para el enlace de compartir profesional
 from dotenv import load_dotenv
 from datetime import datetime
+import sys
 
 # ==========================================
 # CONFIGURATION & CONSTANTS
@@ -251,5 +252,14 @@ def enviar_informe_semanal():
     except Exception as e:
         print(f"[ERROR] No se pudo enviar el informe: {e}")
 
+# 2. CAMBIA EL FINAL DEL ARCHIVO POR ESTO:
 if __name__ == "__main__":
-    broadcast_batch()
+    # Si le pasamos la orden "informe", solo envía el reporte al Admin
+    if len(sys.argv) > 1 and sys.argv[1] == "informe":
+        print("[MODO] Generando informe privado...")
+        enviar_informe_semanal()
+        
+    # Si NO le decimos nada, funciona como siempre (Preguntas al grupo)
+    else:
+        print("[MODO] Enviando preguntas diarias al grupo...")
+        broadcast_batch()
