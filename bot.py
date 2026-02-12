@@ -168,6 +168,7 @@ def broadcast_batch():
 
         try:
             response = requests.post(API_URL, data=payload)
+            # IMPORTANTE: Mantenemos la validación de éxito en 200
             if response.status_code == 200:
                 print(f"[SUCCESS] Pregunta {index + 1} enviada.")
             else:
@@ -175,8 +176,47 @@ def broadcast_batch():
         except Exception as e:
             print(f"[EXCEPTION] Error de conexión: {e}")
 
+        # Pequeña pausa entre preguntas
         if index < len(selected_batch) - 1:
             time.sleep(DELAY_SECONDS)
+
+    # ==========================================
+    # 4. MENSAJE DE CIERRE (CTA FINAL)
+    # ==========================================
+    # Esperamos un poco después de la última pregunta para que no salga pegado
+    time.sleep(DELAY_SECONDS)
+
+    texto_cierre = (
+        "🫡 **Misión cumplida por ahora.**\n\n"
+        "Si te están sirviendo estos tests, no seas caimán y pásalo a tu binomio. "
+        "¡Cuantos más seamos, mejor nivel habrá! 👇"
+    )
+
+    # Reutilizamos el 'link_final' que creamos al principio para no repetir código
+    keyboard_cierre = {
+        "inline_keyboard": [[
+            {
+                "text": "📤 COMPARTIR AHORA MISMO",
+                "url": link_final 
+            }
+        ]]
+    }
+
+    try:
+        requests.post(
+            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
+            json={
+                "chat_id": CHAT_ID, 
+                "text": texto_cierre, 
+                "parse_mode": "Markdown",
+                "reply_markup": keyboard_cierre,
+                # Siempre desactivamos notificación en el cierre para no saturar (solo aparece)
+                "disable_notification": True 
+            }
+        )
+        print("[SUCCESS] Mensaje de cierre enviado.")
+    except Exception as e:
+        print(f"[ERROR] Fallo en el cierre: {e}")
 
     print("[DONE] Proceso finalizado.")
 
