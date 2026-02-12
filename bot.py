@@ -254,12 +254,14 @@ def enviar_informe_semanal():
 
 # 2. CAMBIA EL FINAL DEL ARCHIVO POR ESTO:
 if __name__ == "__main__":
-    # Si le pasamos la orden "informe", solo envía el reporte al Admin
+    # Comprobamos si hemos recibido la orden secreta "informe"
     if len(sys.argv) > 1 and sys.argv[1] == "informe":
-        print("[MODO] Generando informe privado...")
+        print("🕵️‍♂️ MODO PRIVADO: Generando informe para el mando...")
+        # ESTA FUNCIÓN SOLO USA ADMIN_ID (TU CHAT PRIVADO)
         enviar_informe_semanal()
         
-    # Si NO le decimos nada, funciona como siempre (Preguntas al grupo)
+    # Si NO hay orden, asumimos que es el cron diario normal
     else:
-        print("[MODO] Enviando preguntas diarias al grupo...")
+        print("📢 MODO PÚBLICO: Enviando preguntas al canal...")
+        # ESTA FUNCIÓN USA CHAT_ID (EL CANAL PÚBLICO)
         broadcast_batch()
