@@ -14,6 +14,26 @@
         "bloque": 1,
         "tema": 1,
         "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Cómo actuará el militar ante las situaciones críticas, consciente de que su intervención, por la proximidad a la población civil, tiene una enorme trascendencia?",
+        "opciones": ["Con serenidad", "Con paciencia", "Con sacrificio", "Con ejemplaridad"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 2.\nActuará con la máxima competencia y espíritu de sacrificio, afrontando las situaciones críticas con serenidad, consciente de que su intervención, por la proximidad a la población civil, tiene una enorme trascendencia."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] En presencia de un superior, ¿deberá corregir las faltas?",
+        "opciones": ["Sí, debe corregir las faltas", "No, no debe corregir las faltas", "Solo si el superior lo permite", "Solo si se trata de una falta grave"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 5.\nEn presencia de un superior, no deberá corregir las faltas o defectos que observe cuando corresponda a aquel hacerlo."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
         "pregunta": "[RROO] ¿Cuál es el primer y más fundamental deber del militar?",
         "opciones": ["La obediencia", "La puntualidad", "La disposición permanente para defender a España", "El compañerismo"],
         "correcta": 2,
