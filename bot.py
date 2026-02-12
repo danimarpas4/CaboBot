@@ -15,6 +15,7 @@ load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = "@testpromilitar" 
+ADMIN_ID = os.getenv("ADMIN_ID")
 
 if not TOKEN:
     raise ValueError("[CRITICAL] No se encontró TELEGRAM_TOKEN en los Secrets de GitHub")
@@ -218,13 +219,35 @@ def broadcast_batch():
     print("[DONE] Proceso finalizado.")
 
 def enviar_informe_semanal():
+    # Si no hay ADMIN_ID configurado, avisamos por consola y no enviamos nada para evitar spam
+    if not ADMIN_ID:
+        print("[WARNING] No hay ADMIN_ID configurado. Informe omitido.")
+        return
+
     questions = load_question_ledger()
     total = len(questions)
-    # 21 preguntas al día (3 preguntas x 7 turnos)
-    mensaje = f"📊 **INFORME SEMANAL CABOBOT**\n\n✅ Tienes {total} preguntas en total.\n⏳ Al ritmo actual, tienes temario para {total // 21} días más."
+    
+    # Cálculo estimado (21 preguntas al día aprox)
+    dias_restantes = total // 21
+    
+    mensaje = (
+        f"🕵️‍♂️ **INFORME PRIVADO PARA EL MANDO**\n\n"
+        f"✅ Total preguntas en base de datos: {total}\n"
+        f"⏳ Stock estimado para: {dias_restantes} días.\n"
+        f"🤖 Estado del sistema: 100% Operativo"
+    )
+    
     try:
-        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-                      data={"chat_id": CHAT_ID, "text": mensaje, "parse_mode": "Markdown"})
+        # AQUÍ ESTÁ EL CAMBIO CLAVE: Usamos ADMIN_ID en lugar de CHAT_ID
+        requests.post(
+            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
+            data={
+                "chat_id": ADMIN_ID,  # <--- ENVÍA SOLO A TI
+                "text": mensaje, 
+                "parse_mode": "Markdown"
+            }
+        )
+        print(f"[SUCCESS] Informe privado enviado al admin ({ADMIN_ID})")
     except Exception as e:
         print(f"[ERROR] No se pudo enviar el informe: {e}")
 
