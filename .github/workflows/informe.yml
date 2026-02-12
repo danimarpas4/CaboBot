@@ -7,7 +7,7 @@ jobs:
   enviar-informe:
     runs-on: ubuntu-latest
     steps:
-      - name: Descargar repositorio
+      - name: Descargar código
         uses: actions/checkout@v3
 
       - name: Instalar Python
@@ -18,9 +18,9 @@ jobs:
       - name: Instalar librerías
         run: pip install python-dotenv requests
 
-      - name: GENERAR INFORME
+      - name: EJECUTAR INFORME
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           ADMIN_ID: ${{ secrets.ADMIN_ID }}
-        # TRUCO: Importamos el bot pero solo ejecutamos la función de informe
-        run: python -c "from bot import enviar_informe_semanal; enviar_informe_semanal()"
+        # AQUI ESTÁ LA CLAVE: Le pasamos la palabra 'informe'
+        run: python bot.py informe
