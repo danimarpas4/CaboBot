@@ -1705,7 +1705,7 @@
         "tema": 1,
         "titulo_tema": "Transmisiones",
         "pregunta": "Según el alfabeto fonético internacional, ¿cuál es la voz para la letra 'Ñ'?",
-        "opciones": ["NOÑO", "ÑU", "NOVEMBER", "ÑANDU"],
+        "opciones": ["ÑOÑO", "ÑU", "NOVEMBER", "ÑANDU"],
         "correcta": 0,
         "explicacion": "📚 Apartado 4.1 (Tabla).\nLetra N: NOVEMBER. Letra Ñ: ÑOÑO."
     },
