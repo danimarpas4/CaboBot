@@ -50,40 +50,12 @@ def obtener_saludo():
     # 2. Lógica de la hora (Madrid UTC+1)
     hora = (time.gmtime().tm_hour + 1) % 24 
     
-    # 3. Frases de felicitación nocturna
+    # 3. Frases de felicitación nocturna (Versión limpia)
     felicitaciones = [
         "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
-
-
-
-
-
-
-
         "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
-
-
-
-
-
-
-
         "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
-
-
-
-
-
-
-
         "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
-
-
-
-
-
-
-
         "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
     
@@ -131,7 +103,7 @@ def broadcast_batch():
 
     print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
 
-    # 1. CONFIGURACIÓN DEL BOTÓN DE COMPARTIR
+    # 1. CONFIGURACIÓN DEL BOTÓN DE COMPARTIR (Lo necesitamos aquí para el saludo)
     url_invitacion = "https://t.me/testpromilitar" 
     texto_compartir = "🪖 ¡Compañero! Estoy preparando el ascenso con este bot. Envía tests diarios y tiene cuenta atrás para el examen. ¡Únete aquí!"
     
@@ -139,7 +111,7 @@ def broadcast_batch():
     texto_encoded = urllib.parse.quote(texto_compartir)
     link_final = f"https://t.me/share/url?url={url_invitacion}&text={texto_encoded}"
 
-    keyboard = {
+    keyboard_saludo = {
         "inline_keyboard": [[
             {
                 "text": "📢 RECOMENDAR A UN COMPAÑERO",
@@ -162,7 +134,7 @@ def broadcast_batch():
                 "chat_id": CHAT_ID, 
                 "text": saludo, 
                 "parse_mode": "Markdown",
-                "reply_markup": keyboard,
+                "reply_markup": keyboard_saludo,
                 "disable_notification": es_noche 
             }
         )
@@ -171,15 +143,38 @@ def broadcast_batch():
     
     # 3. ENVIAR LAS ENCUESTAS (ESTAS SON MUDAS 🔕)
     for index, item in enumerate(selected_batch):
+        
+        # --- LÓGICA DE ETIQUETAS VISUALES ---
+        tema = item.get("titulo_tema", "General")
+        icono = "📜" # Icono por defecto
+        
+        # Mapeo inteligente de iconos
+        if "Constitución" in tema: icono = "🇪🇸"
+        elif "Penal" in tema: icono = "⚖️"
+        elif "RROO" in tema or "Reales Ordenanzas" in tema: icono = "🪖"
+        elif "Ética" in tema: icono = "🧠"
+        elif "Administrativo" in tema: icono = "📂"
+        elif "Igualdad" in tema: icono = "🤝"
+        elif "Internacional" in tema: icono = "🌍"
+
+        # Formateamos la pregunta
+        pregunta_formateada = f"{icono} [{tema.upper()}]\n\n{item['pregunta']}"
+        
+        # CONTROL DE SEGURIDAD (Max 300 chars)
+        if len(pregunta_formateada) > 300:
+            pregunta_final = item["pregunta"]
+        else:
+            pregunta_final = pregunta_formateada
+
         payload = {
             "chat_id": CHAT_ID,
-            "question": item["pregunta"],
+            "question": pregunta_final, 
             "options": json.dumps(item["opciones"]),
             "type": "quiz",
             "correct_option_id": item["correcta"],
             "explanation": item.get("explicacion", ""),
             "is_anonymous": True,
-            "disable_notification": True # <--- SIEMPRE SILENCIO AQUÍ
+            "disable_notification": True # <--- MANTENEMOS EL SILENCIO
         }
 
         try:
@@ -203,13 +198,25 @@ def broadcast_batch():
         "¡Cuantos más seamos, mejor nivel habrá! 👇"
     )
 
+    # TU ENLACE (Ojo: ¡Cámbialo por el tuyo real!)
+    url_sugerencias = "https://t.me/danimtnez95" 
+
     keyboard_cierre = {
-        "inline_keyboard": [[
-            {
-                "text": "📤 COMPARTIR AHORA MISMO",
-                "url": link_final 
-            }
-        ]]
+        "inline_keyboard": [
+            [
+                {
+                    "text": "📤 COMPARTIR AHORA MISMO",
+                    "url": link_final 
+                }
+            ],
+            [
+                # --- ESTE ES EL BOTÓN NUEVO ---
+                {
+                    "text": "📝 ENVIAR UNA PREGUNTA",
+                    "url": url_sugerencias
+                }
+            ]
+        ]
     }
 
     try:
