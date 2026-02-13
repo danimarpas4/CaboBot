@@ -193,7 +193,7 @@ def broadcast_batch():
     time.sleep(DELAY_SECONDS)
 
     texto_cierre = (
-        "🫡 **Misión cumplida por ahora.**\n\n"
+        "🫡 **¡Misión cumplida por ahora!**\n\n"
         "Si te están sirviendo estos tests, no seas caimán y pásalo a tu binomio. "
         "¡Cuantos más seamos, mejor nivel habrá! 👇"
     )
