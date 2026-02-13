@@ -3,52 +3,32 @@ name: Enviar Preguntas Diarias
 on:
   schedule:
     # -----------------------------------------------------------
-    # HORARIO UTC (GitHub) vs HORA ESPAÑA (Invierno UTC+1)
+    # HORARIO UTC (GitHub) -> HORA ESPAÑA (UTC+1)
+    # 05:00 UTC = 06:00 España (Inicio)
+    # 22:00 UTC = 23:00 España (Fin)
+    # El '*' en medio significa "Todos los días del mes y semana"
     # -----------------------------------------------------------
-    
-    # 🌅 TURNO 1 (08:00 España)
-    - cron: '0 7 * * *'
-    
-    # ☕ TURNO 2 (10:00 España)
-    - cron: '0 9 * * *'
-    
-    # ☀️ TURNO 3 (12:00 España)
-    - cron: '0 11 * * *'
-    
-    # 🍽️ TURNO 4 (14:00 España)
-    - cron: '0 13 * * *'
-    
-    # 🌆 TURNO 5 (16:00 España)
-    - cron: '0 15 * * *'
-    
-    # 🏃 TURNO 6 (19:00 España)
-    - cron: '0 18 * * *'
-    
-    # 🌙 TURNO 7 (21:00 España)
-    - cron: '0 20 * * *'
-
-    # 🦉 CIERRE DE DÍA (23:00 España)
-    - cron: '0 22 * * *'
+    - cron: '0 5-22 * * *'
   
-  workflow_dispatch:      # Permite activar el botón manual
+  workflow_dispatch:      # Mantiene el botón manual por si acaso
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Descargar Repositorio
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Instalar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
+      - name: Instalar Dependencias
         run: pip install python-dotenv requests
 
-      - name: Run Bot
+      - name: Ejecutar Bot
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          ADMIN_ID: ${{ secrets.ADMIN_ID }}  # <--- AÑADE ESTO
-        run: python bot.py
+          # Eliminado ADMIN_ID (ya no es necesario)
+        run: python bot.pys

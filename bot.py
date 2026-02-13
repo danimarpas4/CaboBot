@@ -22,33 +22,32 @@ if not TOKEN:
 API_URL = f"https://api.telegram.org/bot{TOKEN}/sendPoll"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# ÚNICA FUENTE DE DATOS: preguntas.json
 FINAL_DB_PATH = os.path.join(BASE_DIR, 'preguntas.json')
 
-BATCH_SIZE = 3      
+# --- CONFIGURACIÓN DE INTENSIDAD ---
+# 2 preguntas cada hora = 36 al día.
+BATCH_SIZE = 2      
 DELAY_SECONDS = 3   
 
 def load_question_ledger():
     if not os.path.exists(FINAL_DB_PATH):
-        print(f"[CRITICAL] No se encuentra el archivo {FINAL_DB_PATH}. El bot no enviará nada.")
         return []
-
     try:
         with open(FINAL_DB_PATH, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data
+            return json.load(f)
     except Exception as e:
-        print(f"[CRITICAL] Error leyendo el archivo JSON: {e}")
+        print(f"[CRITICAL] Error JSON: {e}")
         return []
 
 def obtener_saludo():
-    # 1. Configuración de la fecha del examen: 25 de Febrero de 2026
+    # 1. Configuración de fechas
     fecha_examen = datetime(2026, 2, 25) 
     hoy = datetime.now()
     dias_restantes = (fecha_examen - hoy).days
     
-    # 2. Lógica de la hora (Madrid UTC+1)
+    # 2. Datos temporales
     hora = (time.gmtime().tm_hour + 1) % 24 
+    dia_semana = hoy.weekday() # 0=Lunes, 6=Domingo
     
     # 3. Frases de felicitación nocturna
     felicitaciones = [
@@ -59,7 +58,7 @@ def obtener_saludo():
         "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
     ]
     
-    # 4. Construcción del mensaje de Cuenta Atrás
+    # 4. Construcción del mensaje BASE (Cuenta Atrás)
     if dias_restantes > 0:
         base_saludo = f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias_restantes} días para el examen!** 🎯\n\n"
     elif dias_restantes == 0:
@@ -67,22 +66,29 @@ def obtener_saludo():
     else:
         base_saludo = "✅ **Ciclo de examen finalizado. ¡Esperamos vuestros aptos!** 🥂\n\n"
     
-    # 5. Saludos por turnos
+    # 5. DETECTAR SI ES FIN DE SEMANA (AÑADIDO NUEVO)
+    # Si es Sábado (5) o Domingo (6), añadimos mensaje de motivación extra
+    if dia_semana >= 5:
+        mensaje_finde = "🚀 **¡FIN DE SEMANA PRE-EXAMEN!**\nMientras otros descansan, nosotros apretamos más, así que ahí va una buena tanda. ¡Sin piedad! 🔥\n\n"
+    else:
+        mensaje_finde = "" # Entre semana no ponemos nada extra
+
+    # Unimos el mensaje de finde al principio del saludo
+    saludo_final = mensaje_finde + base_saludo
+
+    # 6. Saludos por turnos horarios
     if 6 <= hora < 13:
-        return base_saludo + "🌅 **Turno de Mañana**: Aquí tenéis las preguntas de hoy."
+        return saludo_final + "🌅 **Turno de Mañana**: ¡Vamos a por todas!"
     elif 13 <= hora < 16:
-        return base_saludo + "☀️ **Turno de Mediodía**: ¡Aprovechad el descanso para repasar!"
+        return saludo_final + "☀️ **Turno de Mediodía**: ¡Prohibido rendirse!"
     elif 16 <= hora < 20:
-        return base_saludo + "🌆 **Turno de Tarde**: ¡Vamos con otra tanda de estudio!"
+        return saludo_final + "🌆 **Turno de Tarde**: ¡Seguimos sumando!"
     elif 20 <= hora < 23:
         random.seed(time.strftime("%Y%m%d"))
         frase_hoy = random.choice(felicitaciones)
-        
-        # Reset de semilla para las preguntas siguientes
         semilla_unificada = time.strftime("%Y%m%d%H")
         random.seed(semilla_unificada)
-        
-        return (f"{base_saludo}🌙 **Turno de Noche**: ¡Último esfuerzo del día!\n\n"
+        return (f"{saludo_final}🌙 **Turno de Noche**: ¡Último esfuerzo!\n\n"
                 f"🏆 **CUADRO DE HONOR**\n"
                 f"{frase_hoy}")
     else:
@@ -90,30 +96,23 @@ def obtener_saludo():
 
 def broadcast_batch():
     questions_pool = load_question_ledger()
-    
-    if not questions_pool:
-        return
+    if not questions_pool: return
 
-    # --- LÓGICA ANTI-REPETICIÓN ---
     semilla_unificada = time.strftime("%Y%m%d%H")
     random.seed(semilla_unificada)
-    
     random.shuffle(questions_pool)
     selected_batch = questions_pool[:BATCH_SIZE]
 
-    print(f"[INIT] Enviando lote real con semilla: {semilla_unificada}")
+    print(f"[INIT] Enviando lote de {BATCH_SIZE} preguntas. Semilla: {semilla_unificada}")
 
-    # 1. BOTÓN DE COMPARTIR PARA EL SALUDO
+    # 1. BOTÓN DE COMPARTIR (SALUDO)
     url_invitacion = "https://t.me/testpromilitar" 
     texto_compartir = "🪖 ¡Compañero! Estoy preparando el ascenso con este bot. Envía tests diarios y tiene cuenta atrás para el examen. ¡Únete aquí!"
-    
     texto_encoded = urllib.parse.quote(texto_compartir)
     link_final = f"https://t.me/share/url?url={url_invitacion}&text={texto_encoded}"
 
     keyboard_saludo = {
-        "inline_keyboard": [[
-            {"text": "📢 RECOMENDAR A UN COMPAÑERO", "url": link_final}
-        ]]
+        "inline_keyboard": [[{"text": "📢 RECOMENDAR A UN COMPAÑERO", "url": link_final}]]
     }
 
     # 2. ENVIAR SALUDO
@@ -139,7 +138,6 @@ def broadcast_batch():
     for index, item in enumerate(selected_batch):
         tema = item.get("titulo_tema", "General")
         icono = "📜" 
-        
         if "Constitución" in tema: icono = "🇪🇸"
         elif "Penal" in tema: icono = "⚖️"
         elif "RROO" in tema or "Reales Ordenanzas" in tema: icono = "🪖"
@@ -149,12 +147,7 @@ def broadcast_batch():
         elif "Internacional" in tema: icono = "🌍"
 
         pregunta_formateada = f"{icono} [{tema.upper()}]\n\n{item['pregunta']}"
-        
-        # CONTROL DE SEGURIDAD
-        if len(pregunta_formateada) > 300:
-            pregunta_final = item["pregunta"]
-        else:
-            pregunta_final = pregunta_formateada
+        pregunta_final = item["pregunta"] if len(pregunta_formateada) > 300 else pregunta_formateada
 
         payload = {
             "chat_id": CHAT_ID,
@@ -169,18 +162,13 @@ def broadcast_batch():
 
         try:
             requests.post(API_URL, data=payload)
-            print(f"[SUCCESS] Pregunta {index + 1} enviada.")
-        except Exception as e:
-            print(f"[EXCEPTION] Error de conexión: {e}")
+        except Exception: pass
+        if index < len(selected_batch) - 1: time.sleep(DELAY_SECONDS)
 
-        if index < len(selected_batch) - 1:
-            time.sleep(DELAY_SECONDS)
-
-    # 4. MENSAJE DE CIERRE (VUELVE A SER SIMPLE)
+    # 4. MENSAJE DE CIERRE (1 SOLO BOTÓN)
     time.sleep(DELAY_SECONDS)
-
     texto_cierre = (
-        "🫡 **Misión cumplida por ahora.**\n\n"
+        "🫡 **Objetivo cumplido por esta hora.**\n\n"
         "Si te están sirviendo estos tests, no seas caimán y pásalo a tu binomio. "
         "¡Cuantos más seamos, mejor nivel habrá! 👇"
     )
@@ -202,9 +190,7 @@ def broadcast_batch():
                 "disable_notification": True 
             }
         )
-        print("[SUCCESS] Mensaje de cierre enviado.")
-    except Exception as e:
-        print(f"[ERROR] Fallo en el cierre: {e}")
+    except Exception: pass
 
 if __name__ == "__main__":
     broadcast_batch()
