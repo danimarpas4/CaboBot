@@ -2554,7 +2554,7 @@
         "bloque": 3,
         "tema": 5,
         "titulo_tema": "Teoría del Tiro",
-        "pregunta": "En un cartucho de arma ligera, ¿dónde se aloja la cápsula fulminante?",
+        "pregunta": "En un cartucho, ¿dónde se aloja la cápsula fulminante?",
         "opciones": ["En la ojiva de la bala", "En el cuerpo de la vaina", "En el culote de la vaina", "En el interior de la carga de proyección"],
         "correcta": 2,
         "explicacion": "📚 Balística Interior.\nEn la parte inferior de la vaina se encuentra el culote, donde se aloja la cápsula fulminante, artificio de dar fuego."
@@ -2568,6 +2568,146 @@
         "opciones": ["Que explota por impacto", "Que contiene un núcleo duro perforante", "Que contiene una mezcla química que se inflama al contacto con el aire o por impacto", "Que deja una estela visible en su trayectoria"],
         "correcta": 2,
         "explicacion": "📚 Tipos de munición.\nMunición con balas incendiarias: la munición... con balas que contengan una mezcla química que se inflama al contacto con el aire o por impacto."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es el agrupamiento?",
+        "opciones": ["La tendencia de los disparos a concentrarse en un punto determinado", "La probabilidad de acertar en el blanco", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del agrupamiento"],
+        "correcta": 2,
+        "explicacion": "📚 Agrupamiento.\nEl conjunto de impactos obtenidos sobre el terreno o blanco, con un arma que dispara un número limitado de proyectiles con los mismos datos de tiro."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es el centro de impactos?",
+        "opciones": ["El centro geométrico del agrupamiento", "La probabilidad de acertar en el blanco", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del agrupamiento"],
+        "correcta": 0,
+        "explicacion": "📚 Agrupamiento.\nEl centro geométrico del agrupamiento es el punto central del conjunto de impactos obtenidos sobre el terreno o blanco."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es la desviación?",
+        "opciones": ["Es la derivación de los puntos de caída de los proyectiles respecto al plano de tiro", "Es la desviación de los puntos de caída de los proyectiles respecto al plano de tiro", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del agrupamiento"],
+        "correcta": 1,
+        "explicacion": "📚 Agrupamiento.\nEs la desviación de los puntos de caída de los proyectiles respecto al plano de tiro, producida por el movimiento de rotación producido por las estrías."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es el tiro exacto?",
+        "opciones": ["Es aquel que es correcto y preciso", "Aquel que corresponde a un agrupamiento de pequeña magnitud", "El conjunto de impactos obtenidos sobre el terreno o blanco", "Aquel que corresponde a un agrupamiento cuyo centro de impactos coincide con el centro del blanco."],
+        "correcta": 0,
+        "explicacion": "📚 Tiro exacto.\nEl tiro exacto es aquel que es correcto y preciso."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es el tiro preciso?",
+        "opciones": ["Es aquel que es correcto y preciso", "Aquel que corresponde a un agrupamiento de pequeña magnitud", "El conjunto de impactos obtenidos sobre el terreno o blanco", "Aquel que corresponde a un agrupamiento cuyo centro de impactos coincide con el centro del blanco."],
+        "correcta": 1,
+        "explicacion": "📚 Tiro preciso.\nEl tiro preciso es aquel que corresponde a un agrupamiento de pequeña magnitud."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es el tiro correcto o corregido?",
+        "opciones": ["Es aquel que es correcto y preciso", "Aquel que corresponde a un agrupamiento de pequeña magnitud", "El conjunto de impactos obtenidos sobre el terreno o blanco", "Aquel que corresponde a un agrupamiento cuyo centro de impactos coincide con el centro del blanco."],
+        "correcta": 3,
+        "explicacion": "📚 Tiro correcto o corregido.\nEl tiro correcto o corregido es aquel que corresponde a un agrupamiento cuyo centro de impactos coincide con el centro del blanco."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es la dispersión?",
+        "opciones": ["Es la desviación de los puntos de caída de los proyectiles respecto al plano de tiro", "Fenómeno que se manifiesta por la distribuciión sobre una zona, al efectuar una serie de disparos con el mismo arma", "Cuando el tte se queda empantallao y no responde", "Aquel que corresponde a un agrupamiento cuyo centro de impactos coincide con el centro del blanco."],
+        "correcta": 1,
+        "explicacion": "📚 Dispersión.\nLa dispersión es un fenómeno que se manifiesta por la distribución sobre una zona, al efectuar una serie de disparos con el mismo arma, en idénticas condiciones y sobre el mismo objetivo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Cuáles pueden ser las causas de la dispersión?",
+        "opciones": ["Tipo de arma", "Desgaste y temperatura del arma", "La cadencia del arma", "Que el tirador no sepa apuntar"],
+        "correcta": 1,
+        "explicacion": "📚 Dispersión.\nLas causas de la dispersión son múltiples: desgaste y temperatura del arma, pequeñas variacones en las características del proyectil, condiciones atmosféricas, etc."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "Si el error del disparo es mayor que el error máximo, el disparo se llama ________",
+        "opciones": ["Tenso", "Anormal", "Subnormal", "Erróneo"],
+        "correcta": 1,
+        "explicacion": "📚 Dispersión.\nSi el error del disparo es mayor que el error máximo, el disparo se llama anormal."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Cuál es el objetivo del feugo de destrucción?",
+        "opciones": ["Destruir el blanco", "Hacer daño a los civiles", "Proteger a los civiles", "Inutilizar al personal, medios y obras de fortificación del enemigo."],
+        "correcta": 3,
+        "explicacion": "📚 Feugo de destrucción.\nInutilizar al personal, medios y obras de fortificación del enemigo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Cuál es el objetivo del fuego de hostigamiento?",
+        "opciones": ["Destruir el blanco", "Hacer peligrosa la permanencia en ciertas zonas", "Inutilizar al personal, medios y obras de fortificación del enemigo.", "Obligar al enemigo a retirarse"],
+        "correcta": 1,
+        "explicacion": "📚 Fuego de hostigamiento.\nHacer peligrosa la permanencia en ciertas zonas, dificultando la actividad o el descanso del enemigo."
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Cuando se dice que un tiro es tenso?",
+        "opciones": ["Cuando el ángulo de tiro está comprendido entre 240 y 800 milésimas.", "Cuando el ángulo de tiro es inferior a 240 milésimas(13, 5º)", "Cuando el ángulo de tiro es inferior a 250 milésimas(13, 5º)", "Ángulo superior a 800 milésimas."],
+        "correcta": 1,
+        "explicacion": "📚 Tiro tenso.\nCuando el ángulo de tiro es inferior a 240 milésimas(13, 5º)"
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es un tiro de flanco?",
+        "opciones": ["Cuando el plano de tiro incide perpendicularmente sobre el plano anterior del objetivo", "Cuando el plano de tiro incide perpendicularmente sobre el plano posterior del objetivo", "Cuando el plano de tiro no incide", "en cualquier otro caso distinto al de enfilada"],
+        "correcta": 1,
+        "explicacion": "📚 Tiro de flanco.\nCuando el plano de tiro incide perpendicularmente sobre el plano posterior del objetivo"
+    },
+    {
+        "capitulo": 2,
+        "bloque": 3,
+        "tema": 5,
+        "titulo_tema": "Teoría del Tiro",
+        "pregunta": "¿Qué es un arma de repetición?",
+        "opciones": ["Arma que se recarga después de cada disparo", "Arma que solo puede dispararse una vez", "Arma que requiere un mecanismo especial para disparar", "Arma que se dispara con un solo dedo"],
+        "correcta": 0,
+        "explicacion": "📚 Arma de repetición.\nArma que se recarga después de cada disparo, mediante un mecanismo accionado por el tirador que introduce en el cañón un cartucho colocado previamente en el depósito de municiones."
     },
     {
         "capitulo": 2,
