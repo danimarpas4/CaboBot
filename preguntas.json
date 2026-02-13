@@ -953,6 +953,16 @@
         "capitulo": 1,
         "bloque": 4,
         "tema": 2,
+        "titulo_tema": "El militar que sin incurrir en otros delitos",
+        "pregunta": "¿A quién se aplica el Código Penal Militar además de a las Fuerzas Armadas?",
+        "opciones": ["A la Policía Nacional en misiones internacionales", "A la Guardia Civil en tiempo de conflicto armado o estado de sitio", "A los funcionarios civiles de Defensa", "A cualquier ciudadano en zona militar"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nSe aplica a la Guardia Civil en tiempo de conflicto armado, estado de sitio, misiones militares o integrados en unidades de las FAS."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
         "titulo_tema": "Código Penal Militar (LO 14/2015)",
         "pregunta": "A efectos del Código Penal Militar, ¿quién se considera 'centinela'?",
         "opciones": ["Solo quien está en una garita", "El militar que, en acto de servicio de armas y cumpliendo consigna, guarda un puesto con arma de fuego a la vista", "Cualquier militar de guardia", "El Oficial de Guardia"],
