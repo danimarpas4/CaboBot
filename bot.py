@@ -98,22 +98,29 @@ def broadcast_batch():
     questions_pool = load_question_ledger()
     if not questions_pool: return
 
-    # --- NUEVA LÓGICA DE INTENSIDAD (FIN DE SEMANA) ---
+    # --- NUEVA LÓGICA DE INTENSIDAD ---
     dia_semana = datetime.now().weekday() # 0=Lunes, 6=Domingo
-    if dia_semana >= 5:
-        lote_actual = 10  # Munición pesada en fin de semana
+    hora_actual = (time.gmtime().tm_hour + 1) % 24 # La misma lógica de hora que ya usabas
+
+    if dia_semana >= 5: # Finde (Sábado o Domingo)
+        # Elegimos a qué horas exactas queremos que envíe las 10 preguntas
+        horas_ataque = [10, 14, 18, 22] 
+        
+        if hora_actual not in horas_ataque:
+            print(f"[INFO] Fin de semana. Hora {hora_actual}:00. Alto el fuego, no enviamos nada.")
+            return # Cortamos la ejecución aquí. No se envía nada.
+            
+        lote_actual = 10  # Si coincide la hora, disparamos 10
     else:
-        lote_actual = 2   # Munición estándar entre semana
+        lote_actual = 2   # Entre semana seguimos a 2 por hora
 
     semilla_unificada = time.strftime("%Y%m%d%H")
     random.seed(semilla_unificada)
     random.shuffle(questions_pool)
-    
-    # Usamos lote_actual en lugar de BATCH_SIZE
     selected_batch = questions_pool[:lote_actual]
 
     print(f"[INIT] Enviando lote de {lote_actual} preguntas. Semilla: {semilla_unificada}")
-    # ... (el resto de tu código sigue igual)
+   
 
     # 1. BOTÓN DE COMPARTIR (SALUDO)
     url_invitacion = "https://t.me/testpromilitar" 
