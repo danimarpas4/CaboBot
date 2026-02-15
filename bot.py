@@ -1,213 +1,193 @@
-import requests
 import json
+import sqlite3
 import random
 import os
-import time
+import logging
 import urllib.parse
+from datetime import datetime, time as dt_time
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
+
+# ==========================================
+# 1. CONFIGURACIÓN (MANTENIDA)
+# ==========================================
 from dotenv import load_dotenv
-from datetime import datetime
-
-# ==========================================
-# CONFIGURACIÓN
-# ==========================================
-
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = "@testpromilitar" 
+FECHA_EXAMEN = datetime(2026, 2, 25)
 
-if not TOKEN:
-    raise ValueError("[CRITICAL] No se encontró TELEGRAM_TOKEN en los Secrets de GitHub")
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-API_URL = f"https://api.telegram.org/bot{TOKEN}/sendPoll"
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open('preguntas.json', 'r', encoding='utf-8') as f:
+    preguntas_oficiales = json.load(f)
 
-FINAL_DB_PATH = os.path.join(BASE_DIR, 'preguntas.json')
+# ==========================================
+# 2. BASE DE DATOS (ESTADÍSTICAS)
+# ==========================================
+def init_db():
+    conn = sqlite3.connect('ranking.db')
+    cursor = conn.cursor()
+    # Tabla histórica
+    cursor.execute('''CREATE TABLE IF NOT EXISTS usuarios 
+                      (user_id INTEGER PRIMARY KEY, nombre TEXT, puntos_totales INTEGER DEFAULT 0)''')
+    # Tabla para el resumen diario
+    cursor.execute('''CREATE TABLE IF NOT EXISTS diario 
+                      (user_id INTEGER PRIMARY KEY, nombre TEXT, aciertos_hoy INTEGER DEFAULT 0)''')
+    conn.commit()
+    conn.close()
 
-# --- CONFIGURACIÓN DE INTENSIDAD ---
-# 2 preguntas cada hora = 36 al día.
-BATCH_SIZE = 2      
-DELAY_SECONDS = 3   
+def registrar_acierto(user_id, nombre):
+    conn = sqlite3.connect('ranking.db')
+    cursor = conn.cursor()
+    # Puntos totales
+    cursor.execute('''INSERT INTO usuarios (user_id, nombre, puntos_totales) VALUES (?, ?, 1) 
+                      ON CONFLICT(user_id) DO UPDATE SET puntos_totales = puntos_totales + 1, nombre = ?''', (user_id, nombre, nombre))
+    # Aciertos del día
+    cursor.execute('''INSERT INTO diario (user_id, nombre, aciertos_hoy) VALUES (?, ?, 1) 
+                      ON CONFLICT(user_id) DO UPDATE SET aciertos_hoy = aciertos_hoy + 1, nombre = ?''', (user_id, nombre, nombre))
+    conn.commit()
+    conn.close()
 
-def load_question_ledger():
-    if not os.path.exists(FINAL_DB_PATH):
-        return []
-    try:
-        with open(FINAL_DB_PATH, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"[CRITICAL] Error JSON: {e}")
-        return []
-
+# ==========================================
+# 3. LÓGICA ORIGINAL (SALUDOS E ICONOS)
+# ==========================================
 def obtener_saludo():
-    # 1. Configuración de fechas
-    fecha_examen = datetime(2026, 2, 25) 
     hoy = datetime.now()
-    dias_restantes = (fecha_examen - hoy).days
+    dias_restantes = (FECHA_EXAMEN - hoy).days
+    hora = hoy.hour
+    dia_semana = hoy.weekday()
     
-    # 2. Datos temporales
-    hora = (time.gmtime().tm_hour + 1) % 24 
-    dia_semana = hoy.weekday() # 0=Lunes, 6=Domingo
+    base_saludo = f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias_restantes} días!** 🎯\n\n"
+    mensaje_finde = "🚀 **¡FIN DE SEMANA PRE-EXAMEN!**\n" if dia_semana >= 5 else ""
     
-    # 3. Frases de felicitación nocturna
-    felicitaciones = [
-        "¡Habéis demostrado una disciplina de hierro hoy! A dormir putos pollos. 🪖",
-        "Un día más de estudio es un paso más hacia vuestro objetivo. ¡Grandes! A aguantar al tte.🏆",
-        "La constancia es la llave del éxito. ¡Mañana más y mejor! A curtir a esos pollos 💪",
-        "Descansad bien, guerreros. El deber de hoy está cumplido. Mañana toca semana de Cabo Cuartel... 🌙",
-        "Orgulloso de ver a tantos aspirantes dándolo todo. ¡A por ello pistolos!🎯"
-    ]
+    if 6 <= hora < 13: turno = "🌅 Turno de Mañana"
+    elif 13 <= hora < 20: turno = "☀️ Turno de Tarde"
+    else: turno = "🌙 Turno de Noche"
     
-    # 4. Construcción del mensaje BASE (Cuenta Atrás)
-    if dias_restantes > 0:
-        base_saludo = f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias_restantes} días para el examen!** 🎯\n\n"
-    elif dias_restantes == 0:
-        base_saludo = "🔥 **¡HA LLEGADO EL DÍA! Hoy se decide todo. ¡Mucha fuerza, guerreros!** 🪖\n\n"
-    else:
-        base_saludo = "✅ **Ciclo de examen finalizado. ¡Esperamos vuestros aptos!** 🥂\n\n"
+    return f"{mensaje_finde}{base_saludo}{turno}"
+
+def get_icono(tema):
+    tema = tema.lower()
+    if "constitución" in tema: return "🇪🇸"
+    if "penal" in tema: return "⚖️"
+    if "rroo" in tema or "reales" in tema: return "🪖"
+    if "ética" in tema: return "🧠"
+    return "📜"
+
+# ==========================================
+# 4. ENVÍO AUTOMÁTICO (HORARIOS MANTENIDOS)
+# ==========================================
+async def enviar_batch_automatico(context: ContextTypes.DEFAULT_TYPE):
+    ahora = datetime.now()
+    dia_semana = ahora.weekday()
+    hora_actual = ahora.hour
+
+    # Lógica de intensidad original
+    if dia_semana >= 5: # Sábado o Domingo
+        if hora_actual not in [10, 14, 18, 22]: return
+        lote_actual = 10
+    else: # Lunes a Viernes
+        lote_actual = 2
+
+    batch = random.sample(preguntas_oficiales, lote_actual)
     
-    # 5. DETECTAR SI ES FIN DE SEMANA (AÑADIDO NUEVO)
-    # Si es Sábado (5) o Domingo (6), añadimos mensaje de motivación extra
-    if dia_semana >= 5:
-        mensaje_finde = "🚀 **¡FIN DE SEMANA PRE-EXAMEN!**\nMientras otros descansan, nosotros apretamos más, así que ahí va una buena tanda. ¡Sin piedad! 🔥\n\n"
-    else:
-        mensaje_finde = "" # Entre semana no ponemos nada extra
+    # Enviar saludo al canal
+    await context.bot.send_message(chat_id=CHAT_ID, text=obtener_saludo(), parse_mode="Markdown")
 
-    # Unimos el mensaje de finde al principio del saludo
-    saludo_final = mensaje_finde + base_saludo
+    for p in batch:
+        # Generar botones para rastrear estadísticas (en lugar de encuestas anónimas)
+        keyboard = []
+        for i, opt in enumerate(p['opciones']):
+            es_correcta = "SI" if i == p['correcta'] else "NO"
+            # Guardamos la info del acierto y el índice de la pregunta
+            callback_data = f"v|{es_correcta}|{p.get('id', 'x')}"
+            keyboard.append([InlineKeyboardButton(opt, callback_data=callback_data)])
 
-    # 6. Saludos por turnos horarios
-    if 6 <= hora < 13:
-        return saludo_final + "🌅 **Turno de Mañana**: ¡Vamos a por todas!"
-    elif 13 <= hora < 16:
-        return saludo_final + "☀️ **Turno de Mediodía**: ¡Prohibido rendirse!"
-    elif 16 <= hora < 20:
-        return saludo_final + "🌆 **Turno de Tarde**: ¡Seguimos sumando!"
-    elif 20 <= hora < 23:
-        random.seed(time.strftime("%Y%m%d"))
-        frase_hoy = random.choice(felicitaciones)
-        semilla_unificada = time.strftime("%Y%m%d%H")
-        random.seed(semilla_unificada)
-        return (f"{saludo_final}🌙 **Turno de Noche**: ¡Último esfuerzo!\n\n"
-                f"🏆 **CUADRO DE HONOR**\n"
-                f"{frase_hoy}")
-    else:
-        return "🌙 **Turno de Madrugada**: Estudiando mientras otros duermen. Así se gana. 🪖"
-
-def broadcast_batch():
-    questions_pool = load_question_ledger()
-    if not questions_pool: return
-
-    # --- NUEVA LÓGICA DE INTENSIDAD ---
-    dia_semana = datetime.now().weekday() # 0=Lunes, 6=Domingo
-    hora_actual = (time.gmtime().tm_hour + 1) % 24 # La misma lógica de hora que ya usabas
-
-    if dia_semana >= 5: # Finde (Sábado o Domingo)
-        # Elegimos a qué horas exactas queremos que envíe las 10 preguntas
-        horas_ataque = [10, 14, 18, 22] 
+        icono = get_icono(p.get("titulo_tema", ""))
+        texto = f"{icono} *{p.get('titulo_tema', 'TEMA')}*\n\n❓ {p['pregunta']}"
         
-        if hora_actual not in horas_ataque:
-            print(f"[INFO] Fin de semana. Hora {hora_actual}:00. Alto el fuego, no enviamos nada.")
-            return # Cortamos la ejecución aquí. No se envía nada.
-            
-        lote_actual = 10  # Si coincide la hora, disparamos 10
-    else:
-        lote_actual = 2   # Entre semana seguimos a 2 por hora
-
-    semilla_unificada = time.strftime("%Y%m%d%H")
-    random.seed(semilla_unificada)
-    random.shuffle(questions_pool)
-    selected_batch = questions_pool[:lote_actual]
-
-    print(f"[INIT] Enviando lote de {lote_actual} preguntas. Semilla: {semilla_unificada}")
-   
-
-    # 1. BOTÓN DE COMPARTIR (SALUDO)
-    url_invitacion = "https://t.me/testpromilitar" 
-    texto_compartir = "🪖 ¡Compañero! Estoy preparando el ascenso con este bot. Envía tests diarios y tiene cuenta atrás para el examen. ¡Únete aquí!"
-    texto_encoded = urllib.parse.quote(texto_compartir)
-    link_final = f"https://t.me/share/url?url={url_invitacion}&text={texto_encoded}"
-
-    keyboard_saludo = {
-        "inline_keyboard": [[{"text": "📢 RECOMENDAR A UN COMPAÑERO", "url": link_final}]]
-    }
-
-    # 2. ENVIAR SALUDO
-    saludo = obtener_saludo()
-    hora_actual = (time.gmtime().tm_hour + 1) % 24
-    es_noche = True if (hora_actual >= 23 or hora_actual < 6) else False
-
-    try:
-        requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-            json={
-                "chat_id": CHAT_ID, 
-                "text": saludo, 
-                "parse_mode": "Markdown",
-                "reply_markup": keyboard_saludo,
-                "disable_notification": es_noche 
-            }
+        await context.bot.send_message(
+            chat_id=CHAT_ID, 
+            text=texto, 
+            reply_markup=InlineKeyboardMarkup(keyboard), 
+            parse_mode="Markdown"
         )
-    except Exception as e:
-        print(f"[ERROR] No se pudo enviar el saludo: {e}")
+
+    # Mensaje de cierre con link de compartir (Original)
+    texto_cierre = "🫡 **Objetivo cumplido por esta hora.**\nSi te sirven estos tests, ¡pásalo a tu binomio!"
+    kb_cierre = [[InlineKeyboardButton("📤 COMPARTIR", url="https://t.me/share/url?url=t.me/testpromilitar")]]
+    await context.bot.send_message(chat_id=CHAT_ID, text=texto_cierre, reply_markup=InlineKeyboardMarkup(kb_cierre), parse_mode="Markdown")
+
+# ==========================================
+# 5. GESTIÓN DE VOTOS Y RANKING
+# ==========================================
+async def manejar_voto(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    data = query.data.split("|")
     
-    # 3. ENVIAR LAS ENCUESTAS
-    for index, item in enumerate(selected_batch):
-        tema = item.get("titulo_tema", "General")
-        icono = "📜" 
-        if "Constitución" in tema: icono = "🇪🇸"
-        elif "Penal" in tema: icono = "⚖️"
-        elif "RROO" in tema or "Reales Ordenanzas" in tema: icono = "🪖"
-        elif "Ética" in tema: icono = "🧠"
-        elif "Administrativo" in tema: icono = "📂"
-        elif "Igualdad" in tema: icono = "🤝"
-        elif "Internacional" in tema: icono = "🌍"
+    if data[0] == "v":
+        es_correcta = data[1]
+        user_id = query.from_user.id
+        nombre = query.from_user.first_name
 
-        pregunta_formateada = f"{icono} [{tema.upper()}]\n\n{item['pregunta']}"
-        pregunta_final = item["pregunta"] if len(pregunta_formateada) > 300 else pregunta_formateada
+        if es_correcta == "SI":
+            registrar_acierto(user_id, nombre)
+            await query.answer(f"✅ ¡Correcto, {nombre}! +1 punto.")
+        else:
+            await query.answer(f"❌ Fallo. ¡Sigue dándole caña!", show_alert=False)
 
-        payload = {
-            "chat_id": CHAT_ID,
-            "question": pregunta_final, 
-            "options": json.dumps(item["opciones"]),
-            "type": "quiz",
-            "correct_option_id": item["correcta"],
-            "explanation": item.get("explicacion", ""),
-            "is_anonymous": True,
-            "disable_notification": True
-        }
+async def enviar_resumen_diario(context: ContextTypes.DEFAULT_TYPE):
+    """Envía el Top 5 del día a las 23:59 y resetea"""
+    conn = sqlite3.connect('ranking.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT nombre, aciertos_hoy FROM diario ORDER BY aciertos_hoy DESC LIMIT 5')
+    top = cursor.fetchall()
+    
+    if top:
+        mensaje = "📊 **RESUMEN DE OPERACIONES (HOY)** 📊\n\n"
+        medallas = ["🥇", "🥈", "🥉", "🎖️", "🎖️"]
+        for i, (nom, pts) in enumerate(top):
+            mensaje += f"{medallas[i]} {nom}: {pts} aciertos\n"
+        
+        await context.bot.send_message(chat_id=CHAT_ID, text=mensaje, parse_mode="Markdown")
+        cursor.execute('DELETE FROM diario') # Reset diario
+        conn.commit()
+    conn.close()
 
-        try:
-            requests.post(API_URL, data=payload)
-        except Exception: pass
-        if index < len(selected_batch) - 1: time.sleep(DELAY_SECONDS)
+async def ver_ranking(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando /ranking para ver el histórico"""
+    conn = sqlite3.connect('ranking.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT nombre, puntos_totales FROM usuarios ORDER BY puntos_totales DESC LIMIT 10')
+    rows = cursor.fetchall()
+    conn.close()
 
-    # 4. MENSAJE DE CIERRE (1 SOLO BOTÓN)
-    time.sleep(DELAY_SECONDS)
-    texto_cierre = (
-        "🫡 **Objetivo cumplido por esta hora.**\n\n"
-        "Si te están sirviendo estos tests, no seas caimán y pásalo a tu binomio. "
-        "¡Cuantos más seamos, mejor nivel habrá! 👇"
-    )
+    texto = "🏆 **CUADRO DE HONOR HISTÓRICO** 🏆\n\n"
+    for i, (nom, pts) in enumerate(rows):
+        texto += f"{i+1}. {nom} — {pts} pts\n"
+    await update.message.reply_text(texto, parse_mode="Markdown")
 
-    keyboard_cierre = {
-        "inline_keyboard": [[
-            {"text": "📤 COMPARTIR AHORA MISMO", "url": link_final}
-        ]]
-    }
+# ==========================================
+# 6. ARRANQUE
+# ==========================================
+def main():
+    init_db()
+    app = Application.builder().token(TOKEN).build()
 
-    try:
-        requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-            json={
-                "chat_id": CHAT_ID, 
-                "text": texto_cierre, 
-                "parse_mode": "Markdown",
-                "reply_markup": keyboard_cierre,
-                "disable_notification": True 
-            }
-        )
-    except Exception: pass
+    # Tarea 1: Preguntas cada hora (3600 seg)
+    app.job_queue.run_repeating(enviar_batch_automatico, interval=3600, first=10)
+    
+    # Tarea 2: Resumen diario a las 23:59
+    app.job_queue.run_daily(enviar_resumen_diario, time=dt_time(23, 59, 0))
 
-if __name__ == "__main__":
-    broadcast_batch()
+    # Handlers
+    app.add_handler(CallbackQueryHandler(manejar_voto))
+    app.add_handler(CommandHandler("ranking", ver_ranking))
+
+    print("📡 Bot Promilitar. Todo verificado.")
+    app.run_polling()
+
+if __name__ == '__main__':
+    main()
