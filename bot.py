@@ -98,12 +98,22 @@ def broadcast_batch():
     questions_pool = load_question_ledger()
     if not questions_pool: return
 
+    # --- NUEVA LÓGICA DE INTENSIDAD (FIN DE SEMANA) ---
+    dia_semana = datetime.now().weekday() # 0=Lunes, 6=Domingo
+    if dia_semana >= 5:
+        lote_actual = 10  # Munición pesada en fin de semana
+    else:
+        lote_actual = 2   # Munición estándar entre semana
+
     semilla_unificada = time.strftime("%Y%m%d%H")
     random.seed(semilla_unificada)
     random.shuffle(questions_pool)
-    selected_batch = questions_pool[:BATCH_SIZE]
+    
+    # Usamos lote_actual en lugar de BATCH_SIZE
+    selected_batch = questions_pool[:lote_actual]
 
-    print(f"[INIT] Enviando lote de {BATCH_SIZE} preguntas. Semilla: {semilla_unificada}")
+    print(f"[INIT] Enviando lote de {lote_actual} preguntas. Semilla: {semilla_unificada}")
+    # ... (el resto de tu código sigue igual)
 
     # 1. BOTÓN DE COMPARTIR (SALUDO)
     url_invitacion = "https://t.me/testpromilitar" 
