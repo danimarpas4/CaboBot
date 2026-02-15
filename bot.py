@@ -69,8 +69,12 @@ def obtener_saludo():
 # ==========================================
 
 async def track_poll_results(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Actualiza la base de datos con los resultados en tiempo real."""
     poll = update.poll
-    if poll.type != Poll.QUIZ: return
+    
+    # BLINDAJE: Si no es un Quiz o no tiene ID de opción correcta, ignoramos
+    if poll.type != Poll.QUIZ or poll.correct_option_id is None:
+        return
     
     aciertos = poll.options[poll.correct_option_id].voter_count
     total = poll.total_voter_count
