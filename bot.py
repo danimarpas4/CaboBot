@@ -18,27 +18,29 @@ FECHA_EXAMEN = datetime(2026, 2, 25)
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-# Cargamos tus preguntas desde el JSON
 with open('preguntas.json', 'r', encoding='utf-8') as f:
     preguntas_oficiales = json.load(f)
 
 # ==========================================
-# 2. LÓGICA DE TIEMPO Y MENSAJES
+# 2. LOGICA DE TEXTOS Y TURNOS
 # ==========================================
 def obtener_saludo():
     hoy = datetime.now()
     dias = (FECHA_EXAMEN - hoy).days
     hora = hoy.hour
+    dia_semana = hoy.weekday()
     
     if 6 <= hora < 13: turno = "🌅 Turno de Mañana"
     elif 13 <= hora < 20: turno = "☀️ Turno de Tarde"
     else: turno = "🌙 Turno de Noche"
     
-    return (
-        f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias} días!** 🎯\n\n"
-        f"{turno}\n"
-        f"--------------------------------"
-    )
+    saludo = f"⏳ **CUENTA ATRÁS: ¡Solo quedan {dias} días!** 🎯\n\n"
+    
+    # Aviso explícito de la ráfaga los fines de semana
+    if dia_semana >= 5: 
+        saludo = "🚀 **¡FIN DE SEMANA PRE-EXAMEN!** (Ráfaga de 10 test)\n\n" + saludo
+    
+    return f"{saludo}{turno}\n--------------------------------"
 
 MSG_CIERRE = (
     "✅ **OBJETIVO CUMPLIDO POR HOY**\n\n"
@@ -47,19 +49,17 @@ MSG_CIERRE = (
 )
 
 # ==========================================
-# 3. ENVÍO DE ENCUESTAS (VISUALES)
+# 3. LANZADOR DE ENCUESTAS NATIVAS
 # ==========================================
 async def lanzar_tanda(bot, cantidad):
-    # 1. Saludo inicial con cuenta atrás
+    # 1. Saludo
     await bot.send_message(chat_id=CHAT_ID, text=obtener_saludo(), parse_mode="Markdown")
-
-    # 2. Bloque de encuestas tipo Quiz
+    
+    # 2. Encuestas (Quiz)
     batch = random.sample(preguntas_oficiales, cantidad)
     for p in batch:
         tema = p.get('titulo_tema', '').lower()
-        # Seleccionamos icono según el tema
         icono = "🇪🇸" if "constitución" in tema else "⚖️" if "penal" in tema else "🪖" if "rroo" in tema else "🧠" if "ética" in tema else "📜"
-        
         titulo = f"{icono} TEMA {p.get('tema', '?')}: {p.get('titulo_tema', 'General')}"
         
         await bot.send_poll(
@@ -68,46 +68,45 @@ async def lanzar_tanda(bot, cantidad):
             options=p['opciones'],
             type='quiz',
             correct_option_id=p['correcta'],
-            explanation=p['explicacion'], # Aquí sale la "bombilla" con la explicación
-            is_anonymous=True
+            explanation=p['explicacion'], # La bombilla
+            is_anonymous=True # Encuestas nativas anónimas
         )
 
-    # 3. Mensaje de cierre con botón de compartir
+    # 3. Cierre y botón
     share_url = "https://t.me/share/url?url=https://t.me/testpromilitar&text=¡Echa un vistazo a este canal para preparar el examen de Cabo! 🪖🎖️"
-    keyboard_cierre = InlineKeyboardMarkup([[InlineKeyboardButton("📢 COMPARTIR CANAL", url=share_url)]])
-
-    await bot.send_message(
-        chat_id=CHAT_ID, 
-        text=MSG_CIERRE, 
-        reply_markup=keyboard_cierre, 
-        parse_mode="Markdown"
-    )
+    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("📢 COMPARTIR CANAL", url=share_url)]])
+    await bot.send_message(chat_id=CHAT_ID, text=MSG_CIERRE, reply_markup=keyboard, parse_mode="Markdown")
 
 # ==========================================
-# 4. AUTOMATISMOS Y COMANDOS
+# 4. HORARIOS Y COMANDOS
 # ==========================================
 async def enviar_batch_automatico(context: ContextTypes.DEFAULT_TYPE):
     ahora = datetime.now()
-    if ahora.weekday() >= 5: # Fines de semana
-        if ahora.hour not in [10, 14, 18, 22]: return
+    dia_semana = ahora.weekday()
+    hora_actual = ahora.hour
+
+    if dia_semana >= 5: # Sábado y Domingo
+        if hora_actual not in [10, 14, 18, 22]: 
+            return # Si no es esta hora, no hace nada
         await lanzar_tanda(context.bot, 10)
-    else: # Diario
+    else: # Lunes a Viernes
         await lanzar_tanda(context.bot, 2)
 
 async def disparar_manual(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Comando para enviar 2 preguntas al instante y probar que funciona"""
     await lanzar_tanda(context.bot, 2)
-    await update.message.reply_text("🚀 Tanda de encuestas enviada.")
+    await update.message.reply_text("🚀 ¡Tanda enviada al canal!")
 
 def main():
     app = Application.builder().token(TOKEN).build()
     
-    # Tareas automáticas cada hora
+    # Tarea automática cada hora
     app.job_queue.run_repeating(enviar_batch_automatico, interval=3600, first=10)
-
-    # Comando para lanzar a mano
+    
+    # Comandos
     app.add_handler(CommandHandler("disparar", disparar_manual))
-
-    print("🚀 Bot de Encuestas Nativas (Modo Visual) en marcha.")
+    
+    print("🚀 Bot en Modo Encuestas Nativas con Horarios activado.")
     app.run_polling()
 
 if __name__ == '__main__':
