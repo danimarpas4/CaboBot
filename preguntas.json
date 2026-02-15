@@ -34,6 +34,146 @@
         "bloque": 1,
         "tema": 1,
         "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] En las RROO, dentro del espíritu militar, son pruebas de gran desidia e ineptitud para la carrera de las armas:",
+        "opciones": ["Contentarse regularmente con hacer lo preciso de su deber", "El llegar tarde a su obligación, aunque sea de minutos", "Excusarse con males imaginarios o supuestos de las fatigas que le corresponden", "Todas son correctas"],
+        "correcta": 4,
+        "explicacion": "📚 Artículo 14.\nEl militar cuyo propio honor y espíritu no le estimulen a obrar siempre bien, vale muy poco para el servicio; el llegar tarde a su obligación, aunque sea de minutos; el excusarse con males imaginarios o supuestos de..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Tiene su expresión colectiva en el acatamiento a la Constitución y su manifestación individual en el cumplimiento de las órdenes recibidas, ¿a qué se refiere esta definición?",
+        "opciones": ["Cohesión", "Obediencia debida", "Jerarquía", "Disciplina"],
+        "correcta": 4,
+        "explicacion": "📚 Artículo 8.\nLa disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado, será practicada y exigida en las FFAAS como norma de actuación."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] En el cumplimiento de las órdenes debe esforzarse en ser fiel a los propósitos del mando, con responsabilidad y espíritu de iniciativa. Ante lo imprevisto, tomará una decisión coherente con aquellos...",
+        "opciones": ["Propósitos y con la unidad de doctrina", "Propósitos y con la unidad de mando", "Propósitos y con la unidad de iniciativa", "Propósitos y con la unidad de acción"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 47.\nEn el cumplimiento de las órdenes debe esforzarse en ser fiel a los propósitos del mando, con responsabilidad y espíritu de iniciativa. Ante lo imprevisto, tomará una decisión coherente con aquellos propósitos y con la unidad de doctrina."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Propiciará con su actuación que la ______ impere en las Fuerzas Armadas de tal modo que nadie tenga nada que esperar del favor ni temer de la arbitrariedad.",
+        "opciones": ["Justicia", "Disciplina", "Honor", "Unidad"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 18.\nPropiciará con su actuación que la justicia impere en las Fuerzas Armadas de tal modo que nadie tenga nada que esperar del favor ni temer de la arbitrariedad."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Los que ejercen el mando tratarán de inculcar una discipana basada en el ______.",
+        "opciones": ["Ejemplo", "Convencimiento", "Honor", "Respeto"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 55.\nLos que ejercen el mando tratarán de inculcar una disciplina basada en el convencimiento."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO]Todo militar, cualquiera que sea su empleo, atenderá las indicaciones o instrucciones de otro que, aun siendo de ...",
+        "opciones": ["Empleo superior al suyo", "Empleo inferior al suyo", "Empleo igual al suyo", "empleo de teniente"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 50.\nTodo militar, cualquiera que sea su empleo, atenderá las indicaciones o instrucciones de otro que, aun siendo de empleo inferior al suyo, se encuentre de servicio y actúe en virtud de órdenes o consignas...."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO]En lo referente a la responsabilidad de obediencia, el militar, en el cumplimiento de las órdenes debe esforzarse en ...",
+        "opciones": ["Cumplirlas a toda costa", "Ser fiel a los propósitos del mando", "Ser fiel a sus principios", "Cumplir las órdenes sin dilaciones indebidas"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 47.\nEn el cumplimiento de las órdenes debe esforzarse en ser fiel a los propósitos del mando, con responsabilidad y espirítu de iniciativa."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Qué definen las Reales Ordenanzas?",
+        "opciones": ["El código de conducta de los militares", "Los principios éticos y las reglas de comportamiento", "Las dos anteriores son correctas", "Todas son incorrectas"],
+        "correcta": 1,
+        "explicacion": "📚 Artículo 1.\nLas Reales Ordenanzas definen los principios éticos y las reglas de comportamiento que deben observar los militares."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Si un militar tuviera alguna queja o reclamación sobre asuntos del servicio que pudieran afectar o perjudicar sus intereses:",
+        "opciones": ["Todas son correctas", "Lo pondrá en conocimiento de sus superiores", "Podrá ejercitar los derechos o acciones que correspondan", "Lo hará de buen modo y por el conducto reglamentario"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 38.\nSi tuviera alguna queja o reclamación..., lo pondrá en conocimiento de sus superiores, haciéndolo de buen modo y por el conducto reglamentario. Sin perjuicio de ejercitar los derechos o acciones que correspondan."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] El militar ajustará su contucta al ...",
+        "opciones": ["Al respeto de las personas", "Al bien propio", "al derecho nacional aplicable en conflictos armados", "Todas son correctas"],
+        "correcta": 0,
+        "explicacion": "📚 Artículo 11.\nEl militar ajustará su conducta al respeto de las personas, al bien común y al derecho internacional aplicable en conflictos armados."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] Todo militar tiene _____ de prestar ante la Bandera juramento o promesa de defendar a España.",
+        "opciones": ["El derecho", "la obligación", "el derecho y el deber", "el deber"],
+        "correcta": 3,
+        "explicacion": "📚 Artículo 6.\nTodo militar tiene el deber de prestar ante la Bandera juramento o promesa de defendar a España."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Qué guardará y hará guardar el militar como normal fundamental del Estado?",
+        "opciones": ["Las Reales Ordenanzas", "La jerarquía", "La Constitución", "La compostura"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 4.\nEl militar guardará y hará guardar la Constitución como norma fundamental del Estado y cumplirá las obligaciones derivadas de las misiones de las FFAAS, de su condición militar y..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Cuál de los siguientes principios no es un principio con los que deberá actual el militar como servidor público?",
+        "opciones": ["Transparencia", "Confidencialidad", "Parcialidad", "Responsabilidad"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 5.\nDeberá actuar con arreglo a los principios de objetividad, integridad, neutralidad, responsabilidad, IMPARCIALIDAD, confidencialidad, dedicación al servicio, transparencia, ejemplaridad, austeridad..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
+        "pregunta": "[RROO] ¿Cómo actuara el militar en caso de conflicto armado, alentado por la legalidad y legitimidad de su causa y el apoyo de la Nación?",
+        "opciones": ["Con quebrantable voluntad de vencer", "Con lealta a la Constitución", "Con inquebrantable voluntad de vencer", "Con rsponsabilidad"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 5.\nDeberá actuar con arreglo a los principios de objetividad, integridad, neutralidad, responsabilidad, IMPARCIALIDAD, confidencialidad, dedicación al servicio, transparencia, ejemplaridad, austeridad..."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 1,
+        "tema": 1,
+        "titulo_tema": "Disposiciones Generales",
         "pregunta": "[RROO] ¿Cuál es el primer y más fundamental deber del militar?",
         "opciones": ["La obediencia", "La puntualidad", "La disposición permanente para defender a España", "El compañerismo"],
         "correcta": 2,
