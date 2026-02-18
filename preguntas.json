@@ -1524,24 +1524,10 @@
         "Los reservistas cuando se encuentren incorporados en las Fuerzas Armadas",
         "Los alumnos pertenecientes a la enseñanza de formación de la Policía Nacional.",
         "Los prisioneros de guerra, respecto de los que alguien fuera potencia detenedora.",
-        "Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. "
+        "Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo."
     ],
     "correcta": 3,
-    "explicacion": "📚 Art 1.\n Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. \n 1º. Los que mantengan una relación de servicios profesionales con las Fuerzas Armadas o con la Guardia 
-Civil, mientras no pasen a alguna situación administrativa en la que tengan en suspenso su condición 
-militar. 
-2º. Los reservistas cuando se encuentren activados en las Fuerzas Armadas. 
-3º. Los alumnos de los centros docentes militares de formación y los aspirantes a la condición de 
-reservistas voluntarios en su periodo de formación militar. 
-4º. Los alumnos pertenecientes a la enseñanza de formación de la Guardia Civil. 
-5º. Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley 
-1-IV-18 
-TEMARIO OPOSICIÓN ASCENSO A CABO 
-Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. 
-6º. En las situaciones de conflicto armado o estado de sitio, los capitanes, comandantes y miembros de 
-la tripulación de buques o aeronaves no militares que formen parte de un convoy, bajo escolta o 
-dirección militar, así como los prácticos a bordo de buques de guerra y buques de la Guardia Civil. 
-7º. Los prisioneros de guerra, respecto de los que España fuera potencia detenedora."
+    "explicacion": "📚 Art 1. Son militares a efectos de este Código:\n1º. Los que mantengan una relación de servicios profesionales con las FF.AA. o con la Guardia Civil.\n2º. Reservistas activados.\n3º. Alumnos de centros docentes militares.\n4º. Alumnos de formación de la Guardia Civil.\n5º. Asimilación por Estados de Alarma, Excepción o Sitio.\n6º. Tripulación no militar en convoy bajo escolta en conflicto armado.\n7º. Prisioneros de guerra."
     },
     {
     "capitulo": 1,
