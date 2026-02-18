@@ -1335,7 +1335,7 @@
         "tema": 1,
         "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
         "pregunta": "¿Qué órganos forman el Apoyo a la Fuerza?",
-        "opciones": ["MAPER, MADOC, MALE, IGE y DAE", "FUTER, FLO y MAPER", "Cuartel General, FUTER y MALE", "MAPER, MALE y Dirección de Acuartelamiento"],
+        "opciones": ["MAPER, MADOC, MALE, IGE y DIAE", "FUTER, FLO y MAPER", "Cuartel General, FUTER y MALE", "MAPER, MALE y Dirección de Acuartelamiento"],
         "correcta": 0,
         "explicacion": "📚 Punto 1.3.\nEl Apoyo a la Fuerza está formado por: Mando de Personal, Mando de Adiestramiento y Doctrina, Mando de Apoyo Logístico, Inspección General del ET y Dirección de Asuntos Económicos."
     },
@@ -1365,7 +1365,7 @@
         "tema": 1,
         "titulo_tema": "Organización del Ejército de Tierra (Instr. 14/2021)",
         "pregunta": "¿Quién se encarga de la contratación y contabilidad en el ET?",
-        "opciones": ["La Dirección de Asuntos Económicos (DAE)", "El Mando de Apoyo Logístico (MALE)", "La Jefatura de Asuntos Económicos del FUTER", "El Gabinete del JEME"],
+        "opciones": ["La Dirección de Asuntos Económicos (DIAE)", "El Mando de Apoyo Logístico (MALE)", "La Jefatura de Asuntos Económicos del FUTER", "El Gabinete del JEME"],
         "correcta": 0,
         "explicacion": "📚 Punto 1.3.5.\nLa Dirección de Asuntos Económicos es la responsable de... la contratación y contabilidad."
     },
@@ -2634,10 +2634,10 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "¿Qué alcance eficaz aproximado tiene la MG-42 sobre bípode?",
-        "opciones": ["400 metros", "600 metros", "1.200 metros", "2.000 metros"],
+        "pregunta": "¿Qué alcance cadencia teórica tiene la MG-42?",
+        "opciones": ["1.250 dpm", "1.300 dpm", "1.350 dpm", "1.200 dpm"],
         "correcta": 1,
-        "explicacion": "Datos Técnicos.\nEl alcance eficaz sobre bípode es de aproximadamente 600 metros."
+        "explicacion": "Datos Técnicos.\nCadencia teórica: 1.300 dpm."
     },
     {
         "capitulo": 2,
