@@ -1154,7 +1154,6 @@
     "correcta": 1,
     "explicacion": "📚 Art 1.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
     },
-    ---
     {
     "capitulo": 1,
     "bloque": 1,
