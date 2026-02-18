@@ -1124,6 +1124,502 @@
         "bloque": 4,
         "tema": 2,
         "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿Qué pena se impondrá al militar que sin incurrir en los delitos de abuso a superior o abuso de autoridad, públicamente, en lugares...maltrataré de obra a otro militar?",
+        "opciones": ["Seis meses a dos años de prisión", "Seis meses a tres años de prisión", "Tres meses a tres años de prisión", "Tres meses a seis años de prisión"],
+        "correcta": 1,
+        "explicacion": "📚 Art 49.\n Pena de seis meses a tres años de prisión para el militar que sin incurrir...maltrataré de obra a otro militar, le tratare de manera degradante, inhumana o humillante o realizare actos de agresión o abuso sexuales."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "¿El Código Penal Militar será de aplicación a _____ que constituyan delitos militares",
+        "opciones": ["las infracciones ", "los delitos", "las sanciones", "las infracciones disciplinarias"],
+        "correcta": 0,
+        "explicacion": "📚 Art 1.\n El CPM será de aplicación a las infracciones que constituyan delitos militares. Las infracciones disciplinarias cometidas por los miembros de las Fuerzas Armadas y de la Guardia Civil se regirán por su legislación específica. ."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
+    "opciones": [
+        "Esta opción tiene exactamente cien caracteres para probar el límite visual que permite la API de TG",
+        "Debes evitar superar este tamaño porque de lo contrario el sistema del bot recortará el texto final",
+        "Recuerda que las opciones cortas son mucho más fáciles de leer en dispositivos móviles pequeños",
+        "Esta es la cuarta opción de respuesta y también cumple con el estándar de los cien caracteres max"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 1.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    },
+    ---
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Fuera de los casos anteriores, el militar que, por temor a un riesgo personal, violare un deber militar establecido en la Ley Orgánica 9/2011, de 27 de julio, o en la Ley Orgánica 11/2007, de 22 de octubre, cuya naturaleza exija afrontar el peligro y superar el miedo...",
+    "opciones": [
+        "Será castigado con la pena de cuatro meses a cinco años de prisión.",
+        "Será castigado con la pena de cuatro meses a cuatro años de prisión.",
+        "Será castigado con la pena de seis meses a seis años de prisión.",
+        "Será castigado con la pena de seis meses a cuatro años de prisión."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 1.\n Será castigado con la pena de cuatro meses a cuatro años de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que, en situación de conflicto armado, estado de sitio o circunstancias críticas y por temor a un riesgo personal, para excusarse de su puesto o misión, simulare enfermedad o lesión, se la produjere o emplease cualquier engaño con el mismo fin...",
+    "opciones": [
+        "Será castigado con la pena de tres años a diez años",
+        "Será castigado con la pena de tres años y un día a diez años de prisión.",
+        "Será castigado con la pena de dos años y un día a diez años de prisión.",
+        "Será castigado con la pena de tres años y un día a quince años de prisión."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 52.\n Será castigado con la pena de tres años y un día a diez años de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El superior que tratare a un subordinado de manera degradante, inhumana o humillante, o realizare actos de agresión o abuso sexuales, será castigado con la pena de...",
+    "opciones": [
+        "Seis meses a seis años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo.",
+        "Será castigado con la pena de tres meses y un día a tres años de prisión.",
+        "Será castigado con la pena de tres meses y un día a seis años de prisión.",
+        "Seis meses a cinco años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo"
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 47.\n Seis meses a cinco años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El superior que, abusando de sus facultades de mando o de su posición en el servicio, irrogare un perjuicio grave a un subordinado, le obligare a prestaciones ajenas al interés del servicio o le impidiere arbitrariamente el ejercicio de algún derecho...",
+    "opciones": [
+        "Será castigado con la pena de tres meses a tres años de prisión.",
+        "Será castigado con la pena de tres meses y un día a tres años de prisión.",
+        "Será castigado con la pena de tres meses y un día a seis años de prisión.",
+        "Será castigado con la pena de seis meses y un día a tres años de prisión."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 45.\n Será castigado con la pena de tres meses y un día a tres años de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que se negare a obedecer o no cumpliere las órdenes legítimas de sus superiores relativas al servicio de armas será castigado con la pena de...",
+    "opciones": [
+        "Tres meses y un día a dos años de prisión",
+        "Tres meses y un día a tres años de prisión",
+        "Tres meses  a dos años de prisión",
+        "Seis meses a seis años de prisión. "
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 44.\n El militar que se negare a obedecer o no cumpliere las órdenes legítimas de sus superiores relativas al servicio de armas será castigado con la pena de seis meses a seis años de prisión. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que se negare a obedecer o no cumpliere las órdenes legítimas de sus superiores relativas al servicio será castigado con la pena de...",
+    "opciones": [
+        "Seis meses y un día a seis años de prisión",
+        "Tres meses y un día a dos años de prisión",
+        "Seis meses a seis años de prisión",
+        "Tres meses a dos años de prisión"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 44.\n El militar que se negare a obedecer o no cumpliere las órdenes legítimas de sus superiores relativas al servicio será castigado con la pena de tres meses y un día a dos años de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que, sin incurrir en los delitos previstos en el artículo anterior, coaccionare, amenazare, calumniare o injuriare gravemente a un superior, en su presencia o ante una concurrencia de personas, por escrito o con publicidad...",
+    "opciones": [
+        "Será castigado con la pena de seis meses a tres años de prisión",
+        "Será castigado con la pena de tres meses a tres años de prisión",
+        "Será castigado con la pena de seis meses a tres años de prisión y la pena de perdida de empleo",
+        "Será castigado con la pena de seis meses a seis años de prisión"
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 43.\n Será castigado con la pena de seis meses a tres años de prisión"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que maltratare de obra a un superior o atentare contra su libertad o indemnidad sexuales, será castigado con la pena de...",
+    "opciones": [
+        "Seis meses a cuatroaños de prisión, pudiendo imponerse, además, la pena de pérdida de empleo.",
+        "Seis meses a cinco años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo.",
+        "Seis meses a seis años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo.",
+        "Seis meses a cinco años de prisión, y se impondrá, además, la pena de pérdida de empleo."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 42.\n El militar que maltratare de obra a un superior o atentare contra su libertad o indemnidad sexuales, será castigado con la pena de seis meses a cinco años de prisión, pudiendo imponerse, además, la pena de pérdida de empleo."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que no adoptase las medidas necesarias o no empleare los medios racionales a su alcance para contener la sedición en las fuerzas a su mando será castigado con la pena de...",
+    "opciones": [
+        "Prisión de seis meses a seis años, y se pondrá, además, la pena de pérdida de empleo",
+        "Prisión de tres meses a seis años, pudiendo imponerse, además, la pena de pérdida de empleo",
+        "Prisión de seis meses a seis años, pudiendo imponerse, además, la pena de pérdida de empleo",
+        "Prisión de tres meses a seis años, y se pondrá, además, la pena de pérdida de empleo"
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 41.\n El militar que no adoptase las medidas necesarias o no empleare los medios racionales a su alcance para contener la sedición en las fuerzas a su mando será castigado con la pena de prisión de seis meses a seis años, pudiendo imponerse, además, la pena de pérdida de empleo."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Los militares que, en número de cuatro o más, hicieren reclamaciones o peticiones colectivas en tumulto o portando armas, serán castigados con la pena de...",
+    "opciones": [
+        "Uno a seis años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición",
+        "Uno a cinco años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición",
+        "Seis meses a seis años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición",
+        "seis meses a cinco años de prisión cuando se trate de los meros ejecutores"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 39.\n Uno a seis años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición y seis meses a cuatro años de prisión cuando se trate de los meros ejecutores."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Los militares que, mediante concierto expreso o tácito, en número de cuatro o más o que, sin llegar a este número, constituyan al menos la mitad de una fuerza, dotación o tripulación, se negaren a obedecer o no cumplieren las órdenes legítimas recibidas, incumplieren los demás deberes del servicio o amenazaren, ofendieren o ultrajaren a un superior",
+    "opciones": [
+        "Dos a quince años de prisión cuando se trate de los que hubieran inducido, sostenido o dirigido...",
+        "Uno a diez años de prisión cuando se trate de los meros ejecutores.",
+        "Las dos anteriores son correctas.",
+        "Las dos anteriores son incorrectas."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 38.\n Pena de dos a quince años de prisión cuando se trate de los que hubieren inducido, sostenido o dirigido la sedición y uno a diez años de prisión cuando se trate de los meros ejecutores."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Cuál es la pena para el militar que injuriare a las Fuerzas Armadas, Guardia Civil, Instituciones o Cuerpos determinados de los mismos?",
+    "opciones": [
+        "Seis meses y un día a un año de prisión",
+        "Tres meses y un día a dos años de prisión",
+        "Tres meses a un año de prisión",
+        "Tres meses y un día a un año de prisión"
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 37.\n El militar que injuriare a las Fuerzas Armadas, Guardia Civil, Instituciones o Cuerpos determinados de los mismos será castigado con la pena de tres meses y un día a un año de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que ofendiere o ultrajare a España, su Bandera, Himno o alguno de sus símbolos o emblemas, a la Constitución o al Rey, será castigado con la pena de...",
+    "opciones": [
+        "Tres meses y un día a seis años de prisión",
+        "Tres meses y un día a tres años de prisión",
+        "Seis meses y un día a tres años de prisión",
+        "Seis meses y un día a seis años de prisión"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 36.\n El militar que ofendiere o ultrajare a España, su Bandera, Himno o alguno de sus símbolos o emblemas, a la Constitución o al Rey, será castigado con la pena de tres meses y un día a tres años de prisión."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que denunciare falsamente la existencia, en lugares afectos a las Fuerzas Armadas o a la Guardia Civil, de aparatos explosivos u otros similares o entorpeciere intencionadamente el transporte, aprovisionamiento, transmisiones o cualquier clase de misión militar...",
+    "opciones": [
+        "será castigado con la pena de seis meses a cinco años de prisión",
+        "será castigado con la pena de tres meses a seis años de prisión",
+        "será castigado con la pena de seis meses a seis años de prisión",
+        "será castigado con la pena de seis meses a tres años de prisión"
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 28.\n Será castigado con la pena de seis meses a seis años de prisión "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "El militar que cometiere cualquiera de los delitos previstos en los artículos 277 ó 598 a 603 del Código Penal será castigado con la pena establecida en el mismo incrementada ______ de su límite máximo. ",
+    "opciones": [
+        "en un cuarto",
+        "en un quinto",
+        "en dos quinto",
+        "en tres quintos"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 26.\n El militar que cometiere cualquiera de los delitos previstos en los artículos 277 ó 598 a 603 del Código Penal será castigado con la pena establecida en el mismo incrementada en un quinto de su límite máximo."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Qué pena se impondrá al extranjero que, en situación de conflicto armado, se procurare, difundiera, falseare, o inutilizare información clasificada como reservada o secreta o de interés militar susceptible de perjudicar a la seguridad o a la defensa nacionales, o de los medios técnicos o sistemas empleados por las Fuerzas Armadas o la Guardia Civil o las industrias de interés militar, o la revelase a potencia extranjera, asociación u organismo internacional?",
+    "opciones": [
+        "Será castigado, como traidor, a la pena de diez a veinte años de prisión.",
+        "Será castigado, como espía, a la pena de diez a veinte años de prisión.",
+        "Será castigado, como espía, a la pena de quince a veinte años de prisión.",
+        "Será castigado, como traidor, a la pena de quince a veinte años de prisión."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 25.\n Será castigado, como espía, a la pena de diez a veinte años de prisión. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Para el cumplimiento de la condena será de abono el tiempo de privación de libertad o de derechos acordados cautelar o preventivamente, en los términos previstos en el Código Penal?",
+    "opciones": [
+        "Si.",
+        "No.",
+        "Ninguna de las opciones es correcta.",
+        "Solo si así lo dicta la autoridad sancionadora."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 14.\n Para el cumplimiento de la condena será de abono el tiempo de privación de libertad o de derechos acordados cautelar o preventivamente, en los términos previstos en el Código Penal."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "La pena de multa se determinará y aplicará por el sistema establecido en el _______.",
+    "opciones": [
+        "Código Civil",
+        "Código Penal.",
+        "la Ley de Enjuiciamineto Civil",
+        "la Ley de Enjuiciamiento Criminal"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 13.\n La pena de multa se determinará y aplicará por el sistema establecido en el Código Penal."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "La pena de inhabilitación absoluta para mando de buque de guerra o aeronave militar privará al penado, con _____, del mando de éstos.",
+    "opciones": [
+        "carácter temporal",
+        "carácter permanente",
+        "carácter fijo",
+        "con cualquier caracter"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 13.\n La pena de inhabilitación absoluta para mando de buque de guerra o aeronave militar privará al penado, con carácter permanente, del mando de éstos."
+    },
+    ---
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "En situación de conflicto armado, las penas privativas de libertad impuestas a militares podrán ser cumplidas en la unidad de su destino y en cometidos que el mando militar designe, en atención a las exigencias _____, previa comunicación y aprobación del órgano judicial actuante.",
+    "opciones": [
+        "Ninguna de las opciones es correcta.",
+        "de la campaña y de la jerarquía",
+        "de la campaña y de la disciplina",
+        "de la disciplina y de la jerarquía"
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 12.\n En situación de conflicto armado, las penas privativas de libertad impuestas a militares podrán ser cumplidas en la unidad de su destino y en cometidos que el mando militar designe, en atención a las exigencias de la campaña y de la disciplina, previa comunicación y aprobación del órgano judicial actuante. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "La pena de localización permanente se cumplirá, conforme a lo previsto en el Código Penal, _________ designado por el Ministerio de Defensa. ",
+    "opciones": [
+        "en el domicilio del reo",
+        "en el domicilio del reo o, en su caso, en el establecimiento penitenciario",
+        "en el establecimiento penitenciario",
+        "en el lugar desingado por el Ministerio de Defensa"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 12.\n La pena de localización permanente se cumplirá, conforme a lo previsto en el Código Penal, en el domicilio del reo o, en su caso, en el establecimiento penitenciario designado por el Ministerio de Defensa. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "La pena de prisión tendrá una duración mínima de ______, salvo lo que excepcionalmente resulte por aplicación del Código Penal. ",
+    "opciones": [
+        "Tres meses y un día y máxima de veinticinco años",
+        "Dos meses y un día y máxima de veinticinco años",
+        "Tres meses y máxima de veinticinco años",
+        "Dos meses y máxima de veinticinco años"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 12.\n La pena de prisión tendrá una duración mínima de dos meses y un día y máxima de veinticinco años, salvo lo que excepcionalmente resulte por aplicación del Código Penal."
+    },
+    {
+    "capitulo": 1,  
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Cuál de las siguientes es una pena grave?",
+    "opciones": [
+        "Pérdida de empleo",
+        "Multa de dos meses y un día a seis meses.",
+        "Suspensión militar de empleo, de tres meses a tres años. ",
+        "Pérdida de destino"
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 1.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "En los delitos militares se considerará circunstancia ___, la de haber precedido por parte del superior inmediata provocación o cualquiera otra actuación injusta que haya producido en el sujeto arrebato, obcecación u otro estado pasional de entidad semejante. ",
+    "opciones": [
+        "Agravante muy cualificada",
+        "Atenuante muy cualificada",
+        "Atenuante ",
+        "Agravante"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 10.\n En los delitos militares se considerará circunstancia atenuante muy cualificada, la de haber precedido por parte del superior inmediata provocación o cualquiera otra actuación injusta que haya producido en el sujeto arrebato, obcecación u otro estado pasional de entidad semejante."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Asimismo, son delitos militares cualesquiera otras acciones u omisiones cometidas por un militar y tipificadas en el Código Penal como: ",
+    "opciones": [
+        "Delitos de traición y delitos contra las personas y bienes protegidos en caso de conflicto armado",
+        "Delito de rebelión, en caso de conflicto armado internacional.",
+        "Las dos anteriores son correctas.",
+        "Las dos anteriores son incorrectas."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 9.\n a) Delitos de traición y delitos contra las personas y bienes protegidos en caso de conflicto armado... b) Delito de rebelión, en caso de conflicto armado internacional. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Son militares, a efectos de este Código, quienes al momento de la comisión del delito posean dicha condición, de conformidad con las leyes relativas a la adquisición y pérdida de la misma y, concretamente, con las excepciones que expresamente... : ",
+    "opciones": [
+        "Los reservistas cuando se encuentren incorporados en las Fuerzas Armadas",
+        "Los alumnos pertenecientes a la enseñanza de formación de la Policía Nacional.",
+        "Los prisioneros de guerra, respecto de los que alguien fuera potencia detenedora.",
+        "Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. "
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 1.\n Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. \n 1º. Los que mantengan una relación de servicios profesionales con las Fuerzas Armadas o con la Guardia 
+Civil, mientras no pasen a alguna situación administrativa en la que tengan en suspenso su condición 
+militar. 
+2º. Los reservistas cuando se encuentren activados en las Fuerzas Armadas. 
+3º. Los alumnos de los centros docentes militares de formación y los aspirantes a la condición de 
+reservistas voluntarios en su periodo de formación militar. 
+4º. Los alumnos pertenecientes a la enseñanza de formación de la Guardia Civil. 
+5º. Quienes pasen a tener cualquier asimilación o consideración militar, de conformidad con la Ley 
+1-IV-18 
+TEMARIO OPOSICIÓN ASCENSO A CABO 
+Orgánica reguladora de los Estados de Alarma, Excepción o Sitio y normas de desarrollo. 
+6º. En las situaciones de conflicto armado o estado de sitio, los capitanes, comandantes y miembros de 
+la tripulación de buques o aeronaves no militares que formen parte de un convoy, bajo escolta o 
+dirección militar, así como los prácticos a bordo de buques de guerra y buques de la Guardia Civil. 
+7º. Los prisioneros de guerra, respecto de los que España fuera potencia detenedora."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": " El presente Código se aplicará a los miembros del Cuerpo de la Guardia Civil y a los alumnos pertenecientes a la enseñanza de formación de dicho cuerpo en los siguientes supuestos:",
+    "opciones": [
+        "En tiempo de conflicto armado. ",
+        " Mientras se encuentren incoporados a Unidades de las Fuerzas Armadas.",
+        "Durante la vigencia del estado de alarma",
+        "En el cumplimiento de las misiones de carácter de paz que se les encomienden. "
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 1.\n a) En tiempo de conflicto armado. b) Durante la vigencia del estado de sitio. c) En el cumplimiento de las misiones de carácter militar que se les encomienden. d) Mientras se encuentren integrados en Unidades de las Fuerzas Armadas. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "¿Cuando a una acción u omisión constitutiva de un delito militar le corresponda en el Código Penal una pena más grave, se aplicará dicho Código por la Jurisdicción Militar. ?",
+    "opciones": [
+        "Si, con las excepciones reflejadas en dicho Código.",
+        "Sí.",
+        "No.",
+        "A veces."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 1.\n Cuando a una acción u omisión constitutiva de un delito militar le corresponda en el Código Penal una pena más grave, se aplicará dicho Código por la Jurisdicción Militar."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Código Penal Militar (LO 14/2015)",
+    "pregunta": "Las disposiciones del Código Penal serán aplicables a los delitos militares como supletorias en lo no previsto expresamente por el presente Código. En todo caso será de aplicación _______.",
+    "opciones": [
+        "el Título Segundo del Código Penal",
+        "el Título Preliminar del Código Penal",
+        "el Título Preliminar del Régimen Disciplinario",
+        "el Título Segundo del Régimen Disciplinario"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 1.\n Las disposiciones del Código Penal serán aplicables a los delitos militares como supletorias en lo no previsto expresamente por el presente Código. En todo caso será de aplicación el Título Preliminar del Código Penal"
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
+        "pregunta": "Las acciones u omisiones dolosas o imprudentes previstas en el Libro Segundo del Código Penal Militar...",
+        "opciones": ["Son delitos penales", "Son delitos militares", "Son delitos sancionables", "Son delitos sancionables"],
+        "correcta": 1,
+        "explicacion": "📚 Art 9.\n Son delitos MILITARES las acciones y omisones dolosas o imprudentes previstas en el Libro Segundo de este Código.."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 2,
+        "titulo_tema": "Código Penal Militar (LO 14/2015)",
         "pregunta": "¿Cuál de las siguientes es una Pena Grave según el Código Penal Militar?",
         "opciones": ["Pérdida de empleo", "Suspensión militar de empleo", "Multa de dos a seis meses", "Prisión de tres meses a tres años"],
         "correcta": 0,
@@ -2408,16 +2904,6 @@
         "opciones": ["En el guardamanos", "En el asa de transporte", "Sobre el cañón", "En la culata"],
         "correcta": 1,
         "explicacion": "📚 Datos Generales.\nEl visor óptico va integrado en el asa de transporte."
-    },
-    {
-        "capitulo": 2,
-        "bloque": 3,
-        "tema": 2,
-        "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "HK G-36E. En la descripción general del arma, ¿qué pieza corresponde al número 1?",
-        "opciones": ["El cañón", "La bocacha apagallamas", "La palanca de montar", "El tapón de gases"],
-        "correcta": 1,
-        "explicacion": "📚 Descripción General.\n1.- Bocacha apagallamas."
     },
     {
         "capitulo": 2,
