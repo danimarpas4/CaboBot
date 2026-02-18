@@ -1144,21 +1144,6 @@
     "bloque": 1,
     "tema": 1,
     "titulo_tema": "Código Penal Militar (LO 14/2015)",
-    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
-    "opciones": [
-        "Esta opción tiene exactamente cien caracteres para probar el límite visual que permite la API de TG",
-        "Debes evitar superar este tamaño porque de lo contrario el sistema del bot recortará el texto final",
-        "Recuerda que las opciones cortas son mucho más fáciles de leer en dispositivos móviles pequeños",
-        "Esta es la cuarta opción de respuesta y también cumple con el estándar de los cien caracteres max"
-    ],
-    "correcta": 1,
-    "explicacion": "📚 Art 1.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
-    },
-    {
-    "capitulo": 1,
-    "bloque": 1,
-    "tema": 1,
-    "titulo_tema": "Código Penal Militar (LO 14/2015)",
     "pregunta": "Fuera de los casos anteriores, el militar que, por temor a un riesgo personal, violare un deber militar establecido en la Ley Orgánica 9/2011, de 27 de julio, o en la Ley Orgánica 11/2007, de 22 de octubre, cuya naturaleza exija afrontar el peligro y superar el miedo...",
     "opciones": [
         "Será castigado con la pena de cuatro meses a cinco años de prisión.",
@@ -1439,7 +1424,6 @@
     "correcta": 1,
     "explicacion": "📚 Art 13.\n La pena de inhabilitación absoluta para mando de buque de guerra o aeronave militar privará al penado, con carácter permanente, del mando de éstos."
     },
-    ---
     {
     "capitulo": 1,
     "bloque": 1,
