@@ -213,16 +213,6 @@
         "capitulo": 1,
         "bloque": 1,
         "tema": 2,
-        "titulo_tema": "Del Juramento o Promesa ante la Bandera",
-        "pregunta": "[RROO] ¿Qué representa la Bandera de España según el artículo 6?",
-        "opciones": ["La historia militar", "La soberanía, independencia, unidad e integridad de la Patria", "El mando supremo del Rey", "La Constitución Española"],
-        "correcta": 1,
-        "explicacion": "📚 Artículo 6.\nEs el signo de la soberanía, independencia, unidad e integridad de la Patria y representa sus valores superiores."
-    },
-    {
-        "capitulo": 1,
-        "bloque": 1,
-        "tema": 2,
         "titulo_tema": "Del Militar",
         "pregunta": "[RROO] ¿Cuáles son las virtudes fundamentales del militar según el Art. 17?",
         "opciones": ["Valor, honor y lealtad", "Disciplina, valor, prontitud en la obediencia y exactitud en el servicio", "Compañerismo, sacrificio y austeridad", "Integridad, neutralidad y eficacia"],
@@ -1082,6 +1072,987 @@
     {
         "capitulo": 1,
         "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "En las sanciones económicas, ¿cómo se calcula la cuantía diaria?",
+        "opciones": ["Sueldo base dividido por 30", "Sueldo más complementos dividido por 30", "Sueldo más complemento de empleo dividido por 60", "Sueldo base dividido por 60"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 60.\nSe calculará tomando el sueldo y el complemento de empleo... se dividirá por sesenta aquella cantidad y se multiplicará por el número de días."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
+    "opciones": [
+        "Esta opción tiene exactamente cien caracteres para probar el límite visual que permite la API de TG",
+        "Debes evitar superar este tamaño porque de lo contrario el sistema del bot recortará el texto final",
+        "Recuerda que las opciones cortas son mucho más fáciles de leer en dispositivos móviles pequeños",
+        "Esta es la cuarta opción de respuesta y también cumple con el estándar de los cien caracteres max"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    },
+    ---
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿Cuándo comenzarán a contarse los plazos de prescripción de las sanciones?",
+    "opciones": [
+        "Desde el día siguiente a aquel en que se notifica la resolución sancionadora.",
+        "Desde el día en que adquiera firmeza en vía administrativa la resolución sancionadora.",
+        "Ninguna opción es correcta.",
+        "Desde el día siguiente a aquel en que adquiera firmeza en vía administrativa la resolución sancionadora o desde el día en que debiera haber comenzado el cumplimiento de la sanción."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 25.\n Estos plazos comenzarán a contarse desde el día siguiente a aquel en que adquiera firmeza en vía administrativa la resolución sancionadora o desde el día en que debiera haber comenzado el cumplimiento de la sanción."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "En las faltas graves y muy graves, la prescripción se interrumpirá desde que se hubiera notificado _________, sin perjuicio de lo dispuesto en el artículo 48.5 sobre caducidad.",
+    "opciones": [
+        "Al culpable el inicio del cumplimiento de la sanción.",
+        "Al presunto responsable el acuerdo de iniciación del procedimiento sancionador.",
+        "Al presunto responsable el inicio del cumplimiento de la sanción.",
+        "Desde que formalmente conste que la autoridad o mando con competencia sancionadora hubiera recibido el traslado de la referida resolución judicial. "
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 24.\n En las faltas graves y muy graves, la prescripción se interrumpirá desde que se hubiera notificado al presunto responsable el acuerdo de iniciación del procedimiento sancionador, sin perjuicio de lo dispuesto en el artículo 48.5 sobre caducidad."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La responsabilidad disciplinaria se extingue por cualquiera de las causas siguientes:",
+    "opciones": [
+        "Cumplimiento de la pena.",
+        "Pase a reserva.",
+        "Fallecimiento.",
+        "Pérdida de la condición de alumno."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 23.\n La responsabilidad disciplinaria se extingue por cualquiera de las causas siguientes: a) Cumplimiento de la sanción. b) Prescripción de la falta o de la sanción. c) Pérdida de la condición militar. d) Pase a retiro. e) Fallecimiento."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La sanción de baja en el centro docente militar de formación, ¿es aplicable a todos los militares en activo?",
+    "opciones": [
+        "Si.",
+        "No.",
+        "Si, menos a los militares en la reserva.",
+        "Solo a quienes ostenten la condición de alumnos de dichos centros."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 18.\n La sanción de baja en el centro docente militar de formación, aplicable a quienes ostenten la condición de alumnos de dichos centros, supone la pérdida tanto de la condición de alumno del centro como del empleo militar que se hubiere alcanzado con carácter eventual, sin afectar al que se tuviera antes de ser nombrado alumno."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "En el arresto de quince a sesenta días que consiste en la privación de libertad del sancionado, su internamiento seráen un _______.",
+    "opciones": [
+        "Centro disciplinario militar",
+        "Establecimiento disciplinario militar",
+        "Establecimiento penal militar",
+        "Establecimiento penitenciario con separación del resto de los penados."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 16.\n El arresto de quince a sesenta días consiste en la privación de libertad del sancionado y su internamiento en un establecimiento disciplinario militar durante el tiempo por el que se imponga dicha sanción. El militar sancionado no participará en las actividades de la unidad durante el tiempo de este arresto."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La reprensión es la reprobación disciplinaria expresa que, por escrito, dirige el superior con competencia disciplinaria para imponerla a un subordinado para su anotación en la hoja de servicios es...",
+    "opciones": [
+        "Reprovación",
+        "Reprensión",
+        "Represión",
+        "Sanción."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 12.\n Reprensión. La reprensión es la reprobación disciplinaria expresa que, por escrito, dirige el superior con competencia disciplinaria para imponerla a un subordinado para su anotación en la hoja de servicios. No constituye sanción disciplinaria la advertencia o amonestación verbal que, para el mejor cumplimiento de las obligaciones, puede hacerse en el ejercicio del mando."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La suspensión de funciones, es una falta...",
+    "opciones": [
+        "Leve.",
+        "Grave.",
+        "Ninguna opción es correcta.",
+        "Muy grave"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 11.\n *OJO** que es suspensión de **EMPLEO.**"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La pérdida de empleo, es una falta...",
+    "opciones": [
+        "Leve.",
+        "Grave.",
+        "Ninguna opción es correcta.",
+        "Muy grave"
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 11.\n *OJO** que es pérdida de **DESTINO.**"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La baja en el Centro Docente Militar de Formación, es una falta...",
+    "opciones": [
+        "Leve.",
+        "Grave.",
+        "Ninguna opción es correcta.",
+        "Muy grave"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 11.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "A los efectos de esta ley, se entiende que una conducta típica es reiterada cuando se realiza en _______, que se computará de fecha a fecha desde la comisión del primero, aunque los hechos aislados hayan sido sancionados.",
+    "opciones": [
+        "En tres o más ocasiones en el periodo de tres años.",
+        "En tres o más ocasiones en el periodo de dos años.",
+        "En dos o más ocasiones en el periodo de tres años.",
+        "En dos o más ocasiones en el periodo de dos años."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 10.\n A los efectos de esta ley, se entiende que una conducta típica es reiterada cuando se realiza en tres o más ocasiones en el periodo de dos años, que se computará de fecha a fecha desde la comisión del primero, aunque los hechos aislados hayan sido sancionados."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿Quiénes son responsables de las faltas disciplinarias?",
+    "opciones": [
+        "Quienes realicen, por sí mismos o a través de otro, el hecho constitutivo de la infracción.",
+        "Quienes cooperen con actos sin los cuales no se habría efectuado.",
+        "Los que induzcan a otro a ejecutarlo.",
+        "Las tres opciones son correctas."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 9.\n Son responsables de las faltas disciplinarias quienes realicen, por sí mismos o a través de otro, el hecho constitutivo de la infracción o cooperen con actos sin los cuales no se habría efectuado, así como los que induzcan a otro a ejecutarlo."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave. \n **OJO:** aquí dice **DOS** faltas y en la falta grave se refiere a **TRES** faltas leves."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento de las normas y procedimientos que regulan el ejercicio del derecho de sufragio activo...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Haber sido condenado por sentencia firme en aplicación de leyes distintas al Código Penal Militar, a pena de prisión por un delito doloso o a pena de prisión superior a un año por delito cometido por imprudencia, en cualquiera de los casos cuando afecte al servicio, a la imagen pública de las Fuerzas Armadas, a la dignidad militar o cause daño a la Administración...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Infringir reiteradamente los deberes de neutralidad política o sindical, o las limitaciones en el ejercicio de las libertades de expresión o información, de los derechos de reunión y manifestación y del derecho de asociación política o profesional...",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave. \n **OJO con el REITERADAMENTE, siempre son muy graves.**"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento de las normas sobre incompatibilidades cuando ello dé lugar a una situación de incompatibilidad...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta levee."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave.\n **OJO:**El incumplimiento de las normas sobre incompatibilidades **cuando ello dé lugar** a una situación de incompatibilidad. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La negativa injustificada a someterse a reconocimiento médico, prueba de alcoholemia o detección del consumo de drogas tóxicas, estupefacientes, substancias psicotrópicas o similares, legítimamente ordenada por la autoridad competente, y realizada por personal autorizado, a fin de constatar la capacidad psicofísica para prestar servicio, así como la incomparecencia reiterada e injustificada, cuando sea debidamente citado, ante los órganos competentes o los instructores de los expedientes administrativos o disciplinarios...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Ninguna opción es correcta."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Estar embriagado o consumir drogas tóxicas, estupefacientes o sustancias psicotrópicas durante el desempeño del servicio o de forma reiterada fuera de él...",
+    "opciones": [
+        "Es una falta menos grave.",
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Durante la actuación de las Fuerzas Armadas en supuestos de grave riesgo, catástrofe, calamidad u otras necesidades públicas, no prestar el auxilio posible a los ciudadanos que se encuentren en grave peligro o incumplir reiteradamente un deber militar para evitar un riesgo propio...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave. \n **OJO**: 'a los ciudadanos que se encuentren en **GRAVE** peligro...'"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Omitir por imprudencia la adopción de las medidas a su alcance para evitar o perseguir la infracción por sus subordinados de los deberes establecidos por el derecho internacional aplicable en los conflictos armados...",
+    "opciones": [
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento del deber de reserva sobre secretos oficiales y materias clasificadas. ",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento del deber de fidelidad a la Constitución y la realización de actos irrespetuosos o la emisión pública de expresiones o manifestaciones contrarias al ordenamiento constitucional, a la Corona y a las demás instituciones y órganos constitucionalmente reconocidos, cuando sea grave o reiterado...",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 8.\n Es una falta muy grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": " Cometer falta leve teniendo anotadas y no canceladas tres faltas leves, sancionadas con arresto...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Quebrantar una sanción o una medida disciplinaria previa o provisional o facilitar su incumplimiento...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta menos grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La inexactitud en el cumplimiento de las normas y procedimientos que regulan el ejercicio del derecho de sufragio activo...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Ninguna de las anteriores."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Promover o participar en acciones de negociación colectiva o en huelgas, así como en otras acciones concertadas que tengan por finalidad alterar el normal funcionamiento de las Fuerzas Armadas o sus unidades, publicitarlas, o inducir o invitar a otros militares a que las lleven a cabo...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento de las normas y procedimientos que regulan los registros personales de los militares y las revistas, inspecciones y registros de sus taquillas, efectos y pertenencias...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Realizar, ordenar o tolerar o no denunciar actos que, de cualquier modo, atenten contra la intimidad, la dignidad personal o en el trabajo o supongan discriminación por razón de nacimiento, origen racial o étnico, género o sexo, orientación e identidad sexual, religión, convicciones, opinión, discapacidad o cualquier otra condición o circunstancia personal o social...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Mantener relaciones sexuales en instalaciones militares, buques, aeronaves o campamentos, o durante ejercicios u operaciones, cuando, por las circunstancias en que se lleven a cabo o por su trascendencia, atenten contra la dignidad militar...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Estar embriagado o consumir drogas tóxicas, estupefacientes o sustancias psicotrópicas en instalaciones militares, buques, aeronaves o campamentos, durante ejercicios u operaciones o, fuera de ellos, vistiendo uniforme o cuando afecte a la imagen de las Fuerzas Armadas, así como llevar a cabo otros actos contrarios a la dignidad militar susceptibles de producir descrédito o menosprecio de las Fuerzas Armadas...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta menos grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Incumplir un deber militar o dejar de auxiliar injustificadamente al compañero en peligro, para evitar un riesgo propio...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El incumplimiento de las normas sobre prevención de riesgos, protección de la salud y del medio ambiente aplicables en el ámbito de las Fuerzas Armadas...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "No incorporarse o ausentarse, injustificadamente, de su destino, del puesto desempeñado o del centro docente militar de formación en el que curse sus estudios, por un plazo superior a veinticuatro horas, que se computará de momento a momento, siendo el inicial aquél en que el interesado debía estar presente en el destino, puesto o centro docente militar de formación...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Ocasionar o no impedir actos que supongan riesgo para la seguridad de una fuerza o unidad militar, así como exhibir o utilizar las armas de forma innecesaria o inadecuada...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Ninguna de las opciones es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El descuido en la instrucción o preparación personal cuando ocasione perjuicio al servicio...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Incumplir las obligaciones del centinela o de otro servicio de armas, transmisiones o guardia de seguridad siempre que no se cause grave daño al servicio, así como abandonar otro tipo de servicios o guardias distintos a los anteriores o colocarse en estado de no poder cumplirlos...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    }
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El descuido en la instrucción o preparación personal cuando ocasione perjuicio al servicio...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Ninguna opción es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Impedir o limitar a otro militar el ejercicio de los derechos que tenga legalmente reconocidos, no tramitar o devolver a su origen, sin darles el debido curso reglamentario, las iniciativas, peticiones, reclamaciones o quejas formuladas por subordinados o no resolver en los plazos legales los recursos interpuestos ante sanciones impuestas por la comisión de faltas disciplinarias...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La negligencia en la preparación, instrucción y adiestramiento del personal a sus órdenes...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta muy grave.",
+        "Es una falta menosgrave.",
+        "Es una falta grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Las extralimitaciones en el ejercicio de la autoridad o mando que no irroguen un perjuicio grave, los actos que supongan vejación o menosprecio y el abuso de su posición de superioridad jerárquica, en relación con sus subordinados militares o civiles, nacionales o extranjeros, o dar órdenes sin tener competencia para ello...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": " Dar órdenes que sean contrarias al ordenamiento jurídico o que se refieran a cuestiones ajenas al servicio...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Organizar, participar o asistir a reuniones clandestinas o no autorizadas que se celebren en unidades militares...",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La incomparecencia injustificada, cuando sea debidamente citado, ante los órganos competentes o los instructores de expedientes administrativos o disciplinarios, así como ocultar o alterar ante autoridades o superiores el verdadero nombre, circunstancia o destino o hacer uso de documento que no corresponda a su persona...",
+    "opciones": [
+        "ninguna opción es correcta.",
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Hacer peticiones, reclamaciones, quejas o manifestaciones contrarias a la disciplina o basadas en aseveraciones falsas, así como formularlas con carácter colectivo o a través de los medios de comunicación social... ",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta leve.",
+        "Es una falta menos grave."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Emitir manifiesta y públicamente expresiones contrarias, realizar actos irrespetuosos o adoptar actitud de menosprecio hacia la Constitución, la Corona y demás órganos, instituciones o poderes del Estado; la Bandera, Escudo e Himno nacionales; las Comunidades Autónomas, Ciudades con Estatuto de Autonomía o Administraciones Locales y sus símbolos; las personas y autoridades que las representan, así como las de otras naciones u organizaciones internacionales; las Fuerzas Armadas, sus cuerpos y escalas, las Fuerzas y Cuerpos de Seguridad, así como sus autoridades y mandos...",
+    "opciones": [
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave.",
+        "Es una falta grave."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La falta de respeto o subordinación a los superiores en la estructura orgánica u operativa y la inobservancia de sus órdenes o instrucciones, así como de los requerimientos que reciba de un militar de empleo superior referentes a las disposiciones y normas generales de orden y comportamiento...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "ninguna opción es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 7.\n Es una falta grave."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Auxiliar sin ser cooperador necesario o encubrir al autor de una falta disciplinaria grave...",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Ninguna opción es correcta.  ",
+        "Es una falta leve."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El descuido en la conservación del armamento, material o equipo de carácter oficial...",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Es una falta muy leve."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Los daños leves en las cosas y la sustracción de escasa cuantía realizados en instalaciones militares, buques, aeronaves o campamentos, o durante ejercicios u operaciones o en acto de servicio...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve.",
+        "Ninguna opción es correcta."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Consumir bebidas alcohólicas durante el desempeño de sus funciones o en otras ocasiones en que lo prohíban las normas militares...",
+    "opciones": [
+        "Ninguna opción es correcta.",
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Es una falta menos grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El descuido en el aseo personal y la infracción de las normas que regulan la uniformidad, así como ostentar insignias, condecoraciones u otros distintivos militares o civiles sin estar autorizado para ello...",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta leve.",
+        "Es una falta grave.",
+        "Ninguna opción es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Dificultar a otro militar el ejercicio de los derechos que tenga legalmente reconocidos y la inexactitud o descuido en la tramitación reglamentaria de las iniciativas, peticiones, reclamaciones o quejas formuladas por subordinados...",
+    "opciones": [
+        "Es una falta menos grave.",
+        "Es una falta leve.",
+        "Es una falta muy grave.",
+        "Es una falta grave"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    }, 
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La omisión de saludo a un superior, el no devolverlo a otro militar de igual o inferior empleo y el inexacto cumplimiento de las normas que lo regulan...",
+    "opciones": [
+        "Es una falta menos grave.",
+        "Es una falta grave.",
+        "Es una falta menos grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Hacer reclamaciones o peticiones en forma o términos irrespetuosos o prescindiendo de los cauces reglados.",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta menos grave.",
+        "Es una falta muy grave."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": " La inobservancia de las indicaciones o instrucciones de otro militar que, aun siendo de empleo igual o inferior, se encuentre de servicio y actúe en virtud de órdenes o consignas que esté encargado de hacer cumplir. ",
+    "opciones": [
+        "Es una falta muy grave.",
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Esta es la cuarta opción de respuesta y también cumple con el estándar de los cien caracteres max"
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Expresar públicamente opiniones que, relacionadas estrictamente con el servicio en las Fuerzas Armadas, no se ajusten a los límites derivados de la disciplina, realizadas cualesquiera de ellas de palabra, por escrito o por medios telemáticos.",
+    "opciones": [
+        "Ninguna es correcta.",
+        "Es una falta grave.",
+        "Es una falta muy grave.",
+        "Es una falta leve."
+    ],
+    "correcta": 3,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "La inexactitud en el cumplimiento de las órdenes o instrucciones de los superiores en la estructura orgánica u operativa, así como de los requerimientos que reciba de un militar de empleo superior referentes a las disposiciones y normas generales de orden y comportamiento.",
+    "opciones": [
+        "Es una falta grave.",
+        "Es una falta leve.",
+        "Es una falta muy grave.",
+        "Ninguna es correcta."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 6.\n Es una falta leve."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Son faltas disciplinarias _______, previstas en esta ley. ",
+    "opciones": [
+        "Las acciones y omisiones, dolosas o imprudentes",
+        "Las acciones u omisiones, dolosas o imprudentes",
+        "Las acciones y omisiones, dolosas o culposas",
+        "Las acciones u omisiones, dolosas o prudentes"
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 5.\n Son faltas disciplinarias las acciones y omisiones, dolosas o imprudentes, previstas en esta ley"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": " El tiempo transcurrido desde el inicio de un procedimiento penal hasta la comunicación a la autoridad disciplinaria de su resolución firme, ¿se computará para la prescripción de la infracción disciplinaria?",
+    "opciones": [
+        "Se computará para la prescripción de la infracción disciplinaria.",
+        "No se computará para la prescripción de la infracción disciplinaria.",
+        "No se computará para la prescripción de la sanción disciplinaria.",
+        "Se computará para la prescripción de la sanción disciplinaria."
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 4.\n El tiempo transcurrido desde el inicio de un procedimiento penal hasta la comunicación a la autoridad disciplinaria de su resolución firme no se computará para la prescripción de la infracción disciplinaria."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "Sólo podrá recaer sanción penal y disciplinaria sobre los mismos hechos cuando ______.",
+    "opciones": [
+        "Sí hubiere identidad de bien jurídico protegido.",
+        "No hubiere identidad de bien jurídico corregido.",
+        "No hubiere identidad de bien jurídico protegido.",
+        "Hubiere identidad de bien jurídico protegido."
+    ],
+    "correcta": 2,
+    "explicacion": "📚 Art 4.\n Sólo podrá recaer sanción penal y disciplinaria sobre los mismos hechos cuando no hubiere identidad de bien jurídico protegido."
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿La iniciación de un procedimiento penal impedirá la incoación y tramitación de expedientes disciplinarios por los mismos hechos?",
+    "opciones": [
+        "Depende.",
+        "En algunos casos.",
+        "Si.",
+        "No."
+    ],
+    "correcta": 4,
+    "explicacion": "📚 Art 4.\n La iniciación de un procedimiento penal no impedirá la incoación y tramitación de expedientes disciplinarios por los mismos hechos"
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "¿A qué tipo de responsabilidad están sujetos los militares?",
+    "opciones": [
+        "Responsabilidad civil, penal y disciplinaria judicial. ",
+        "Responsabilidad civil, penal y disciplinaria militar.",
+        "Responsabilidad civil, penal y contencioso-disciplinaria judicial.",
+        "Responsabilidad civil, penal y administrativa."
+    ],
+    "correcta": 0,
+    "explicacion": "📚 Art 3.\n Responsabilidad civil, penal y disciplinaria judicial. "
+    },
+    {
+    "capitulo": 1,
+    "bloque": 1,
+    "tema": 1,
+    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+    "pregunta": "El régimen disciplinario regulado en esta ley se entiende sin perjuicio de la responsabilidad civil y penal en la que puedan incurrir los miembros de las Fuerzas Armadas, así como del ejercicio de ______, que se harán efectivas en la forma prevista por las normas que las regulan. ",
+    "opciones": [
+        "Las potestades judiciales",
+        "Las potestades disciplinarias judiciales",
+        "Las potestades disciplinarias",
+        "Las potestades penales y disciplinarias"
+    ],
+    "correcta": 1,
+    "explicacion": "📚 Art 3.\n  El régimen disciplinario regulado en esta ley se entiende sin perjuicio de la responsabilidad civil y penal en la que puedan incurrir los miembros de las Fuerzas Armadas, así como del ejercicio de las potestades disciplinarias judiciales, que se harán efectivas en la forma prevista por las normas que las regulan."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
+        "tema": 1,
+        "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
+        "pregunta": "En las sanciones económicas, ¿cómo se calcula la cuantía diaria?",
+        "opciones": ["Sueldo base dividido por 30", "Sueldo más complementos dividido por 30", "Sueldo más complemento de empleo dividido por 60", "Sueldo base dividido por 60"],
+        "correcta": 2,
+        "explicacion": "📚 Artículo 60.\nSe calculará tomando el sueldo y el complemento de empleo... se dividirá por sesenta aquella cantidad y se multiplicará por el número de días."
+    },
+    {
+        "capitulo": 1,
+        "bloque": 4,
         "tema": 2,
         "titulo_tema": "Código Penal Militar (LO 14/2015)",
         "pregunta": "¿A quién se aplica el Código Penal Militar además de a las Fuerzas Armadas?",
@@ -1482,7 +2453,7 @@
         "Pérdida de destino"
     ],
     "correcta": 0,
-    "explicacion": "📚 Art 1.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    "explicacion": "📚 Art 11.\n Pérdida de empleo, prisión superior a 3 años y inhabilitación absoluta para mando de buque de guerra o aeronave militar."
     },
     {
     "capitulo": 1,
@@ -2190,9 +3161,9 @@
         "tema": 1,
         "titulo_tema": "Modelo de liderazgo K-2",
         "pregunta": "¿Cuál es la primera etapa o 'campamento base' en el ascenso a la cima del liderazgo?",
-        "opciones": ["El Equipazgo", "La Decisión", "El Autoliderazgo", "La Misión"],
+        "opciones": ["El Equipazgo", "La Decisión", "El liderazgo", "La Misión"],
         "correcta": 2,
-        "explicacion": "📚 Tema 1 (Punto 3).\nAsí tendemos al autoliderazgo, basado en el autoconocimiento y el autodesarrollo, como primer paso."
+        "explicacion": "📚 Tema 1 (Punto 3).\nCampamento base del liderazgo."
     },
     {
         "capitulo": 1,
@@ -2390,7 +3361,7 @@
         "tema": 2,
         "titulo_tema": "La Escuadra y el Equipo",
         "pregunta": "¿Qué formación adopta la escuadra para cruzar zonas batidas por el fuego enemigo o para el asalto?",
-        "opciones": ["Hilera", "Cuña", "Línea o Guerrilla", "Rombo"],
+        "opciones": ["Hilera", "Cuña", "Fila o Guerrilla", "Rombo"],
         "correcta": 2,
         "explicacion": "📚 Formaciones.\nFila o guerrilla: Se utiliza para franquear crestas y divisorias, cruzar zonas muy despejadas o batidas por el fuego y para ejecutar el asalto. Es el despliegue de mayor dificultad para la acción del mando. "
     },
@@ -2433,16 +3404,6 @@
         "opciones": ["Alto el fuego", "Atención o Reunión", "Despliegue", "Enemigo a la vista"],
         "correcta": 1,
         "explicacion": "📚 Señales.\nBrazo levantado verticalmente: Atención. También se utiliza para llamar a los jefes de escuadra (Reunión)."
-    },
-    {
-        "capitulo": 2,
-        "bloque": 1,
-        "tema": 2,
-        "titulo_tema": "La Escuadra y el Equipo",
-        "pregunta": "¿Cuál es la distancia normal entre combatientes en orden abierto (dispersión)?",
-        "opciones": ["1 a 2 metros", "5 a 10 metros", "15 a 20 metros", "Más de 25 metros"],
-        "correcta": 1,
-        "explicacion": "📚 Formaciones.\nLa dispersión normal entre hombres es de 5 a 10 metros, dependiendo del terreno y la visibilidad."
     },
     {
         "capitulo": 2,

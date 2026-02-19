@@ -1,5 +1,5 @@
 import json, random, os, logging, sqlite3, urllib.parse, asyncio
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from zoneinfo import ZoneInfo
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, Poll
 from telegram.ext import Application, CommandHandler, ContextTypes, PollHandler
@@ -31,7 +31,7 @@ init_db()
 with open('preguntas.json', 'r', encoding='utf-8') as f:
     preguntas_oficiales = json.load(f)
 
-# --- CONFIGURACIÓN DE COMPARTIR ---
+# --- CONFIGURACIÓN DE COMPARTIR (TU VERSIÓN ORIGINAL) ---
 url_privada = "https://t.me/+c0fMDCCvFs42YWVk"
 texto_compartir = (
     "¡Compañero! Te paso este canal de test gratuitos para preparar al ascenso a Cabo. "
@@ -41,6 +41,21 @@ texto_compartir = (
 )
 link_viral = f"https://t.me/share/url?url=&text={urllib.parse.quote(texto_compartir)}"
 keyboard_viral = InlineKeyboardMarkup([[InlineKeyboardButton("🚀 RECOMENDAR A UN COMPAÑERO", url=link_viral)]])
+
+# --- COMANDO SECRETO: INFORME DE ARSENAL ---
+async def informe_arsenal(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    total = len(preguntas_oficiales)
+    temas = {}
+    for p in preguntas_oficiales:
+        t = p.get('titulo_tema', 'SIN TEMA').upper()
+        temas[t] = temas.get(t, 0) + 1
+    
+    informe = f"📦 **PARTE DE EXISTENCIAS (ARSENAL)** 📦\n------------------------------------------\n"
+    informe += f"🎖️ **Total Munición**: {total} preguntas\n\n📚 **Desglose:**\n"
+    for t, c in sorted(temas.items(), key=lambda x: x[1], reverse=True):
+        informe += f"🔹 *{t}*: {c}\n"
+    informe += "------------------------------------------\n🫡 **Informe para el Mando.**"
+    await update.message.reply_text(informe, parse_mode="Markdown")
 
 # --- MENSAJE ESPECIAL DÍA DEL EXAMEN ---
 async def enviar_mensaje_examen(context):
@@ -97,21 +112,24 @@ def preparar_texto_informe():
     informe += "🫡 **Mañana más y mejor. ¡Descansen!**"
     return informe
 
-# --- ACCIÓN DE LANZAR PREGUNTAS ---
+# --- LANZAMIENTO DE PREGUNTAS ---
 async def lanzar_tanda(bot, cantidad):
-    hoy_str = datetime.now(ZONA_ESP).strftime('%Y-%m-%d')
+    hoy = datetime.now(ZONA_ESP)
+    hace_7_dias = (hoy - timedelta(days=7)).strftime('%Y-%m-%d')
     conn = sqlite3.connect('stats.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT pregunta_texto FROM encuestas WHERE fecha = ?", (hoy_str,))
-    enviadas_hoy = [row[0] for row in cursor.fetchall()]
-    pool_disponible = [p for p in preguntas_oficiales if p['pregunta'] not in enviadas_hoy]
     
-    if len(pool_disponible) < cantidad:
-        pool_disponible = preguntas_oficiales
+    # Memoria de 7 días
+    cursor.execute("SELECT DISTINCT pregunta_texto FROM encuestas WHERE fecha >= ?", (hace_7_dias,))
+    recientes = [row[0] for row in cursor.fetchall()]
+    pool = [p for p in preguntas_oficiales if p['pregunta'] not in recientes]
+    
+    if len(pool) < cantidad:
+        pool = preguntas_oficiales
 
     await bot.send_message(chat_id=CHAT_ID, text=obtener_saludo(), reply_markup=keyboard_viral, parse_mode="Markdown")
 
-    for p in random.sample(pool_disponible, min(cantidad, len(pool_disponible))):
+    for p in random.sample(pool, min(cantidad, len(pool))):
         try:
             msg = await bot.send_poll(
                 CHAT_ID, 
@@ -120,15 +138,18 @@ async def lanzar_tanda(bot, cantidad):
                 type='quiz', 
                 correct_option_id=int(p['correcta']), 
                 explanation=f"{p.get('explicacion','')}"[:190], 
-                is_anonymous=True
+                is_anonymous=True,
+                # NUEVO: Soporte para Markdown en las encuestas
+                question_parse_mode="Markdown",
+                explanation_parse_mode="Markdown"
             )
             cursor.execute("INSERT INTO encuestas VALUES (?, ?, ?, ?, ?, ?)", 
-                           (msg.poll.id, p.get('titulo_tema','').upper(), 0, 0, hoy_str, p['pregunta']))
+                           (msg.poll.id, p.get('titulo_tema','').upper(), 0, 0, hoy.strftime('%Y-%m-%d'), p['pregunta']))
             conn.commit()
         except: continue
     conn.close()
     
-    # MENSAJE DE CIERRE RESTAURADO A SU VERSIÓN ORIGINAL
+    # TU TEXTO DE CIERRE ORIGINAL
     msg_cierre = "✅ **ENTRENAMIENTO FINALIZADO**\n\nNo dejes a tus compañeros atrás. Comparte el canal para ayudarnos entre nosotros. 👇"
     await bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
 
@@ -138,17 +159,14 @@ async def enviar_batch_automatico(context):
     if ahora.date() == FECHA_EXAMEN.date(): return
     if not (6 <= ahora.hour <= 22): return 
     
-    cantidad = 10 if ahora.weekday() >= 5 else 2
-    await lanzar_tanda(context.bot, cantidad)
+    await lanzar_tanda(context.bot, 10 if ahora.weekday() >= 5 and ahora.hour in [10, 14, 18, 22] else 2)
 
 async def cierre_jornada(context):
     ahora = datetime.now(ZONA_ESP)
     if ahora.date() == FECHA_EXAMEN.date(): return
     
-    # 1. Lanzar la última tanda
+    # Tanda final + Estadísticas unificadas
     await lanzar_tanda(context.bot, 10 if ahora.weekday() >= 5 else 2)
-    
-    # 2. Esperar un momento para asegurar el orden y enviar estadísticas
     await asyncio.sleep(2)
     informe = preparar_texto_informe()
     await context.bot.send_message(chat_id=CHAT_ID, text=informe or "Hoy no ha habido actividad registrada.", parse_mode="Markdown")
@@ -160,7 +178,7 @@ def main():
     segundos_hasta_en_punto = 3600 - (ahora.minute * 60 + ahora.second)
     app.job_queue.run_repeating(enviar_batch_automatico, interval=3600, first=segundos_hasta_en_punto)
     
-    # Tanda final + Estadísticas a las 23:00
+    # Cierre de jornada 23:00
     app.job_queue.run_daily(cierre_jornada, time=time(23, 0, tzinfo=ZONA_ESP))
 
     # Mensaje motivación día examen
@@ -170,9 +188,10 @@ def main():
     
     app.add_handler(CommandHandler("disparar", lambda u, c: lanzar_tanda(c.bot, 2)))
     app.add_handler(CommandHandler("test_cierre", lambda u, c: cierre_jornada(c)))
+    app.add_handler(CommandHandler("arsenal", informe_arsenal))
     app.add_handler(PollHandler(track_poll_results))
     
-    print("🚀 Bot en guardia. Mensaje de cierre restaurado.")
+    print("🚀 Bot en guardia. Formato Markdown y Arsenal activados con mensajes originales.")
     app.run_polling()
 
 if __name__ == '__main__': main()
