@@ -32,7 +32,7 @@ with open('preguntas.json', 'r', encoding='utf-8') as f:
     preguntas_oficiales = json.load(f)
 
 # --- CONFIGURACIÓN DE COMPARTIR (TU VERSIÓN ORIGINAL) ---
-url_privada = "https://t.me/+c0fMDCCvFs42YWVk"
+url_privada = "https://t.me/+65_PMmIFrCQ1OTNk"
 texto_compartir = (
     "¡Compañero! Te paso este canal de test gratuitos para preparar al ascenso a Cabo. "
     "Envían preguntas cada hora, tiene cuenta atrás para el examen y estadísticas diarias de nuestros resultados. "
