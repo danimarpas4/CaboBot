@@ -2166,7 +2166,7 @@
         "Tres meses  a dos años de prisión",
         "Seis meses a seis años de prisión. "
     ],
-    "correcta": 1,
+    "correcta": 3,
     "explicacion": "📚 Art 44.\n El militar que se negare a obedecer o no cumpliere las órdenes legítimas de sus superiores relativas al servicio de armas será castigado con la pena de seis meses a seis años de prisión. "
     },
     {
@@ -3335,7 +3335,7 @@
         "tema": 2,
         "titulo_tema": "La Escuadra y el Equipo",
         "pregunta": "¿Para qué situaciones es más adecuada la formación en 'hilera'?",
-        "opciones": ["Es idóneo para la infiltración. ", "Para avanzar por terreno abierto bajo fuego enemigo", "Para desplazamientos rápidos, de noche o con poca visibilidad", "Para ofrecer el máximo frente de fuego"],
+        "opciones": ["Es idóneo para la infiltración. ", "Para avanzar por terreno abierto bajo fuego enemigo", "Para desplazamientos rápidos, de noche o con mucha visibilidad", "Para ofrecer el máximo frente de fuego"],
         "correcta": 0,
         "explicacion": "📚 Formaciones.\nHilera: Es idóneo para la infiltración. Disposición de hombres uno detrás de otro, adoptando una formación sensiblemente triangular para obtener mayor seguridad y potencia de fuego en todas direcciones. El cabo levantará un brazo."
     },

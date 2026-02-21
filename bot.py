@@ -31,16 +31,17 @@ init_db()
 with open('preguntas.json', 'r', encoding='utf-8') as f:
     preguntas_oficiales = json.load(f)
 
-# --- CONFIGURACIÓN DE COMPARTIR (TU VERSIÓN ORIGINAL) ---
+# --- CONFIGURACIÓN DE COMPARTIR CORREGIDA ---
 url_privada = "https://t.me/+65_PMmIFrCQ1OTNk"
+# Eliminamos la URL del texto porque Telegram la concatena automáticamente al final de este string
 texto_compartir = (
-    "¡Compañero! 🪖\n\nTe comparto este canal de test gratuitos para preparar el ascenso a Cabo."
-    "Preguntas oficiales cada hora, simulacros, cuanta atrás para el examen y estadísticas.\n\n"
-    f"Únete al canal y prepárate en condiciones:\n{url_privada}"
+    "¡Compañero! 🪖\n\nTe comparto este canal de test gratuitos para preparar el ascenso a Cabo. "
+    "Preguntas oficiales cada hora, simulacros, cuenta atrás para el examen y estadísticas.\n\n"
+    "Únete al canal y prepárate en condiciones:"
 )
 url_tg_share = f"https://t.me/share/url?url={urllib.parse.quote(url_privada)}&text={urllib.parse.quote(texto_compartir)}"
 keyboard_viral = InlineKeyboardMarkup([
-    [InlineKeyboardButton("⚔️ ENVIAR REFUERZOS (Compartir Bot) ⚔️", url=url_tg_share)]
+    [InlineKeyboardButton("⚔️ COMPARTIR CON TUS COMPAÑEROS ⚔️", url=url_tg_share)]
 ])
 
 # --- OBTENER SALUDO CON AVISO DE SIMULACRO ---
@@ -119,7 +120,8 @@ async def enviar_mensaje_examen(context):
     await context.bot.send_message(chat_id=CHAT_ID, text=msg, parse_mode="Markdown")
 
 # --- LANZAMIENTO DE TANDA CON BUCLE ANTI-ERRORES ---
-async def lanzar_tanda(bot, cantidad, es_simulacro=False):
+# Añadimos un parámetro enviar_cierre para controlarlo desde fuera
+async def lanzar_tanda(bot, cantidad, es_simulacro=False, enviar_cierre=True):
     hoy = datetime.now(ZONA_ESP)
     hace_7_dias = (hoy - timedelta(days=7)).strftime('%Y-%m-%d')
     conn = sqlite3.connect('stats.db')
@@ -137,17 +139,15 @@ async def lanzar_tanda(bot, cantidad, es_simulacro=False):
 
     enviadas = 0
     intentos = 0
-    max_intentos = cantidad * 5  # Margen de seguridad para no crear un bucle infinito
+    max_intentos = cantidad * 5  
     
     random.shuffle(pool)
 
-    # El bucle insiste hasta que se envíen EXACTAMENTE las preguntas solicitadas
     while enviadas < cantidad and intentos < max_intentos and pool:
         p = pool.pop(0)  
         intentos += 1
         success = False
         
-        # --- INTENTO 1: Tu límite de 190 caracteres ---
         explicacion_intento = f"{p.get('explicacion','')}"[:190]
         
         try:
@@ -167,7 +167,6 @@ async def lanzar_tanda(bot, cantidad, es_simulacro=False):
             if "Explanation_too_long" in str(e) or "Poll_explanation_length" in str(e):
                 logging.info(f"⚠️ Explicación pesada. Reintentando con recorte de seguridad a 150...")
                 try:
-                    # --- INTENTO 2: Plan B de seguridad (150 caracteres) ---
                     explicacion_intento = f"{p.get('explicacion','')}"[:150]
                     msg = await bot.send_poll(
                         CHAT_ID, 
@@ -186,7 +185,6 @@ async def lanzar_tanda(bot, cantidad, es_simulacro=False):
             else:
                 logging.error(f"❌ Error de otro tipo: {e}")
 
-        # Si se envió bien (en el intento 1 o en el 2), sumamos al contador y guardamos
         if success:
             enviadas += 1
             cursor.execute("INSERT INTO encuestas VALUES (?, ?, ?, ?, ?, ?)", 
@@ -195,9 +193,10 @@ async def lanzar_tanda(bot, cantidad, es_simulacro=False):
             
     conn.close()
     
-    # Mensaje de cierre original
-    msg_cierre = "✅ **ENTRENAMIENTO FINALIZADO**\n\nNo dejes a tus compañeros atrás. Comparte el canal para ayudarnos entre nosotros. 👇"
-    await bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
+    # Solo envía el mensaje genérico de cierre si no es el final de la jornada
+    if enviar_cierre:
+        msg_cierre = "✅ **ENTRENAMIENTO FINALIZADO**\n\nNo dejes a tus compañeros atrás. Comparte el canal para ayudarnos entre nosotros. 👇"
+        await bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
 
 # --- PROGRAMACIÓN DE TAREAS ---
 async def enviar_batch_automatico(context):
@@ -205,35 +204,40 @@ async def enviar_batch_automatico(context):
     if ahora.date() == FECHA_EXAMEN.date(): return
     if not (6 <= ahora.hour <= 22): return 
     
-    es_finde = ahora.weekday() >= 5  # 5 es Sábado, 6 es Domingo
+    es_finde = ahora.weekday() >= 5  
     
     if es_finde:
-        # Fines de semana: SOLO a estas 4 horas envía 10 preguntas (SIMULACRO)
         if ahora.hour in [10, 14, 18, 22]:
             cantidad = 10
             es_simulacro = True
         else:
-            return  # Si es finde pero es otra hora, aborta y no hace nada.
+            return  
     else:
-        # Entre semana: siempre 2 preguntas por hora
         cantidad = 2
         es_simulacro = False
         
-    await lanzar_tanda(context.bot, cantidad, es_simulacro)
+    await lanzar_tanda(context.bot, cantidad, es_simulacro, enviar_cierre=True)
 
 async def cierre_jornada(context):
     ahora = datetime.now(ZONA_ESP)
     if ahora.date() == FECHA_EXAMEN.date(): return
     
-    # La tanda final de las 23:00 envía preguntas (10 si es finde, 2 si es diario)
     es_finde = ahora.weekday() >= 5
     cantidad = 10 if es_finde else 2
     es_simulacro = es_finde
     
-    await lanzar_tanda(context.bot, cantidad, es_simulacro)
+    # 1. Lanzamos las preguntas, pero le decimos que NO envíe el mensaje de cierre todavía
+    await lanzar_tanda(context.bot, cantidad, es_simulacro, enviar_cierre=False)
     await asyncio.sleep(2)
+    
+    # 2. Enviamos el parte de novedades (estadísticas de la jornada)
     informe = preparar_texto_informe()
     await context.bot.send_message(chat_id=CHAT_ID, text=informe or "Hoy no ha habido actividad registrada.", parse_mode="Markdown")
+    
+    # 3. Y para rematar, enviamos SIEMPRE el botón de compartir
+    await asyncio.sleep(2)
+    msg_cierre = "✅ **PARTE DE NOVEDADES FINALIZADO**\n\nNo dejes a tus compañeros atrás. Comparte el canal para ayudarnos entre nosotros. 👇"
+    await context.bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
 
 def main():
     app = Application.builder().token(TOKEN).build()
@@ -256,7 +260,7 @@ def main():
     app.add_handler(CommandHandler("arsenal", informe_arsenal))
     app.add_handler(PollHandler(track_poll_results))
     
-    print("🚀 Bot en guardia. Lógica de fines de semana y anti-errores activada.")
+    print("🚀 Bot en guardia. Lógica de compartir unificada y corregida.")
     app.run_polling()
 
 if __name__ == '__main__': main()
