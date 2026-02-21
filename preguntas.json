@@ -1084,21 +1084,6 @@
     "bloque": 1,
     "tema": 1,
     "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
-    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
-    "opciones": [
-        "Esta opción tiene exactamente cien caracteres para probar el límite visual que permite la API de TG",
-        "Debes evitar superar este tamaño porque de lo contrario el sistema del bot recortará el texto final",
-        "Recuerda que las opciones cortas son mucho más fáciles de leer en dispositivos móviles pequeños",
-        "Esta es la cuarta opción de respuesta y también cumple con el estándar de los cien caracteres max"
-    ],
-    "correcta": 1,
-    "explicacion": "📚 Art 7.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
-    },
-    {
-    "capitulo": 1,
-    "bloque": 1,
-    "tema": 1,
-    "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
     "pregunta": "¿Cuándo comenzarán a contarse los plazos de prescripción de las sanciones?",
     "opciones": [
         "Desde el día siguiente a aquel en que se notifica la resolución sancionadora.",
@@ -1227,7 +1212,7 @@
         "Muy grave"
     ],
     "correcta": 1,
-    "explicacion": "📚 Art 11.\n La explicación debe ser directa. Telegram permite 200 caracteres, pero configuramos el bot a 190 para evitar fallos. Así el alumno recibe la base legal de forma clara y sin cortes de texto."
+    "explicacion": "📚 Art 11.\n Es una falta grave."
     },
     {
     "capitulo": 1,
@@ -1264,7 +1249,7 @@
     "bloque": 1,
     "tema": 1,
     "titulo_tema": "Régimen Disciplinario (LO 8/2014)",
-    "pregunta": "¿Cuál es el límite exacto de caracteres que permite Telegram para una pregunta cuando ya hemos incluido el título del tema entre corchetes y con el emoji al principio, asegurando que el aspirante pueda leer el enunciado completo sin ningún corte?",
+    "pregunta": "¿Qué tipo de falta comete quien cometiera una falta grave teniendo anotadas y no canceladas dos faltas de igual o superior gravedad?",
     "opciones": [
         "Es una falta grave.",
         "Es una falta muy grave.",
@@ -4049,7 +4034,7 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "¿Qué alcance cadencia teórica tiene la MG-42?",
+        "pregunta": "¿Qué cadencia teórica tiene la MG-42?",
         "opciones": ["1.250 dpm", "1.300 dpm", "1.350 dpm", "1.200 dpm"],
         "correcta": 1,
         "explicacion": "Datos Técnicos.\nCadencia teórica: 1.300 dpm."
@@ -4059,10 +4044,10 @@
         "bloque": 3,
         "tema": 4,
         "titulo_tema": "Ametralladora MG-42",
-        "pregunta": "Si empleamos la MG-42 sobre trípode, ¿cuál es su alcance eficaz estimado?",
-        "opciones": ["800 metros", "1.200 metros", "2.500 metros", "3.000 metros"],
+        "pregunta": "Si empleamos la MG-42 sobre trípode, ¿cuál es su alcance máximo?",
+        "opciones": ["800 metros", "4.000 metros", "2.500 metros", "3.000 metros"],
         "correcta": 1,
-        "explicacion": "Datos Técnicos.\nSobre trípode, el alcance eficaz aumenta considerablemente hasta los 1.200 metros aproximadamente."
+        "explicacion": "Datos Técnicos.\n Alcance máximo 4.000m."
     },
     {
         "capitulo": 2,

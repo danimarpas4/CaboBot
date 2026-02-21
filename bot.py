@@ -34,102 +34,122 @@ with open('preguntas.json', 'r', encoding='utf-8') as f:
 # --- CONFIGURACIÓN DE COMPARTIR (TU VERSIÓN ORIGINAL) ---
 url_privada = "https://t.me/+65_PMmIFrCQ1OTNk"
 texto_compartir = (
-    "¡Compañero! Te paso este canal de test gratuitos para preparar al ascenso a Cabo. "
-    "Envían preguntas cada hora, tiene cuenta atrás para el examen y estadísticas diarias de nuestros resultados. "
-    "Únete aquí! 👇\n\n"
-    f"{url_privada}"
+    "¡Compañero! 🪖\n\nTe comparto este canal de test gratuitos para preparar el ascenso a Cabo."
+    "Preguntas oficiales cada hora, simulacros, cuanta atrás para el examen y estadísticas.\n\n"
+    f"Únete al canal y prepárate en condiciones:\n{url_privada}"
 )
-link_viral = f"https://t.me/share/url?url=&text={urllib.parse.quote(texto_compartir)}"
-keyboard_viral = InlineKeyboardMarkup([[InlineKeyboardButton("🚀 RECOMENDAR A UN COMPAÑERO", url=link_viral)]])
+url_tg_share = f"https://t.me/share/url?url={urllib.parse.quote(url_privada)}&text={urllib.parse.quote(texto_compartir)}"
+keyboard_viral = InlineKeyboardMarkup([
+    [InlineKeyboardButton("⚔️ ENVIAR REFUERZOS (Compartir Bot) ⚔️", url=url_tg_share)]
+])
 
-# --- COMANDO SECRETO: INFORME DE ARSENAL ---
-async def informe_arsenal(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    total = len(preguntas_oficiales)
-    temas = {}
-    for p in preguntas_oficiales:
-        t = p.get('titulo_tema', 'SIN TEMA').upper()
-        temas[t] = temas.get(t, 0) + 1
-    
-    informe = f"📦 **PARTE DE EXISTENCIAS (ARSENAL)** 📦\n------------------------------------------\n"
-    informe += f"🎖️ **Total Munición**: {total} preguntas\n\n📚 **Desglose:**\n"
-    for t, c in sorted(temas.items(), key=lambda x: x[1], reverse=True):
-        informe += f"🔹 *{t}*: {c}\n"
-    informe += "------------------------------------------\n🫡 **Informe para el Mando.**"
-    await update.message.reply_text(informe, parse_mode="Markdown")
-
-# --- MENSAJE ESPECIAL DÍA DEL EXAMEN ---
-async def enviar_mensaje_examen(context):
-    mensaje = (
-        "🎯 **MENSAJE DE MISIÓN: DÍA DEL EXAMEN** 🎯\n\n"
-        "Confía en el proceso. Has estudiado, trabajado y preparado todo de la mejor manera posible. "
-        "Hoy es un simulacro más. ¡Confía, el trabajo está hecho! 🪖🚀"
-    )
-    await context.bot.send_message(chat_id=CHAT_ID, text=mensaje, parse_mode="Markdown")
-
-# --- FUNCIONES DE APOYO ---
-def obtener_saludo():
+# --- OBTENER SALUDO CON AVISO DE SIMULACRO ---
+def obtener_saludo(es_simulacro=False):
     hoy = datetime.now(ZONA_ESP)
     dias = (FECHA_EXAMEN - hoy).days
+    
+    # Base del mensaje
     if dias > 0:
-        return f"⏳ **CUENTA ATRÁS: Quedan {dias} días para el examen** 🎯\n\n🌅 **¡A por la jornada, aspirante!**"
+        mensaje = f"⏳ **CUENTA ATRÁS: Quedan {dias} días para el examen** 🎯\n\n"
     elif dias == 0:
-        return f"🎯 **¡LLEGÓ EL DÍA!** 🎯\n\nEs el momento de demostrarlo todo. ¡A por ello!"
-    return "🚀 **NUEVA CONVOCATORIA EN PREPARACIÓN** 🚀"
+        mensaje = f"🎯 **¡LLEGÓ EL DÍA!** 🎯\n\nEs el momento de demostrarlo todo. "
+    else:
+        mensaje = "🚀 **NUEVA CONVOCATORIA EN PREPARACIÓN** 🚀\n\n"
+
+    # Añadido especial si es simulacro de fin de semana
+    if es_simulacro:
+        mensaje += "🔥 **¡SIMULACRO DE FIN DE SEMANA!** 🔥\n"
+        mensaje += "Ráfaga de 10 preguntas. ¡Demuestra tu nivel, aspirante!"
+    else:
+        mensaje += "🌅 **¡A por la jornada, aspirante!**"
+        
+    return mensaje
 
 async def track_poll_results(update, context):
     poll = update.poll
     if poll.type != Poll.QUIZ or poll.correct_option_id is None: return
+
+    aciertos = next((o.voter_count for o in poll.options if o.voter_count and poll.options.index(o) == poll.correct_option_id), 0)
+    
     conn = sqlite3.connect('stats.db')
     cursor = conn.cursor()
     cursor.execute("UPDATE encuestas SET aciertos = ?, total = ? WHERE poll_id = ?", 
-                   (poll.options[poll.correct_option_id].voter_count, poll.total_voter_count, poll.id))
+                   (aciertos, poll.total_voter_count, poll.id))
     conn.commit()
     conn.close()
 
 def preparar_texto_informe():
-    hoy_str = datetime.now(ZONA_ESP).strftime('%Y-%m-%d')
+    hoy = datetime.now(ZONA_ESP).strftime('%Y-%m-%d')
     conn = sqlite3.connect('stats.db')
     cursor = conn.cursor()
-    cursor.execute("SELECT tema, SUM(aciertos), SUM(total) FROM encuestas WHERE fecha = ? GROUP BY tema", (hoy_str,))
-    rows = cursor.fetchall()
+    cursor.execute("SELECT tema, SUM(aciertos), SUM(total) FROM encuestas WHERE fecha = ? GROUP BY tema", (hoy,))
+    stats = cursor.fetchall()
     conn.close()
-    if not rows or sum(row[2] for row in rows) == 0: return None
     
-    informe = f"📊 **PARTE DE NOVEDADES DIARIO ({datetime.now(ZONA_ESP).strftime('%d/%m')})** 📊\n"
-    informe += "------------------------------------------\n"
-    t_aciertos, t_votos = 0, 0
-    for tema, aciertos, total in rows:
-        if total > 0:
-            porc = (aciertos / total) * 100
-            t_aciertos += aciertos
-            t_votos += total
-            emoji = "✅" if porc > 70 else "⚠️" if porc > 40 else "❌"
-            informe += f"{emoji} *{tema}*: {porc:.1f}% éxito\n"
-            
-    media = (t_aciertos / t_votos * 100) if t_votos > 0 else 0
-    informe += "------------------------------------------\n"
-    informe += f"🎖️ **Rendimiento Global**: {media:.1f}%\n\n"
-    informe += "🫡 **Mañana más y mejor. ¡Descansen!**"
+    if not stats: return None
+    
+    total_respuestas = sum(t[2] for t in stats)
+    if total_respuestas == 0: return None
+    
+    total_aciertos = sum(t[1] for t in stats)
+    precision_global = (total_aciertos / total_respuestas) * 100
+    
+    informe = f"📊 **PARTE DE NOVEDADES - {datetime.now(ZONA_ESP).strftime('%d/%m/%Y')}** 📊\n\n"
+    informe += f"🎯 **Rendimiento Global de la Unidad:** `{precision_global:.1f}%` ({total_aciertos}/{total_respuestas} aciertos)\n\n"
+    
+    for stat in stats:
+        t_aciertos, t_total = stat[1], stat[2]
+        t_porcentaje = (t_aciertos / t_total * 100) if t_total > 0 else 0
+        icono = "🟢" if t_porcentaje >= 75 else "🟡" if t_porcentaje >= 50 else "🔴"
+        informe += f"{icono} *{stat[0]}*: `{t_porcentaje:.1f}%`\n"
+        
+    informe += "\nDescansen. Mañana continuamos la instrucción. 🪖"
     return informe
 
-# --- LANZAMIENTO DE PREGUNTAS ---
-async def lanzar_tanda(bot, cantidad):
+async def informe_arsenal(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_user.id != 113333060: return
+    informe = preparar_texto_informe()
+    await update.message.reply_text(informe or "Sin datos.", parse_mode="Markdown")
+
+async def enviar_mensaje_examen(context):
+    msg = ("🔥 **¡HA LLEGADO EL DÍA, ASPIRANTES!** 🔥\n\n"
+           "Todo el sudor, las horas restadas al sueño y el esfuerzo de estos meses se reducen a este momento.\n\n"
+           "Confiad en vuestra preparación. Leed bien cada pregunta. No hay atajos, solo disciplina y determinación.\n\n"
+           "**¡Mucha fuerza a todos y a por esa plaza!** 🪖🇪🇸")
+    await context.bot.send_message(chat_id=CHAT_ID, text=msg, parse_mode="Markdown")
+
+# --- LANZAMIENTO DE TANDA CON BUCLE ANTI-ERRORES ---
+async def lanzar_tanda(bot, cantidad, es_simulacro=False):
     hoy = datetime.now(ZONA_ESP)
     hace_7_dias = (hoy - timedelta(days=7)).strftime('%Y-%m-%d')
     conn = sqlite3.connect('stats.db')
     cursor = conn.cursor()
     
-    # Memoria de 7 días
+    # Filtro para no repetir preguntas de la última semana
     cursor.execute("SELECT DISTINCT pregunta_texto FROM encuestas WHERE fecha >= ?", (hace_7_dias,))
     recientes = [row[0] for row in cursor.fetchall()]
     pool = [p for p in preguntas_oficiales if p['pregunta'] not in recientes]
     
     if len(pool) < cantidad:
-        pool = preguntas_oficiales
+        pool = list(preguntas_oficiales)
 
-    await bot.send_message(chat_id=CHAT_ID, text=obtener_saludo(), reply_markup=keyboard_viral, parse_mode="Markdown")
+    await bot.send_message(chat_id=CHAT_ID, text=obtener_saludo(es_simulacro), reply_markup=keyboard_viral, parse_mode="Markdown")
 
-    for p in random.sample(pool, min(cantidad, len(pool))):
+    enviadas = 0
+    intentos = 0
+    max_intentos = cantidad * 5  # Margen de seguridad para no crear un bucle infinito
+    
+    random.shuffle(pool)
+
+    # El bucle insiste hasta que se envíen EXACTAMENTE las preguntas solicitadas
+    while enviadas < cantidad and intentos < max_intentos and pool:
+        p = pool.pop(0)  
+        intentos += 1
+        success = False
+        
+        # --- INTENTO 1: Tu límite de 190 caracteres ---
+        explicacion_intento = f"{p.get('explicacion','')}"[:190]
+        
         try:
             msg = await bot.send_poll(
                 CHAT_ID, 
@@ -137,19 +157,45 @@ async def lanzar_tanda(bot, cantidad):
                 options=[str(o)[:100] for o in p['opciones']], 
                 type='quiz', 
                 correct_option_id=int(p['correcta']), 
-                explanation=f"{p.get('explicacion','')}"[:190], 
+                explanation=explicacion_intento,
                 is_anonymous=True,
-                # NUEVO: Soporte para Markdown en las encuestas
                 question_parse_mode="Markdown",
                 explanation_parse_mode="Markdown"
             )
+            success = True
+        except Exception as e:
+            if "Explanation_too_long" in str(e) or "Poll_explanation_length" in str(e):
+                logging.info(f"⚠️ Explicación pesada. Reintentando con recorte de seguridad a 150...")
+                try:
+                    # --- INTENTO 2: Plan B de seguridad (150 caracteres) ---
+                    explicacion_intento = f"{p.get('explicacion','')}"[:150]
+                    msg = await bot.send_poll(
+                        CHAT_ID, 
+                        question=f"📜 [{p.get('titulo_tema','').upper()}]\n\n{p['pregunta']}"[:300], 
+                        options=[str(o)[:100] for o in p['opciones']], 
+                        type='quiz', 
+                        correct_option_id=int(p['correcta']), 
+                        explanation=explicacion_intento,
+                        is_anonymous=True,
+                        question_parse_mode="Markdown",
+                        explanation_parse_mode="Markdown"
+                    )
+                    success = True
+                except Exception as e2:
+                    logging.error(f"❌ Fallo crítico en pregunta: {e2}")
+            else:
+                logging.error(f"❌ Error de otro tipo: {e}")
+
+        # Si se envió bien (en el intento 1 o en el 2), sumamos al contador y guardamos
+        if success:
+            enviadas += 1
             cursor.execute("INSERT INTO encuestas VALUES (?, ?, ?, ?, ?, ?)", 
                            (msg.poll.id, p.get('titulo_tema','').upper(), 0, 0, hoy.strftime('%Y-%m-%d'), p['pregunta']))
             conn.commit()
-        except: continue
+            
     conn.close()
     
-    # TU TEXTO DE CIERRE ORIGINAL
+    # Mensaje de cierre original
     msg_cierre = "✅ **ENTRENAMIENTO FINALIZADO**\n\nNo dejes a tus compañeros atrás. Comparte el canal para ayudarnos entre nosotros. 👇"
     await bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
 
@@ -159,14 +205,32 @@ async def enviar_batch_automatico(context):
     if ahora.date() == FECHA_EXAMEN.date(): return
     if not (6 <= ahora.hour <= 22): return 
     
-    await lanzar_tanda(context.bot, 10 if ahora.weekday() >= 5 and ahora.hour in [10, 14, 18, 22] else 2)
+    es_finde = ahora.weekday() >= 5  # 5 es Sábado, 6 es Domingo
+    
+    if es_finde:
+        # Fines de semana: SOLO a estas 4 horas envía 10 preguntas (SIMULACRO)
+        if ahora.hour in [10, 14, 18, 22]:
+            cantidad = 10
+            es_simulacro = True
+        else:
+            return  # Si es finde pero es otra hora, aborta y no hace nada.
+    else:
+        # Entre semana: siempre 2 preguntas por hora
+        cantidad = 2
+        es_simulacro = False
+        
+    await lanzar_tanda(context.bot, cantidad, es_simulacro)
 
 async def cierre_jornada(context):
     ahora = datetime.now(ZONA_ESP)
     if ahora.date() == FECHA_EXAMEN.date(): return
     
-    # Tanda final + Estadísticas unificadas
-    await lanzar_tanda(context.bot, 10 if ahora.weekday() >= 5 else 2)
+    # La tanda final de las 23:00 envía preguntas (10 si es finde, 2 si es diario)
+    es_finde = ahora.weekday() >= 5
+    cantidad = 10 if es_finde else 2
+    es_simulacro = es_finde
+    
+    await lanzar_tanda(context.bot, cantidad, es_simulacro)
     await asyncio.sleep(2)
     informe = preparar_texto_informe()
     await context.bot.send_message(chat_id=CHAT_ID, text=informe or "Hoy no ha habido actividad registrada.", parse_mode="Markdown")
@@ -186,12 +250,13 @@ def main():
     if ahora < fecha_motivacion:
         app.job_queue.run_once(enviar_mensaje_examen, when=fecha_motivacion)
     
-    app.add_handler(CommandHandler("disparar", lambda u, c: lanzar_tanda(c.bot, 2)))
+    # Para forzar un disparo manual (usa 2 preguntas por defecto)
+    app.add_handler(CommandHandler("disparar", lambda u, c: lanzar_tanda(c.bot, 2, False)))
     app.add_handler(CommandHandler("test_cierre", lambda u, c: cierre_jornada(c)))
     app.add_handler(CommandHandler("arsenal", informe_arsenal))
     app.add_handler(PollHandler(track_poll_results))
     
-    print("🚀 Bot en guardia. Formato Markdown y Arsenal activados con mensajes originales.")
+    print("🚀 Bot en guardia. Lógica de fines de semana y anti-errores activada.")
     app.run_polling()
 
 if __name__ == '__main__': main()
