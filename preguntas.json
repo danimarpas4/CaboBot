@@ -84,7 +84,7 @@
         "bloque": 1,
         "tema": 1,
         "titulo_tema": "Disposiciones Generales",
-        "pregunta": "[RROO]Todo militar, cualquiera que sea su empleo, atenderá las indicaciones o instrucciones de otro que, aun siendo de ...",
+        "pregunta": "[RROO] Todo militar, cualquiera que sea su empleo, atenderá las indicaciones o instrucciones de otro que, aun siendo de ...",
         "opciones": ["Empleo superior al suyo", "Empleo inferior al suyo", "Empleo igual al suyo", "empleo de teniente"],
         "correcta": 1,
         "explicacion": "📚 Artículo 50.\nTodo militar, cualquiera que sea su empleo, atenderá las indicaciones o instrucciones de otro que, aun siendo de empleo inferior al suyo, se encuentre de servicio y actúe en virtud de órdenes o consignas...."
@@ -94,7 +94,7 @@
         "bloque": 1,
         "tema": 1,
         "titulo_tema": "Disposiciones Generales",
-        "pregunta": "[RROO]En lo referente a la responsabilidad de obediencia, el militar, en el cumplimiento de las órdenes debe esforzarse en ...",
+        "pregunta": "[RROO] En lo referente a la responsabilidad de obediencia, el militar, en el cumplimiento de las órdenes debe esforzarse en ...",
         "opciones": ["Cumplirlas a toda costa", "Ser fiel a los propósitos del mando", "Ser fiel a sus principios", "Cumplir las órdenes sin dilaciones indebidas"],
         "correcta": 1,
         "explicacion": "📚 Artículo 47.\nEn el cumplimiento de las órdenes debe esforzarse en ser fiel a los propósitos del mando, con responsabilidad y espirítu de iniciativa."
@@ -2241,7 +2241,7 @@
         "Seis meses a seis años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición",
         "seis meses a cinco años de prisión cuando se trate de los meros ejecutores"
     ],
-    "correcta": 1,
+    "correcta": 0,
     "explicacion": "📚 Art 39.\n Uno a seis años de prisión, cuando se trate de quienes hubieren inducido, sostenido o dirigido la sedición y seis meses a cuatro años de prisión cuando se trate de los meros ejecutores."
     },
     {
@@ -3824,16 +3824,6 @@
         "bloque": 3,
         "tema": 2,
         "titulo_tema": "Fusil HK G-36E",
-        "pregunta": "¿Qué pieza corresponde al número 4 en el esquema del fusil?",
-        "opciones": ["Palanca de montar", "Cierre", "Palanca del seguro", "Guardamonte"],
-        "correcta": 0,
-        "explicacion": "📚 Descripción General.\n4.- Palanca de montar."
-    },
-    {
-        "capitulo": 2,
-        "bloque": 3,
-        "tema": 2,
-        "titulo_tema": "Fusil HK G-36E",
         "pregunta": "HK G-36E. Si se produce una interrupción por 'Vaina no expulsada', ¿cuál puede ser una causa probable?",
         "opciones": ["Aguja percutora rota", "Recámara sucia o extractor roto", "Cargador mal colocado", "Seguro puesto"],
         "correcta": 1,
@@ -4134,7 +4124,7 @@
         "bloque": 3,
         "tema": 5,
         "titulo_tema": "Teoría del Tiro",
-        "pregunta": "¿Qué es la desviación?",
+        "pregunta": "¿Qué es la derivación?",
         "opciones": ["Es la derivación de los puntos de caída de los proyectiles respecto al plano de tiro", "Es la desviación de los puntos de caída de los proyectiles respecto al plano de tiro", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del agrupamiento"],
         "correcta": 1,
         "explicacion": "📚 Agrupamiento.\nEs la desviación de los puntos de caída de los proyectiles respecto al plano de tiro, producida por el movimiento de rotación producido por las estrías."
@@ -4204,7 +4194,7 @@
         "bloque": 3,
         "tema": 5,
         "titulo_tema": "Teoría del Tiro",
-        "pregunta": "¿Cuál es el objetivo del feugo de destrucción?",
+        "pregunta": "¿Cuál es el objetivo del fuego de destrucción?",
         "opciones": ["Destruir el blanco", "Hacer daño a los civiles", "Proteger a los civiles", "Inutilizar al personal, medios y obras de fortificación del enemigo."],
         "correcta": 3,
         "explicacion": "📚 Feugo de destrucción.\nInutilizar al personal, medios y obras de fortificación del enemigo."
