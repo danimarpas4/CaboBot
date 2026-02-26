@@ -184,16 +184,6 @@
         "bloque": 1,
         "tema": 1,
         "titulo_tema": "Disposiciones Generales",
-        "pregunta": "[RROO] ¿A qué ajustará su conducta el militar según el artículo 4?",
-        "opciones": ["Al respeto de las personas y los derechos fundamentales", "A la jerarquía únicamente", "Al reglamento de su unidad", "A las órdenes de la autoridad civil"],
-        "correcta": 0,
-        "explicacion": "📚 Artículo 4.\nEl militar ajustará su conducta al respeto de las personas, de sus derechos fundamentales y libertades públicas."
-    },
-    {
-        "capitulo": 1,
-        "bloque": 1,
-        "tema": 1,
-        "titulo_tema": "Disposiciones Generales",
         "pregunta": "[RROO]¿A qué características ajustará su comportamiento el militar?",
         "opciones": ["Valor, fuerza y honor", "Disciplina, jerarquía y unidad", "Obediencia, silencio y trabajo", "Eficacia, rapidez y austeridad"],
         "correcta": 1,
@@ -4115,7 +4105,7 @@
         "tema": 5,
         "titulo_tema": "Teoría del Tiro",
         "pregunta": "¿Qué es el centro de impactos?",
-        "opciones": ["El centro geométrico del agrupamiento", "La probabilidad de acertar en el blanco", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del agrupamiento"],
+        "opciones": ["El centro geométrico del agrupamiento", "La probabilidad de acertar en el blanco", "El conjunto de impactos obtenidos sobre el terreno o blanco", "El centro geométrico del grupamiento"],
         "correcta": 0,
         "explicacion": "📚 Agrupamiento.\nEl centro geométrico del agrupamiento es el punto central del conjunto de impactos obtenidos sobre el terreno o blanco."
     },
