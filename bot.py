@@ -43,9 +43,9 @@ with open('preguntas.json', 'r', encoding='utf-8') as f:
     preguntas_oficiales = json.load(f)
 
 # --- CONFIGURACIÓN DE DIFUSIÓN MULTIPLATAFORMA ---
-url_privada = "https://t.me/+65_PMmIFrCQ1OTNk"
+url_privada = "https://t.me/addlist/q57lTY3FZTgwMzBk"
 texto_compartir = (
-    "¡Compañero! 🪖\n\nTe comparto este canal de test gratuitos para preparar el ascenso a Cabo. "
+    "¡Compañero! 🪖\n\nTe comparto esta comunidad de test gratuitos para preparar el ascenso a Cabo o Cabo Primero. "
     "Preguntas oficiales cada hora, simulacros y estadísticas reales.\n\n"
     f"Únete aquí: {url_privada}"
 )
