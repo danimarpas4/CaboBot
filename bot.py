@@ -65,17 +65,17 @@ def obtener_saludo(es_simulacro=False):
     dias = (FECHA_EXAMEN - hoy).days
     
     if dias > 0:
-        mensaje = f"⏳ **CUENTA ATRÁS: Quedan {dias} días para el examen de Cabo** 🎯\n\n"
+        mensaje = f"⏳ *CUENTA ATRÁS: Quedan {dias} días para el examen de Cabo* 🎯\n\n"
     elif dias == 0:
-        mensaje = f"🎯 **¡LLEGÓ EL DÍA DEL EXAMEN!** 🎯\n\nDemuestra lo que vales, aspirante. "
+        mensaje = f"🎯 *¡LLEGÓ EL DÍA DEL EXAMEN!* 🎯\n\nDemuestra lo que vales, aspirante. "
     else:
-        mensaje = "🚀 **NUEVA CONVOCATORIA A CABO EN PREPARACIÓN** 🚀\n\n"
+        mensaje = "🚀 *NUEVA CONVOCATORIA A CABO EN PREPARACIÓN* 🚀\n\n"
 
     if es_simulacro:
-        mensaje += "🔥 **¡SIMULACRO DE REPASO!** 🔥\n"
+        mensaje += "🔥 *¡SIMULACRO DE REPASO!* 🔥\n"
         mensaje += "Ráfaga de 10 preguntas para consolidar el temario oficial."
     else:
-        mensaje += "🌅 **¡Buenos días, aspirante! Iniciamos instrucción.**"
+        mensaje += "🌅 *¡Buenos días, aspirante! Iniciamos instrucción.*"
         
     return mensaje
 
@@ -109,8 +109,8 @@ def preparar_texto_informe():
     total_aciertos = sum(r[2] for r in rows)
     precision_global = (total_aciertos / total_respuestas) * 100
     
-    informe = f"📊 **PARTE DE NOVEDADES (CABO) - {datetime.now(ZONA_ESP).strftime('%d/%m/%Y')}** 📊\n\n"
-    informe += f"🎯 **Rendimiento Global:** `{precision_global:.1f}%` ({total_aciertos}/{total_respuestas} aciertos)\n\n"
+    informe = f"📊 *PARTE DE NOVEDADES (CABO) - {datetime.now(ZONA_ESP).strftime('%d/%m/%Y')}* 📊\n\n"
+    informe += f"🎯 *Rendimiento Global:* `{precision_global:.1f}%` ({total_aciertos}/{total_respuestas} aciertos)\n\n"
     
     # Agrupamos resultados por materia para el mensaje
     materias_dict = {}
@@ -120,11 +120,14 @@ def preparar_texto_informe():
         materias_dict[m].append((t, ac, tot))
     
     for mat, temas in materias_dict.items():
-        informe += f"🔹 **{mat.upper()}**\n"
+        # Limpiamos asteriscos y guiones bajos para que no rompan el formato Markdown
+        mat_limpia = mat.replace('*', '').replace('_', '')
+        informe += f"🔹 *{mat_limpia.upper()}*\n"
         for t_nombre, t_ac, t_tot in temas:
+            t_nombre_limpio = t_nombre.replace('*', '').replace('_', '')
             t_perc = (t_ac / t_tot * 100) if t_tot > 0 else 0
             icono = "🟢" if t_perc >= 75 else "🟡" if t_perc >= 50 else "🔴"
-            informe += f"   {icono} {t_nombre}: `{t_perc:.1f}%`\n"
+            informe += f"   {icono} {t_nombre_limpio}: `{t_perc:.1f}%`\n"
         informe += "\n"
         
     informe += "Buen trabajo. Mañana más y mejor. 🪖"
@@ -183,7 +186,7 @@ async def lanzar_tanda(bot, cantidad, es_simulacro=False, enviar_cierre=True):
 
     conn.close()
     if enviar_cierre:
-        msg_cierre = "✅ **ENTRENAMIENTO COMPLETADO**\n\nAyuda a tus compañeros de unidad compartiendo el canal. 👇"
+        msg_cierre = "✅ *ENTRENAMIENTO COMPLETADO*\n\nAyuda a tus compañeros de unidad compartiendo el canal. 👇"
         await bot.send_message(chat_id=CHAT_ID, text=msg_cierre, reply_markup=keyboard_viral, parse_mode="Markdown")
 
 # --- PROGRAMACIÓN DE TAREAS ---
@@ -199,18 +202,17 @@ async def enviar_batch_automatico(context):
     await lanzar_tanda(context.bot, cantidad, es_simulacro=es_finde)
 
 async def cierre_jornada(context):
-    # Ráfaga final de 2 preguntas
-    await lanzar_tanda(context.bot, 2, es_simulacro=False, enviar_cierre=False)
-    await asyncio.sleep(5)
-    
-    # Informe de resultados
+    # Genera el informe directamente sin enviar preguntas a destiempo
     informe = preparar_texto_informe()
-    await context.bot.send_message(chat_id=CHAT_ID, text=informe or "Hoy no ha habido actividad.", parse_mode="Markdown")
     
-    # Cierre con botones de compartir
-    await asyncio.sleep(2)
-    msg_final = "✅ **INSTRUCCIÓN FINALIZADA**\n\nNo dejes a nadie atrás. Comparte la academia con tu unidad. 👇"
-    await context.bot.send_message(chat_id=CHAT_ID, text=msg_final, reply_markup=keyboard_viral, parse_mode="Markdown")
+    if informe:
+        await context.bot.send_message(chat_id=CHAT_ID, text=informe, parse_mode="Markdown")
+        await asyncio.sleep(2)
+        # Cierre con botones de compartir y asteriscos simples
+        msg_final = "✅ *INSTRUCCIÓN FINALIZADA*\n\nNo dejes a nadie atrás. Comparte la academia con tu unidad. 👇"
+        await context.bot.send_message(chat_id=CHAT_ID, text=msg_final, reply_markup=keyboard_viral, parse_mode="Markdown")
+    else:
+        await context.bot.send_message(chat_id=CHAT_ID, text="📊 *PARTE DE NOVEDADES*\n\nHoy no ha habido actividad.", parse_mode="Markdown")
 
 def main():
     app = Application.builder().token(TOKEN).build()
@@ -218,6 +220,8 @@ def main():
     
     segundos_hasta_en_punto = 3600 - (ahora.minute * 60 + ahora.second)
     app.job_queue.run_repeating(enviar_batch_automatico, interval=3600, first=segundos_hasta_en_punto)
+    
+    # El cierre se ejecuta puntualmente a las 23:00 para enviar las estadísticas
     app.job_queue.run_daily(cierre_jornada, time=time(23, 0, tzinfo=ZONA_ESP))
 
     app.add_handler(CommandHandler("disparar", lambda u, c: lanzar_tanda(c.bot, 2, False)))
